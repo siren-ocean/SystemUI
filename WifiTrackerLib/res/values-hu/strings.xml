@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2020 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="summary_separator" msgid="6533720408587140819">" / "</string>
+    <string name="auto_connect_disable" msgid="1078319396240632542">"Automatikus csatlakozás kikapcsolva"</string>
+    <string name="saved_network" msgid="6241977554502802914">"Mentette: <xliff:g id="NAME">%1$s</xliff:g>"</string>
+    <string name="wifi_no_internet_no_reconnect" msgid="3089980800841926268">"Nem csatlakozik automatikusan"</string>
+    <string name="wifi_no_internet" msgid="4461212237521310895">"Nincs internet-hozzáférés"</string>
+    <string name="wifi_disabled_password_failure" msgid="3015007143699702403">"Hitelesítési probléma"</string>
+    <string name="wifi_check_password_try_again" msgid="2643230209986217827">"Ellenőrizze a jelszót, majd próbálkozzon újra"</string>
+    <string name="wifi_disabled_network_failure" msgid="6506742207778007439">"IP-konfigurációs hiba"</string>
+    <string name="wifi_disabled_generic" msgid="8307050327779256414">"Letiltva"</string>
+    <string name="wifi_ap_unable_to_handle_new_sta" msgid="6552198761671428871">"A hozzáférési pont átmenetileg megtelt"</string>
+    <string name="wifi_disconnected" msgid="3720926757662831062">"Leválasztva"</string>
+    <string name="wifi_remembered" msgid="5126903736498678708">"Mentve"</string>
+    <string name="wifi_metered_label" msgid="1362621600006544014">"Forgalomkorlátos"</string>
+    <string name="wifi_unmetered_label" msgid="499466875639448350">"Nem forgalomkorlátos"</string>
+    <string name="connected_via_app" msgid="1818040967936972127">"Kapcsolódva a következőn keresztül: <xliff:g id="NAME">%1$s</xliff:g>"</string>
+    <string name="available_via_app" msgid="9110324040292242769">"Rendelkezésre áll a(z) <xliff:g id="NAME">%1$s</xliff:g> alkalmazáson keresztül"</string>
+    <string name="connected_via_network_scorer" msgid="209764314005159012">"Automatikusan csatlakozva a következőn keresztül: <xliff:g id="NAME">%1$s</xliff:g>"</string>
+    <string name="connected_via_network_scorer_default" msgid="3084818437004202462">"Automatikusan csatlakozott a hálózatértékelés szolgáltatóján keresztül"</string>
+    <string name="wifi_limited_connection" msgid="3646701342701276239">"Korlátozott kapcsolat"</string>
+    <string name="private_dns_broken" msgid="2212227512243587416">"A privát DNS-kiszolgálóhoz nem lehet hozzáférni"</string>
+    <string name="wifi_connected_no_internet" msgid="7273909077465731259">"Nincs internet"</string>
+    <string name="wifi_security_none" msgid="6680263031386719053">"Nincs"</string>
+    <string name="wifi_passpoint_expired" msgid="3257021415099577815">"Lejárt"</string>
+    <string name="tap_to_sign_up" msgid="2409214576606918295">"Koppintson a regisztrációhoz"</string>
+    <string name="tap_to_renew_subscription_and_connect" msgid="375976298920840105">"Koppintson az előfizetés megújításához és a csatlakozáshoz"</string>
+    <string name="osu_opening_provider" msgid="5633521771769175139">"<xliff:g id="PASSPOINTPROVIDER">%1$s</xliff:g> megnyitása"</string>
+    <string name="osu_connect_failed" msgid="8503501619299851793">"Nem sikerült csatlakozni"</string>
+    <string name="osu_completing_sign_up" msgid="7188493241442946231">"Regisztráció befejezése…"</string>
+    <string name="osu_sign_up_failed" msgid="2725057866968590279">"Nem sikerült a regisztráció befejezése. Koppintással újrapróbálkozhat."</string>
+    <string name="osu_sign_up_complete" msgid="7013805426618985953">"A regisztráció befejeződött. Csatlakozás…"</string>
+    <string name="imsi_protection_warning" msgid="3207104049473134195">"Ez a hálózat egyedi azonosítót kap, amely felhasználható az eszköz helyadatainak követésére. "<annotation id="url">"További információ"</annotation>"."</string>
+    <string name="speed_label_very_slow" msgid="2401582671941367179">"Nagyon lassú"</string>
+    <string name="speed_label_slow" msgid="8410385703344502127">"Lassú"</string>
+    <string name="speed_label_okay" msgid="3741857805086997968">"Rendben"</string>
+    <string name="speed_label_medium" msgid="3175703848952862009">"Közepes"</string>
+    <string name="speed_label_fast" msgid="8344116097613544322">"Gyors"</string>
+    <string name="speed_label_very_fast" msgid="1595806641512447877">"Nagyon gyors"</string>
+</resources>

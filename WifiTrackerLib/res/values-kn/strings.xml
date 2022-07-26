@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2020 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="summary_separator" msgid="6533720408587140819">" / "</string>
+    <string name="auto_connect_disable" msgid="1078319396240632542">"ಸ್ವಯಂ ಕನೆಕ್ಟ್ ಆಫ್ ಆಗಿದೆ"</string>
+    <string name="saved_network" msgid="6241977554502802914">"<xliff:g id="NAME">%1$s</xliff:g> ನಿಂದ ಉಳಿಸಲಾಗಿದೆ"</string>
+    <string name="wifi_no_internet_no_reconnect" msgid="3089980800841926268">"ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಕನೆಕ್ಟ್ ಮಾಡಲು ಸಾಧ್ಯವಿಲ್ಲ"</string>
+    <string name="wifi_no_internet" msgid="4461212237521310895">"ಯಾವುದೇ ಇಂಟರ್ನೆಟ್ ಪ್ರವೇಶವಿಲ್ಲ"</string>
+    <string name="wifi_disabled_password_failure" msgid="3015007143699702403">"ಪ್ರಮಾಣೀಕರಣ ಸಮಸ್ಯೆ"</string>
+    <string name="wifi_check_password_try_again" msgid="2643230209986217827">"ಪಾಸ್‌ವರ್ಡ್ ಪರಿಶೀಲಿಸಿ ಮತ್ತು ಪುನಃ ಪ್ರಯತ್ನಿಸಿ"</string>
+    <string name="wifi_disabled_network_failure" msgid="6506742207778007439">"IP ಕಾನ್ಫಿಗರೇಶನ್ ವಿಫಲತೆ"</string>
+    <string name="wifi_disabled_generic" msgid="8307050327779256414">"ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ"</string>
+    <string name="wifi_ap_unable_to_handle_new_sta" msgid="6552198761671428871">"ಪ್ರವೇಶ ಕೇಂದ್ರ ತಾತ್ಕಾಲಿಕವಾಗಿ ಭರ್ತಿಯಾಗಿದೆ"</string>
+    <string name="wifi_disconnected" msgid="3720926757662831062">"ಸಂಪರ್ಕ ಕಡಿತಗೊಳಿಸಲಾಗಿದೆ"</string>
+    <string name="wifi_remembered" msgid="5126903736498678708">"ಉಳಿಸಲಾಗಿದೆ"</string>
+    <string name="wifi_metered_label" msgid="1362621600006544014">"ಮೀಟರ್ ಮಾಡಲಾಗಿದೆ"</string>
+    <string name="wifi_unmetered_label" msgid="499466875639448350">"ಮೀಟರ್ ಮಾಡಲಾಗಿಲ್ಲ"</string>
+    <string name="connected_via_app" msgid="1818040967936972127">"<xliff:g id="NAME">%1$s</xliff:g> ಆ್ಯಪ್ ಮೂಲಕ ಸಂಪರ್ಕಿಸಲಾಗಿದೆ"</string>
+    <string name="available_via_app" msgid="9110324040292242769">"<xliff:g id="NAME">%1$s</xliff:g> ಮೂಲಕ ಲಭ್ಯವಿದೆ"</string>
+    <string name="connected_via_network_scorer" msgid="209764314005159012">"<xliff:g id="NAME">%1$s</xliff:g> ಮೂಲಕ ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಕನೆಕ್ಟ್ ಮಾಡಲಾಗಿದೆ"</string>
+    <string name="connected_via_network_scorer_default" msgid="3084818437004202462">"ನೆಟ್‌ವರ್ಕ್ ರೇಟಿಂಗ್ ಒದಗಿಸುವವರ ಮೂಲಕ ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಸಂಪರ್ಕಿಸಲಾಗಿದೆ"</string>
+    <string name="wifi_limited_connection" msgid="3646701342701276239">"ಸೀಮಿತ ಸಂಪರ್ಕ"</string>
+    <string name="private_dns_broken" msgid="2212227512243587416">"ಖಾಸಗಿ DNS ಸರ್ವರ್ ಅನ್ನು ಪ್ರವೇಶಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ"</string>
+    <string name="wifi_connected_no_internet" msgid="7273909077465731259">"ಇಂಟರ್ನೆಟ್ ಇಲ್ಲ"</string>
+    <string name="wifi_security_none" msgid="6680263031386719053">"ಯಾವುದೂ ಇಲ್ಲ"</string>
+    <string name="wifi_passpoint_expired" msgid="3257021415099577815">"ಅವಧಿ ಮುಕ್ತಾಯವಾಗಿದೆ"</string>
+    <string name="tap_to_sign_up" msgid="2409214576606918295">"ಸೈನ್ ಅಪ್ ಮಾಡಲು ಟ್ಯಾಪ್‌ ಮಾಡಿ"</string>
+    <string name="tap_to_renew_subscription_and_connect" msgid="375976298920840105">"ಸಬ್‌ಸ್ಕ್ರಿಪ್ಶನ್ ನವೀಕರಿಸಲು ಟ್ಯಾಪ್ ಮಾಡಿ ಮತ್ತು ಸಂಪರ್ಕಿಸಿ"</string>
+    <string name="osu_opening_provider" msgid="5633521771769175139">"<xliff:g id="PASSPOINTPROVIDER">%1$s</xliff:g> ಅನ್ನು ತೆರೆಯಲಾಗುತ್ತಿದೆ"</string>
+    <string name="osu_connect_failed" msgid="8503501619299851793">"ಕನೆಕ್ಟ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗುತ್ತಿಲ್ಲ"</string>
+    <string name="osu_completing_sign_up" msgid="7188493241442946231">"ಸೈನ್-ಅಪ್ ಪೂರ್ಣಗೊಳಿಸಲಾಗುತ್ತಿದೆ…"</string>
+    <string name="osu_sign_up_failed" msgid="2725057866968590279">"ಸೈನ್-ಅಪ್ ಪೂರ್ಣಗೊಳಿಸಲು ಸಾಧ್ಯವಾಗುತ್ತಿಲ್ಲ. ಮತ್ತೊಮ್ಮೆ ಪ್ರಯತ್ನಿಸಲು ಟ್ಯಾಪ್ ಮಾಡಿ."</string>
+    <string name="osu_sign_up_complete" msgid="7013805426618985953">"ಸೈನ್-ಅಪ್ ಪೂರ್ಣಗೊಂಡಿದೆ. ಕನೆಕ್ಟ್ ಆಗುತ್ತಿದೆ…"</string>
+    <string name="imsi_protection_warning" msgid="3207104049473134195">"ಸಾಧನದ ಸ್ಥಳವನ್ನು ಟ್ರ್ಯಾಕ್ ಮಾಡಲು ಬಳಸಬಹುದಾದ ಅನನ್ಯ ಐಡಿಯನ್ನು ಈ ನೆಟ್‌ವರ್ಕ್ ಸ್ವೀಕರಿಸುತ್ತದೆ. "<annotation id="url">"ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ"</annotation></string>
+    <string name="speed_label_very_slow" msgid="2401582671941367179">"ತುಂಬಾ ನಿಧಾನವಾಗಿದೆ"</string>
+    <string name="speed_label_slow" msgid="8410385703344502127">"ನಿಧಾನ"</string>
+    <string name="speed_label_okay" msgid="3741857805086997968">"ಸರಿ"</string>
+    <string name="speed_label_medium" msgid="3175703848952862009">"ಮಧ್ಯಮ"</string>
+    <string name="speed_label_fast" msgid="8344116097613544322">"ವೇಗ"</string>
+    <string name="speed_label_very_fast" msgid="1595806641512447877">"ತುಂಬಾ ವೇಗವಾಗಿದೆ"</string>
+</resources>

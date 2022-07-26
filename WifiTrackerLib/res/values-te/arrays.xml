@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+/*
+**
+** Copyright 2020 The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string-array name="wifi_status">
+    <item msgid="8763475525292171481"></item>
+    <item msgid="903308535197209786">"స్కాన్ చేస్తోంది…"</item>
+    <item msgid="6222852518007967736">"కనెక్ట్ అవుతోంది…"</item>
+    <item msgid="1176401854208153464">"ప్రామాణీకరిస్తోంది…"</item>
+    <item msgid="1377026397901197257">"IP చిరునామాను పొందుతోంది…"</item>
+    <item msgid="7627139816052121509">"కనెక్ట్ చేయబడింది"</item>
+    <item msgid="1598801023719359130">"తాత్కాలికంగా రద్దు చేయబడింది"</item>
+    <item msgid="9160765456671002324">"డిస్‌కనెక్ట్ చేస్తోంది…"</item>
+    <item msgid="8013176736494493734">"డిస్‌కనెక్ట్ అయ్యింది"</item>
+    <item msgid="4077393480368783785">"విఫలమైంది"</item>
+    <item msgid="605372180740008604">"బ్లాక్ చేయబడింది"</item>
+    <item msgid="5102306451432929048">"బలహీన కనెక్షన్‌ను తాత్కాలికంగా నివారిస్తోంది"</item>
+  </string-array>
+</resources>

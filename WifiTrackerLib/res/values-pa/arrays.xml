@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+/*
+**
+** Copyright 2020 The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string-array name="wifi_status">
+    <item msgid="8763475525292171481"></item>
+    <item msgid="903308535197209786">"ਸਕੈਨ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ…"</item>
+    <item msgid="6222852518007967736">"ਕਨੈਕਟ ਹੋ ਰਿਹਾ ਹੈ…"</item>
+    <item msgid="1176401854208153464">"ਪ੍ਰਮਾਣਿਤ ਕਰ ਰਿਹਾ ਹੈ…"</item>
+    <item msgid="1377026397901197257">"IP ਪਤਾ ਪ੍ਰਾਪਤ ਕਰ ਰਿਹਾ ਹੈ…"</item>
+    <item msgid="7627139816052121509">"ਕਨੈਕਟ ਹੈ"</item>
+    <item msgid="1598801023719359130">"ਮੁਅੱਤਲ ਕੀਤਾ"</item>
+    <item msgid="9160765456671002324">"ਡਿਸਕਨੈਕਟ ਹੋ ਰਿਹਾ ਹੈ…"</item>
+    <item msgid="8013176736494493734">"ਡਿਸਕਨੈਕਟ ਹੋਇਆ"</item>
+    <item msgid="4077393480368783785">"ਅਸਫਲ"</item>
+    <item msgid="605372180740008604">"ਬਲਾਕ ਕੀਤਾ ਗਿਆ"</item>
+    <item msgid="5102306451432929048">"ਅਸਥਾਈ ਤੌਰ \'ਤੇ ਕਮਜ਼ੋਰ ਕਨੈਕਸ਼ਨ ਤੋਂ ਬਚਣ ਲਈ"</item>
+  </string-array>
+</resources>

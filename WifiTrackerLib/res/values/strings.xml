@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2020 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Summary text separator for short descriptions (eg. "Fast / Connected"). [CHAR LIMIT=NONE] -->
+    <string name="summary_separator">" / "</string>
+
+    <!-- Strings for labeling Wi-Fi Auto-Connection is disabled. Wi-Fi Auto-Connection is a feature
+         for users to specify if a Wi-Fi network will be auto connected when it's reachable. [CHAR LIMIT=60] -->
+    <string name="auto_connect_disable">Auto-connect is off</string>
+
+    <!-- Package name for Settings app-->
+    <string name="settings_package" translatable="false">com.android.settings</string>
+
+    <!-- Package name for Certinstaller app-->
+    <string name="certinstaller_package" translatable="false">com.android.certinstaller</string>
+
+    <!-- Summary for saved networks [CHAR LIMIT=NONE]-->
+    <string name="saved_network">Saved by <xliff:g id="name" example="Wifi App">%1$s</xliff:g></string>
+
+    <!-- Summary for the network but no internet connection was detected. [CHAR LIMIT=NONE] -->
+    <string name="wifi_no_internet_no_reconnect">Won\u2019t automatically connect</string>
+
+    <!-- Summary for the remembered network but no internet connection was detected. [CHAR LIMIT=NONE] -->
+    <string name="wifi_no_internet">No internet access</string>
+
+    <!-- Status for networks disabled from authentication failure (wrong password
+         or certificate). [CHAR LIMIT=NONE] -->
+    <string name="wifi_disabled_password_failure">Authentication problem</string>
+
+    <!-- Message shown when the user likely entered an incorrect password for a wifi network [CHAR LIMIT=NONE] -->
+    <string name="wifi_check_password_try_again">Check password and try again</string>
+
+    <!-- Status for networked disabled from a DNS or DHCP failure [CHAR LIMIT=NONE] -->
+    <string name="wifi_disabled_network_failure">IP configuration failure</string>
+
+    <!-- Status for networks disabled for unknown reason [CHAR LIMIT=NONE] -->
+    <string name="wifi_disabled_generic">Disabled</string>
+
+    <!-- Summary for networks failing to connect due to association rejection status 17, AP full [CHAR LIMIT=NONE] -->
+    <string name="wifi_ap_unable_to_handle_new_sta">Access point temporarily full</string>
+
+    <!-- Summary for the disconnected network. [CHAR LIMIT=40] -->
+    <string name="wifi_disconnected">Disconnected</string>
+
+    <!-- Summary for the remembered network. [CHAR LIMIT=NONE] -->
+    <string name="wifi_remembered">Saved</string>
+
+    <!-- Label indicating network has been manually marked as metered [CHAR LIMIT=NONE] -->
+    <string name="wifi_metered_label">Metered</string>
+
+    <!-- Label indicating network has been manually marked as unmetered [CHAR LIMIT=NONE] -->
+    <string name="wifi_unmetered_label">Unmetered</string>
+
+    <!-- Status message of Wi-Fi when it is connected by a app (via suggestion or network request). [CHAR LIMIT=NONE] -->
+    <string name="connected_via_app">Connected via <xliff:g id="name" example="Wifi App">%1$s</xliff:g></string>
+
+    <!-- Summary for a network suggested by an app. [CHAR LIMIT=NONE] -->
+    <string name="available_via_app">Available via <xliff:g id="name" example="Wifi App">%1$s</xliff:g></string>
+
+    <!-- Status message of Wi-Fi when it is automatically connected by a network recommendation provider. [CHAR LIMIT=NONE] -->
+    <string name="connected_via_network_scorer">Automatically connected via <xliff:g id="name" example="Wifi App">%1$s</xliff:g></string>
+
+    <!-- Status message of Wi-Fi when it is automatically connected by a default network recommendation provider. [CHAR LIMIT=NONE] -->
+    <string name="connected_via_network_scorer_default">Automatically connected via network rating provider</string>
+
+    <!-- Summary for connected wifi network with partial internet connectivity [CHAR LIMIT=50] -->
+    <string name="wifi_limited_connection">Limited connection</string>
+
+    <!-- Summary for connected network without internet due to private dns validation failed [CHAR LIMIT=NONE] -->
+    <string name="private_dns_broken">Private DNS server cannot be accessed</string>
+
+    <!-- Summary for Connected wifi network without internet [CHAR LIMIT=NONE] -->
+    <string name="wifi_connected_no_internet">No internet</string>
+
+    <!-- Do not translate.  Concise terminology for wifi with 802.1x EAP security -->
+    <string name="wifi_security_short_eap" translatable="false">802.1x</string>
+
+    <!-- Do not translate.  Concise terminology for wifi with 802.1x EAP security -->
+    <string name="wifi_security_eap" translatable="false">WPA/WPA2/WPA3-Enterprise</string>
+
+    <!-- Do not translate.  Concise terminology for wifi with WPA 802.1x EAP security -->
+    <string name="wifi_security_short_eap_wpa" translatable="false">WPA-EAP</string>
+
+    <!-- Do not translate.  Concise terminology for wifi with WPA 802.1x EAP security -->
+    <string name="wifi_security_eap_wpa" translatable="false">WPA-Enterprise</string>
+
+    <!-- Do not translate.  Concise terminology for wifi with WPA2/WPA3 802.1x EAP security -->
+    <string name="wifi_security_short_eap_wpa2_wpa3" translatable="false">RSN-EAP</string>
+
+    <!-- Do not translate.  Concise terminology for wifi with WPA2/WPA3 802.1x EAP security -->
+    <string name="wifi_security_eap_wpa2_wpa3" translatable="false">WPA2/WPA3-Enterprise</string>
+
+    <!-- Do not translate.  Concise terminology for wifi with 802.1x EAP Suite-B-192 security -->
+    <string name="wifi_security_short_eap_suiteb" translatable="false">Suite-B-192</string>
+
+    <!-- Do not translate.  Concise terminology for wifi with 802.1x EAP Suite-B-192 security -->
+    <string name="wifi_security_eap_suiteb" translatable="false">WPA3-Enterprise 192-bit</string>
+
+    <!-- Do not translate.  Concise terminology for wifi with WPA security -->
+    <string name="wifi_security_short_wpa" translatable="false">WPA</string>
+
+    <!-- Do not translate.  Terminology for wifi with WPA security -->
+    <string name="wifi_security_wpa" translatable="false">WPA-Personal</string>
+
+    <!-- Do not translate.  Concise terminology for wifi with WPA2/WPA3 security -->
+    <string name="wifi_security_short_wpa2_wpa3" translatable="false">WPA2/WPA3</string>
+
+    <!-- Do not translate.  Terminology for wifi with WPA2/WPA3 security -->
+    <string name="wifi_security_wpa2_wpa3" translatable="false">WPA2/WPA3-Personal</string>
+
+    <!-- Do not translate.  Concise terminology for wifi with both WPA/WPA2/WPA3 security -->
+    <string name="wifi_security_short_wpa_wpa2_wpa3" translatable="false">WPA/WPA2/WPA3</string>
+
+    <!-- Do not translate.  Terminology for wifi with both WPA/WPA2/WPA3 security, or unknown -->
+    <string name="wifi_security_wpa_wpa2_wpa3" translatable="false">WPA/WPA2/WPA3-Personal</string>
+
+    <!-- Do not translate.  Terminology for wifi with WEP security -->
+    <string name="wifi_security_wep" translatable="false">WEP</string>
+
+    <!-- Do not translate.  Concise terminology for wifi with WPA3 security -->
+    <string name="wifi_security_short_sae" translatable="false">WPA3</string>
+
+    <!-- Do not translate.  Terminology for wifi with WPA3 security -->
+    <string name="wifi_security_sae" translatable="false">WPA3-Personal</string>
+
+    <!-- Do not translate.  Concise terminology for wifi with OWE security -->
+    <string name="wifi_security_short_owe" translatable="false">OWE</string>
+
+    <!-- Do not translate.  Terminology for wifi with OWE security -->
+    <string name="wifi_security_owe" translatable="false">Enhanced Open</string>
+
+    <!-- Used in Wi-Fi settings dialogs when Wi-Fi does not have any security. [CHAR LIMIT=40] -->
+    <string name="wifi_security_none">None</string>
+
+    <!-- Passpoint summary for an expired passpoint [CHAR LIMIT=40] -->
+    <string name="wifi_passpoint_expired">Expired</string>
+
+    <!-- Status message of OSU Provider network when not connected. [CHAR LIMIT=NONE] -->
+    <string name="tap_to_sign_up">Tap to sign up</string>
+
+    <!-- Status message of OSU Provider network when existing profile is expired. [CHAR LIMIT=NONE] -->
+    <string name="tap_to_renew_subscription_and_connect">Tap to renew subscription and connect</string>
+
+    <!-- Status message of OSU Provider upon initiating provisioning flow [CHAR LIMIT=NONE] -->
+    <string name="osu_opening_provider">Opening <xliff:g id="passpointProvider" example="Passpoint Provider">%1$s</xliff:g></string>
+
+    <!-- Status message of OSU Provider when connection fails [CHAR LIMIT=NONE] -->
+    <string name="osu_connect_failed">Couldn\u2019t connect</string>
+
+    <!-- Status message of OSU Provider after user completes provisioning flow [CHAR LIMIT=NONE] -->
+    <string name="osu_completing_sign_up">Completing sign-up\u2026</string>
+
+    <!-- Status message of OSU Provider when sign up could not be completed [CHAR LIMIT=NONE] -->
+    <string name="osu_sign_up_failed">Couldn\u2019t complete sign-up. Tap to try again.</string>
+
+    <!-- Status message of OSU Provider on completing provisioning. [CHAR LIMIT=NONE] -->
+    <string name="osu_sign_up_complete">Sign-up complete. Connecting\u2026</string>
+
+    <!-- IMSI protection warning for non-protection network [CHAR LIMIT=NONE] -->
+    <string name="imsi_protection_warning">This network receives a unique ID that can be used to track device location. <annotation id="url">Learn more</annotation></string>
+
+    <!-- Help URL, IMSI protection [DO NOT TRANSLATE] -->
+    <string name="help_url_imsi_protection" translatable="false"></string>
+
+    <!-- Speed label for very slow network speed -->
+    <string name="speed_label_very_slow">Very Slow</string>
+
+    <!-- Speed label for slow network speed -->
+    <string name="speed_label_slow">Slow</string>
+
+    <!-- Speed label for okay network speed -->
+    <string name="speed_label_okay">OK</string>
+
+    <!-- Speed label for medium network speed -->
+    <string name="speed_label_medium">Medium</string>
+
+    <!-- Speed label for fast network speed -->
+    <string name="speed_label_fast">Fast</string>
+
+    <!-- Speed label for very fast network speed -->
+    <string name="speed_label_very_fast">Very Fast</string>
+</resources>

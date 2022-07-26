@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2020 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="summary_separator" msgid="6533720408587140819">" / "</string>
+    <string name="auto_connect_disable" msgid="1078319396240632542">"Avtomatik ulash yoqilmagan"</string>
+    <string name="saved_network" msgid="6241977554502802914">"<xliff:g id="NAME">%1$s</xliff:g> tomonidan saqlangan"</string>
+    <string name="wifi_no_internet_no_reconnect" msgid="3089980800841926268">"Avtomatik ravishda ulanilmaydi"</string>
+    <string name="wifi_no_internet" msgid="4461212237521310895">"Internetga ulanmagan"</string>
+    <string name="wifi_disabled_password_failure" msgid="3015007143699702403">"Haqiqiylikni tekshirishda muammo"</string>
+    <string name="wifi_check_password_try_again" msgid="2643230209986217827">"Parolni tekshirib, qaytadan urining"</string>
+    <string name="wifi_disabled_network_failure" msgid="6506742207778007439">"IP manzil sozlanmadi"</string>
+    <string name="wifi_disabled_generic" msgid="8307050327779256414">"Yoqilmagan"</string>
+    <string name="wifi_ap_unable_to_handle_new_sta" msgid="6552198761671428871">"Internet kirish nuqtasi vaqtinchalik to‘lgan"</string>
+    <string name="wifi_disconnected" msgid="3720926757662831062">"Ulanmagan"</string>
+    <string name="wifi_remembered" msgid="5126903736498678708">"Saqlandi"</string>
+    <string name="wifi_metered_label" msgid="1362621600006544014">"Trafik hisoblanadigan tarmoq"</string>
+    <string name="wifi_unmetered_label" msgid="499466875639448350">"Trafik hisobi yuritilmaydigan tarmoq"</string>
+    <string name="connected_via_app" msgid="1818040967936972127">"<xliff:g id="NAME">%1$s</xliff:g> orqali ulandi"</string>
+    <string name="available_via_app" msgid="9110324040292242769">"<xliff:g id="NAME">%1$s</xliff:g> ilovasi orqali mavjud"</string>
+    <string name="connected_via_network_scorer" msgid="209764314005159012">"<xliff:g id="NAME">%1$s</xliff:g> orqali avtomatik ulandi"</string>
+    <string name="connected_via_network_scorer_default" msgid="3084818437004202462">"Tarmoqlar reytingi muallifi orqali avtomatik ulandi"</string>
+    <string name="wifi_limited_connection" msgid="3646701342701276239">"Cheklangan aloqa"</string>
+    <string name="private_dns_broken" msgid="2212227512243587416">"Xususiy DNS server ishlamayapti"</string>
+    <string name="wifi_connected_no_internet" msgid="7273909077465731259">"Internetga ulanmagansiz"</string>
+    <string name="wifi_security_none" msgid="6680263031386719053">"Hech qanday"</string>
+    <string name="wifi_passpoint_expired" msgid="3257021415099577815">"Muddati tugagan"</string>
+    <string name="tap_to_sign_up" msgid="2409214576606918295">"Registratsiya qilish uchun bosing"</string>
+    <string name="tap_to_renew_subscription_and_connect" msgid="375976298920840105">"Obunani davom ettirish va ulanish uchun bosing"</string>
+    <string name="osu_opening_provider" msgid="5633521771769175139">"<xliff:g id="PASSPOINTPROVIDER">%1$s</xliff:g> ochilmoqda"</string>
+    <string name="osu_connect_failed" msgid="8503501619299851793">"Ulanmadi"</string>
+    <string name="osu_completing_sign_up" msgid="7188493241442946231">"Registratsiya tamomlanmoqda…"</string>
+    <string name="osu_sign_up_failed" msgid="2725057866968590279">"Registratsiya tamomlanmadi. Qayta urinish uchun tegining."</string>
+    <string name="osu_sign_up_complete" msgid="7013805426618985953">"Registratsiya qilindi. Ulanmoqda…"</string>
+    <string name="imsi_protection_warning" msgid="3207104049473134195">"Bu tarmoqqa qurilma joylashuvini aniqlash imkonini beruvchi maxsus identifikator beriladi. "<annotation id="url">"Batafsil"</annotation></string>
+    <string name="speed_label_very_slow" msgid="2401582671941367179">"Juda sekin"</string>
+    <string name="speed_label_slow" msgid="8410385703344502127">"Sekin"</string>
+    <string name="speed_label_okay" msgid="3741857805086997968">"OK"</string>
+    <string name="speed_label_medium" msgid="3175703848952862009">"O‘rtacha"</string>
+    <string name="speed_label_fast" msgid="8344116097613544322">"Tez"</string>
+    <string name="speed_label_very_fast" msgid="1595806641512447877">"Juda tez"</string>
+</resources>

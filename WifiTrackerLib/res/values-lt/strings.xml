@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2020 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="summary_separator" msgid="6533720408587140819">" / "</string>
+    <string name="auto_connect_disable" msgid="1078319396240632542">"Automatinio prisijungimo funkcija išjungta"</string>
+    <string name="saved_network" msgid="6241977554502802914">"Išsaugojo <xliff:g id="NAME">%1$s</xliff:g>"</string>
+    <string name="wifi_no_internet_no_reconnect" msgid="3089980800841926268">"Nebus automatiškai prisijungiama"</string>
+    <string name="wifi_no_internet" msgid="4461212237521310895">"Nėra interneto ryšio"</string>
+    <string name="wifi_disabled_password_failure" msgid="3015007143699702403">"Autentifikavimo problema"</string>
+    <string name="wifi_check_password_try_again" msgid="2643230209986217827">"Patikrinkite slaptažodį ir bandykite dar kartą"</string>
+    <string name="wifi_disabled_network_failure" msgid="6506742207778007439">"IP konfigūracijos triktis"</string>
+    <string name="wifi_disabled_generic" msgid="8307050327779256414">"Neleidžiama"</string>
+    <string name="wifi_ap_unable_to_handle_new_sta" msgid="6552198761671428871">"Prieigos taškas laikinai visiškai užimtas"</string>
+    <string name="wifi_disconnected" msgid="3720926757662831062">"Neprisijungta"</string>
+    <string name="wifi_remembered" msgid="5126903736498678708">"Išsaugotas"</string>
+    <string name="wifi_metered_label" msgid="1362621600006544014">"Matuojamas"</string>
+    <string name="wifi_unmetered_label" msgid="499466875639448350">"Neišmatuotas"</string>
+    <string name="connected_via_app" msgid="1818040967936972127">"Prisijungta naudojant programą „<xliff:g id="NAME">%1$s</xliff:g>“"</string>
+    <string name="available_via_app" msgid="9110324040292242769">"Pasiekiama naudojant „<xliff:g id="NAME">%1$s</xliff:g>“"</string>
+    <string name="connected_via_network_scorer" msgid="209764314005159012">"Automatiškai prisijungta per „<xliff:g id="NAME">%1$s</xliff:g>“"</string>
+    <string name="connected_via_network_scorer_default" msgid="3084818437004202462">"Automatiškai prisijungta naudojant tinklo įvertinimo paslaugos teikėjo paslaugomis"</string>
+    <string name="wifi_limited_connection" msgid="3646701342701276239">"Ribotas ryšys"</string>
+    <string name="private_dns_broken" msgid="2212227512243587416">"Privataus DNS serverio negalima pasiekti"</string>
+    <string name="wifi_connected_no_internet" msgid="7273909077465731259">"Nėra interneto ryšio"</string>
+    <string name="wifi_security_none" msgid="6680263031386719053">"Nėra"</string>
+    <string name="wifi_passpoint_expired" msgid="3257021415099577815">"Baigėsi galiojimo laikas"</string>
+    <string name="tap_to_sign_up" msgid="2409214576606918295">"Palieskite, kad prisiregistruotumėte"</string>
+    <string name="tap_to_renew_subscription_and_connect" msgid="375976298920840105">"Palieskite, kad atnaujintumėte prenumeratą ir prisijungtumėte"</string>
+    <string name="osu_opening_provider" msgid="5633521771769175139">"Atidaroma: „<xliff:g id="PASSPOINTPROVIDER">%1$s</xliff:g>“"</string>
+    <string name="osu_connect_failed" msgid="8503501619299851793">"Nepavyko prisijungti"</string>
+    <string name="osu_completing_sign_up" msgid="7188493241442946231">"Baigiamas prisiregistravimas…"</string>
+    <string name="osu_sign_up_failed" msgid="2725057866968590279">"Nepavyko užbaigti prisiregistravimo. Jei norite bandyti dar kartą, palieskite."</string>
+    <string name="osu_sign_up_complete" msgid="7013805426618985953">"Prisiregistravimas baigtas. Prijungiama…"</string>
+    <string name="imsi_protection_warning" msgid="3207104049473134195">"Šis tinklas gauna unikalų ID, kurį galima naudoti įrenginio vietovei stebėti. "<annotation id="url">"Sužinokite daugiau"</annotation></string>
+    <string name="speed_label_very_slow" msgid="2401582671941367179">"Labai lėtas"</string>
+    <string name="speed_label_slow" msgid="8410385703344502127">"Lėtas"</string>
+    <string name="speed_label_okay" msgid="3741857805086997968">"Gerai"</string>
+    <string name="speed_label_medium" msgid="3175703848952862009">"Vidutinis"</string>
+    <string name="speed_label_fast" msgid="8344116097613544322">"Greitas"</string>
+    <string name="speed_label_very_fast" msgid="1595806641512447877">"Labai greitas"</string>
+</resources>

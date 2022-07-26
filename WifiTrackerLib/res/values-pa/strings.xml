@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2020 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="summary_separator" msgid="6533720408587140819">" / "</string>
+    <string name="auto_connect_disable" msgid="1078319396240632542">"ਸਵੈ-ਕਨੈਕਟ ਬੰਦ ਹੈ"</string>
+    <string name="saved_network" msgid="6241977554502802914">"<xliff:g id="NAME">%1$s</xliff:g> ਵੱਲੋਂ ਰੱਖਿਅਤ ਕੀਤਾ ਗਿਆ"</string>
+    <string name="wifi_no_internet_no_reconnect" msgid="3089980800841926268">"ਸਵੈਚਲਿਤ ਤੌਰ \'ਤੇ ਕਨੈਕਟ ਨਹੀਂ ਕੀਤਾ ਜਾਵੇਗਾ"</string>
+    <string name="wifi_no_internet" msgid="4461212237521310895">"ਕੋਈ ਇੰਟਰਨੈੱਟ ਪਹੁੰਚ ਨਹੀਂ"</string>
+    <string name="wifi_disabled_password_failure" msgid="3015007143699702403">"ਪ੍ਰਮਾਣੀਕਰਨ ਸਮੱਸਿਆ"</string>
+    <string name="wifi_check_password_try_again" msgid="2643230209986217827">"ਪਾਸਵਰਡ ਦੀ ਜਾਂਚ ਕਰੋ ਅਤੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ"</string>
+    <string name="wifi_disabled_network_failure" msgid="6506742207778007439">"IP ਸੰਰੂਪਣ ਅਸਫਲਤਾ"</string>
+    <string name="wifi_disabled_generic" msgid="8307050327779256414">"ਅਯੋਗ ਬਣਾਇਆ"</string>
+    <string name="wifi_ap_unable_to_handle_new_sta" msgid="6552198761671428871">"ਐਕਸੈੱਸ ਪੁਆਇੰਟ ਅਸਥਾਈ ਤੌਰ \'ਤੇ ਸੰਪੂਰਨ ਰੁਝੇਂਵੇਂ ਵਿੱਚ ਹੈ"</string>
+    <string name="wifi_disconnected" msgid="3720926757662831062">"ਡਿਸਕਨੈਕਟ ਹੋਇਆ"</string>
+    <string name="wifi_remembered" msgid="5126903736498678708">"ਰੱਖਿਅਤ ਕੀਤਾ"</string>
+    <string name="wifi_metered_label" msgid="1362621600006544014">"ਮੀਟਰਬੱਧ ਕੀਤਾ ਗਿਆ"</string>
+    <string name="wifi_unmetered_label" msgid="499466875639448350">"ਗੈਰ-ਮੀਟਰਬੱਧ ਕੀਤਾ ਗਿਆ"</string>
+    <string name="connected_via_app" msgid="1818040967936972127">"<xliff:g id="NAME">%1$s</xliff:g> ਰਾਹੀਂ ਕਨੈਕਟ ਕੀਤਾ ਗਿਆ"</string>
+    <string name="available_via_app" msgid="9110324040292242769">"<xliff:g id="NAME">%1$s</xliff:g> ਰਾਹੀਂ ਉਪਲਬਧ"</string>
+    <string name="connected_via_network_scorer" msgid="209764314005159012">"<xliff:g id="NAME">%1$s</xliff:g> ਰਾਹੀਂ ਸਵੈਚਲਿਤ ਤੌਰ \'ਤੇ ਕਨੈਕਟ ਕੀਤਾ ਗਿਆ"</string>
+    <string name="connected_via_network_scorer_default" msgid="3084818437004202462">"ਨੈੱਟਵਰਕ ਰੇਟਿੰਗ ਪ੍ਰਦਾਨਕ ਰਾਹੀਂ ਸਵੈਚਲਿਤ ਤੌਰ \'ਤੇ ਕਨੈਕਟ ਹੋਇਆ"</string>
+    <string name="wifi_limited_connection" msgid="3646701342701276239">"ਸੀਮਤ ਕਨੈਕਸ਼ਨ"</string>
+    <string name="private_dns_broken" msgid="2212227512243587416">"ਨਿੱਜੀ ਡੋਮੇਨ ਨਾਮ ਪ੍ਰਣਾਲੀ (DNS) ਸਰਵਰ \'ਤੇ ਪਹੁੰਚ ਨਹੀਂ ਕੀਤੀ ਜਾ ਸਕੀ"</string>
+    <string name="wifi_connected_no_internet" msgid="7273909077465731259">"ਇੰਟਰਨੈੱਟ ਨਹੀਂ"</string>
+    <string name="wifi_security_none" msgid="6680263031386719053">"ਕੋਈ ਨਹੀਂ"</string>
+    <string name="wifi_passpoint_expired" msgid="3257021415099577815">"ਮਿਆਦ ਮੁੱਕ ਗਈ"</string>
+    <string name="tap_to_sign_up" msgid="2409214576606918295">"ਸਾਈਨ-ਅੱਪ ਕਰਨ ਲਈ ਟੈਪ ਕਰੋ"</string>
+    <string name="tap_to_renew_subscription_and_connect" msgid="375976298920840105">"ਗਾਹਕੀ ਦੇ ਨਵੀਨੀਕਰਨ ਲਈ ਅਤੇ ਕਨੈਕਟ ਕਰਨ ਲਈ ਟੈਪ ਕਰੋ"</string>
+    <string name="osu_opening_provider" msgid="5633521771769175139">"<xliff:g id="PASSPOINTPROVIDER">%1$s</xliff:g> ਨੂੰ ਖੋਲ੍ਹਿਆ ਜਾ ਰਿਹਾ ਹੈ"</string>
+    <string name="osu_connect_failed" msgid="8503501619299851793">"ਕਨੈਕਟ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਿਆ"</string>
+    <string name="osu_completing_sign_up" msgid="7188493241442946231">"ਸਾਈਨ-ਅੱਪ ਮੁਕੰਮਲ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ…"</string>
+    <string name="osu_sign_up_failed" msgid="2725057866968590279">"ਸਾਈਨ-ਅੱਪ ਮੁਕੰਮਲ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਿਆ। ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰਨ ਲਈ ਟੈਪ ਕਰੋ।"</string>
+    <string name="osu_sign_up_complete" msgid="7013805426618985953">"ਸਾਈਨ-ਅੱਪ ਮੁਕੰਮਲ ਹੋਇਆ। ਕਨੈਕਟ ਹੋ ਰਿਹਾ ਹੈ…"</string>
+    <string name="imsi_protection_warning" msgid="3207104049473134195">"ਇਹ ਨੈੱਟਵਰਕ ਇੱਕ ਵਿਲੱਖਣ ਆਈਡੀ ਪ੍ਰਾਪਤ ਕਰਦਾ ਹੈ ਜਿਸਨੂੰ ਡੀਵਾਈਸ ਦੇ ਟਿਕਾਣੇ ਨੂੰ ਟਰੈਕ ਕਰਨ ਲਈ ਵਰਤਿਆ ਦਾ ਸਕਦਾ ਹੈ। "<annotation id="url">"ਹੋਰ ਜਾਣੋ"</annotation></string>
+    <string name="speed_label_very_slow" msgid="2401582671941367179">"ਬਹੁਤ ਹੌਲੀ"</string>
+    <string name="speed_label_slow" msgid="8410385703344502127">"ਹੌਲੀ"</string>
+    <string name="speed_label_okay" msgid="3741857805086997968">"ਠੀਕ ਹੈ"</string>
+    <string name="speed_label_medium" msgid="3175703848952862009">"ਔਸਤ"</string>
+    <string name="speed_label_fast" msgid="8344116097613544322">"ਤੇਜ਼"</string>
+    <string name="speed_label_very_fast" msgid="1595806641512447877">"ਬਹੁਤ ਤੇਜ਼"</string>
+</resources>

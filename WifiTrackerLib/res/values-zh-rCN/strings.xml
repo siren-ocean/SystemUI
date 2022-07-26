@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2020 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="summary_separator" msgid="6533720408587140819">" / "</string>
+    <string name="auto_connect_disable" msgid="1078319396240632542">"自动连接已关闭"</string>
+    <string name="saved_network" msgid="6241977554502802914">"由“<xliff:g id="NAME">%1$s</xliff:g>”保存"</string>
+    <string name="wifi_no_internet_no_reconnect" msgid="3089980800841926268">"无法自动连接"</string>
+    <string name="wifi_no_internet" msgid="4461212237521310895">"无法访问互联网"</string>
+    <string name="wifi_disabled_password_failure" msgid="3015007143699702403">"身份验证出现问题"</string>
+    <string name="wifi_check_password_try_again" msgid="2643230209986217827">"请检查密码，然后重试"</string>
+    <string name="wifi_disabled_network_failure" msgid="6506742207778007439">"IP 配置失败"</string>
+    <string name="wifi_disabled_generic" msgid="8307050327779256414">"已停用"</string>
+    <string name="wifi_ap_unable_to_handle_new_sta" msgid="6552198761671428871">"接入点暂时满载"</string>
+    <string name="wifi_disconnected" msgid="3720926757662831062">"已断开连接"</string>
+    <string name="wifi_remembered" msgid="5126903736498678708">"已保存"</string>
+    <string name="wifi_metered_label" msgid="1362621600006544014">"按流量计费"</string>
+    <string name="wifi_unmetered_label" msgid="499466875639448350">"不按流量计费"</string>
+    <string name="connected_via_app" msgid="1818040967936972127">"已通过<xliff:g id="NAME">%1$s</xliff:g>连接到网络"</string>
+    <string name="available_via_app" msgid="9110324040292242769">"可通过“<xliff:g id="NAME">%1$s</xliff:g>”使用"</string>
+    <string name="connected_via_network_scorer" msgid="209764314005159012">"已通过<xliff:g id="NAME">%1$s</xliff:g>自动连接"</string>
+    <string name="connected_via_network_scorer_default" msgid="3084818437004202462">"已自动连接（通过网络评分服务提供方）"</string>
+    <string name="wifi_limited_connection" msgid="3646701342701276239">"网络连接受限"</string>
+    <string name="private_dns_broken" msgid="2212227512243587416">"无法访问私人 DNS 服务器"</string>
+    <string name="wifi_connected_no_internet" msgid="7273909077465731259">"无法访问互联网"</string>
+    <string name="wifi_security_none" msgid="6680263031386719053">"无"</string>
+    <string name="wifi_passpoint_expired" msgid="3257021415099577815">"已失效"</string>
+    <string name="tap_to_sign_up" msgid="2409214576606918295">"点按即可注册"</string>
+    <string name="tap_to_renew_subscription_and_connect" msgid="375976298920840105">"点按即可续订并连接"</string>
+    <string name="osu_opening_provider" msgid="5633521771769175139">"正在打开<xliff:g id="PASSPOINTPROVIDER">%1$s</xliff:g>"</string>
+    <string name="osu_connect_failed" msgid="8503501619299851793">"无法连接"</string>
+    <string name="osu_completing_sign_up" msgid="7188493241442946231">"正在完成注册…"</string>
+    <string name="osu_sign_up_failed" msgid="2725057866968590279">"无法完成注册。点按即可重试。"</string>
+    <string name="osu_sign_up_complete" msgid="7013805426618985953">"注册完毕。正在连接…"</string>
+    <string name="imsi_protection_warning" msgid="3207104049473134195">"此网络会收到可用于跟踪设备位置的唯一 ID。"<annotation id="url">"了解详情"</annotation></string>
+    <string name="speed_label_very_slow" msgid="2401582671941367179">"很慢"</string>
+    <string name="speed_label_slow" msgid="8410385703344502127">"慢"</string>
+    <string name="speed_label_okay" msgid="3741857805086997968">"良好"</string>
+    <string name="speed_label_medium" msgid="3175703848952862009">"适中"</string>
+    <string name="speed_label_fast" msgid="8344116097613544322">"快"</string>
+    <string name="speed_label_very_fast" msgid="1595806641512447877">"很快"</string>
+</resources>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2020 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="summary_separator" msgid="6533720408587140819">" / "</string>
+    <string name="auto_connect_disable" msgid="1078319396240632542">"अपने-आप कनेक्ट होने की सुविधा बंद है"</string>
+    <string name="saved_network" msgid="6241977554502802914">"<xliff:g id="NAME">%1$s</xliff:g> के द्वारा सहेजा गया"</string>
+    <string name="wifi_no_internet_no_reconnect" msgid="3089980800841926268">"अपने-आप कनेक्ट नहीं होगा"</string>
+    <string name="wifi_no_internet" msgid="4461212237521310895">"इंटरनेट नहीं है"</string>
+    <string name="wifi_disabled_password_failure" msgid="3015007143699702403">"पुष्टि नहीं हो सकी"</string>
+    <string name="wifi_check_password_try_again" msgid="2643230209986217827">"पासवर्ड जाँचें और दोबारा कोशिश करें"</string>
+    <string name="wifi_disabled_network_failure" msgid="6506742207778007439">"IP कॉन्‍फ़िगरेशन की विफलता"</string>
+    <string name="wifi_disabled_generic" msgid="8307050327779256414">"अक्षम"</string>
+    <string name="wifi_ap_unable_to_handle_new_sta" msgid="6552198761671428871">"ऐक्सेस पॉइंट फ़िलहाल भरा हुआ है"</string>
+    <string name="wifi_disconnected" msgid="3720926757662831062">"डिसकनेक्ट किया गया"</string>
+    <string name="wifi_remembered" msgid="5126903736498678708">"सेव किया गया"</string>
+    <string name="wifi_metered_label" msgid="1362621600006544014">"डेटा इस्तेमाल करने की सीमा तय की गई है"</string>
+    <string name="wifi_unmetered_label" msgid="499466875639448350">"डेटा इस्तेमाल करने की सीमा तय नहीं की गई है"</string>
+    <string name="connected_via_app" msgid="1818040967936972127">"<xliff:g id="NAME">%1$s</xliff:g> के ज़रिए कनेक्ट किया गया"</string>
+    <string name="available_via_app" msgid="9110324040292242769">"यह <xliff:g id="NAME">%1$s</xliff:g> के ज़रिए उपलब्ध है"</string>
+    <string name="connected_via_network_scorer" msgid="209764314005159012">"<xliff:g id="NAME">%1$s</xliff:g> के ज़रिए अपने-आप कनेक्ट किया गया"</string>
+    <string name="connected_via_network_scorer_default" msgid="3084818437004202462">"नेटवर्क रेटिंग कंपनी के ज़रिए अपने आप कनेक्ट है"</string>
+    <string name="wifi_limited_connection" msgid="3646701342701276239">"सीमित कनेक्शन"</string>
+    <string name="private_dns_broken" msgid="2212227512243587416">"निजी डीएनएस सर्वर को ऐक्सेस नहीं किया जा सकता"</string>
+    <string name="wifi_connected_no_internet" msgid="7273909077465731259">"इंटरनेट कनेक्शन नहीं है"</string>
+    <string name="wifi_security_none" msgid="6680263031386719053">"कोई नहीं"</string>
+    <string name="wifi_passpoint_expired" msgid="3257021415099577815">"समयसीमा खत्म हो गई"</string>
+    <string name="tap_to_sign_up" msgid="2409214576606918295">"साइन अप करने के लिए टैप करें"</string>
+    <string name="tap_to_renew_subscription_and_connect" msgid="375976298920840105">"सदस्यता रिन्यू करने के लिए टैप करें और कनेक्ट करें"</string>
+    <string name="osu_opening_provider" msgid="5633521771769175139">"<xliff:g id="PASSPOINTPROVIDER">%1$s</xliff:g> खोला जा रहा है"</string>
+    <string name="osu_connect_failed" msgid="8503501619299851793">"कनेक्ट नहीं किया जा सका"</string>
+    <string name="osu_completing_sign_up" msgid="7188493241442946231">"साइन अप किया जा रहा है…"</string>
+    <string name="osu_sign_up_failed" msgid="2725057866968590279">"साइन अप नहीं हो सका. फिर से कोशिश करने के लिए टैप करें."</string>
+    <string name="osu_sign_up_complete" msgid="7013805426618985953">"साइन अप की प्रक्रिया पूरी हो गई. कनेक्ट हो रहा है…"</string>
+    <string name="imsi_protection_warning" msgid="3207104049473134195">"इस नेटवर्क को एक विशेष आईडी दिया जाता है जिसका इस्तेमाल डिवाइस की जगह की जानकारी का पता लगाने के लिए किया जा सकता है. "<annotation id="url">"ज़्यादा जानें"</annotation></string>
+    <string name="speed_label_very_slow" msgid="2401582671941367179">"अत्‍यधिक धीमी"</string>
+    <string name="speed_label_slow" msgid="8410385703344502127">"धीमी"</string>
+    <string name="speed_label_okay" msgid="3741857805086997968">"ठीक है"</string>
+    <string name="speed_label_medium" msgid="3175703848952862009">"मध्यम"</string>
+    <string name="speed_label_fast" msgid="8344116097613544322">"तेज़"</string>
+    <string name="speed_label_very_fast" msgid="1595806641512447877">"बहुत ज़्यादा तेज़"</string>
+</resources>

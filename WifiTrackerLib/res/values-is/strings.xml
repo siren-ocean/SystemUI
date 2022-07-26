@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2020 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="summary_separator" msgid="6533720408587140819">" / "</string>
+    <string name="auto_connect_disable" msgid="1078319396240632542">"Slökkt er á sjálfvirkri tengingu"</string>
+    <string name="saved_network" msgid="6241977554502802914">"<xliff:g id="NAME">%1$s</xliff:g> vistaði"</string>
+    <string name="wifi_no_internet_no_reconnect" msgid="3089980800841926268">"Mun ekki tengjast sjálfkrafa"</string>
+    <string name="wifi_no_internet" msgid="4461212237521310895">"Enginn netaðgangur"</string>
+    <string name="wifi_disabled_password_failure" msgid="3015007143699702403">"Vandamál við auðkenningu"</string>
+    <string name="wifi_check_password_try_again" msgid="2643230209986217827">"Athugaðu aðgangsorðið og reyndu aftur"</string>
+    <string name="wifi_disabled_network_failure" msgid="6506742207778007439">"IP-stillingarvilla"</string>
+    <string name="wifi_disabled_generic" msgid="8307050327779256414">"Óvirkt"</string>
+    <string name="wifi_ap_unable_to_handle_new_sta" msgid="6552198761671428871">"Aðgangsstaður tímabundið fullur"</string>
+    <string name="wifi_disconnected" msgid="3720926757662831062">"Aftengt"</string>
+    <string name="wifi_remembered" msgid="5126903736498678708">"Vistað"</string>
+    <string name="wifi_metered_label" msgid="1362621600006544014">"Mæld notkun"</string>
+    <string name="wifi_unmetered_label" msgid="499466875639448350">"Notkun ekki mæld"</string>
+    <string name="connected_via_app" msgid="1818040967936972127">"Tenging í gegnum <xliff:g id="NAME">%1$s</xliff:g>"</string>
+    <string name="available_via_app" msgid="9110324040292242769">"Í boði með <xliff:g id="NAME">%1$s</xliff:g>"</string>
+    <string name="connected_via_network_scorer" msgid="209764314005159012">"Tengt sjálfkrafa með <xliff:g id="NAME">%1$s</xliff:g>"</string>
+    <string name="connected_via_network_scorer_default" msgid="3084818437004202462">"Sjálfkrafa tengt um netgæðaveitu"</string>
+    <string name="wifi_limited_connection" msgid="3646701342701276239">"Takmörkuð tenging"</string>
+    <string name="private_dns_broken" msgid="2212227512243587416">"Ekki næst í DNS-einkaþjón"</string>
+    <string name="wifi_connected_no_internet" msgid="7273909077465731259">"Engin nettenging"</string>
+    <string name="wifi_security_none" msgid="6680263031386719053">"Ekkert"</string>
+    <string name="wifi_passpoint_expired" msgid="3257021415099577815">"Útrunnin"</string>
+    <string name="tap_to_sign_up" msgid="2409214576606918295">"Ýttu til að skrá þig"</string>
+    <string name="tap_to_renew_subscription_and_connect" msgid="375976298920840105">"Ýttu til að endurnýja áskrift og tengjast"</string>
+    <string name="osu_opening_provider" msgid="5633521771769175139">"Opnar <xliff:g id="PASSPOINTPROVIDER">%1$s</xliff:g>"</string>
+    <string name="osu_connect_failed" msgid="8503501619299851793">"Ekki tókst að tengjast"</string>
+    <string name="osu_completing_sign_up" msgid="7188493241442946231">"Gengur frá skráningu…"</string>
+    <string name="osu_sign_up_failed" msgid="2725057866968590279">"Ekki tókst að ljúka við skráningu. Ýttu til að reyna aftur."</string>
+    <string name="osu_sign_up_complete" msgid="7013805426618985953">"Skráningu lokið. Tengist…"</string>
+    <string name="imsi_protection_warning" msgid="3207104049473134195">"Þetta net fær einkvæmt auðkenni sem hægt er að nota til að rekja staðsetningu tækis. "<annotation id="url">"Frekari upplýsingar"</annotation></string>
+    <string name="speed_label_very_slow" msgid="2401582671941367179">"Mjög hægt"</string>
+    <string name="speed_label_slow" msgid="8410385703344502127">"Hægt"</string>
+    <string name="speed_label_okay" msgid="3741857805086997968">"Í lagi"</string>
+    <string name="speed_label_medium" msgid="3175703848952862009">"Miðlungshratt"</string>
+    <string name="speed_label_fast" msgid="8344116097613544322">"Hratt"</string>
+    <string name="speed_label_very_fast" msgid="1595806641512447877">"Mjög hratt"</string>
+</resources>

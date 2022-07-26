@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2020 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="summary_separator" msgid="6533720408587140819">" / "</string>
+    <string name="auto_connect_disable" msgid="1078319396240632542">"Автоматты жалғау өшірулі"</string>
+    <string name="saved_network" msgid="6241977554502802914">"<xliff:g id="NAME">%1$s</xliff:g> сақтаған"</string>
+    <string name="wifi_no_internet_no_reconnect" msgid="3089980800841926268">"Автоматты байланыстырылмайды."</string>
+    <string name="wifi_no_internet" msgid="4461212237521310895">"Интернетпен байланыс жоқ"</string>
+    <string name="wifi_disabled_password_failure" msgid="3015007143699702403">"Аутентификация қатесі"</string>
+    <string name="wifi_check_password_try_again" msgid="2643230209986217827">"Құпия сөзді тексеріп, әрекетті қайталаңыз"</string>
+    <string name="wifi_disabled_network_failure" msgid="6506742207778007439">"IP конфигурациясының қатесі"</string>
+    <string name="wifi_disabled_generic" msgid="8307050327779256414">"Өшірілген"</string>
+    <string name="wifi_ap_unable_to_handle_new_sta" msgid="6552198761671428871">"Кіру нүктесі уақытша бос емес"</string>
+    <string name="wifi_disconnected" msgid="3720926757662831062">"Ажыратылған"</string>
+    <string name="wifi_remembered" msgid="5126903736498678708">"Сақталды"</string>
+    <string name="wifi_metered_label" msgid="1362621600006544014">"Трафик саналады"</string>
+    <string name="wifi_unmetered_label" msgid="499466875639448350">"Трафик саналмайды"</string>
+    <string name="connected_via_app" msgid="1818040967936972127">"<xliff:g id="NAME">%1$s</xliff:g> арқылы жалғанған"</string>
+    <string name="available_via_app" msgid="9110324040292242769">"<xliff:g id="NAME">%1$s</xliff:g> арқылы қолжетімді"</string>
+    <string name="connected_via_network_scorer" msgid="209764314005159012">"<xliff:g id="NAME">%1$s</xliff:g> арқылы автоматты байланыстырылды."</string>
+    <string name="connected_via_network_scorer_default" msgid="3084818437004202462">"Желіні бағалау провайдері арқылы автоматты түрде қосылған"</string>
+    <string name="wifi_limited_connection" msgid="3646701342701276239">"Шектеулі байланыс"</string>
+    <string name="private_dns_broken" msgid="2212227512243587416">"Жеке DNS серверіне кіру мүмкін емес."</string>
+    <string name="wifi_connected_no_internet" msgid="7273909077465731259">"Интернетпен байланыс жоқ"</string>
+    <string name="wifi_security_none" msgid="6680263031386719053">"Ешқандай"</string>
+    <string name="wifi_passpoint_expired" msgid="3257021415099577815">"Мерзімі өтті"</string>
+    <string name="tap_to_sign_up" msgid="2409214576606918295">"Тіркелу үшін түртіңіз."</string>
+    <string name="tap_to_renew_subscription_and_connect" msgid="375976298920840105">"Жазылымды қайта жаңартып, қосылу үшін түртіңіз."</string>
+    <string name="osu_opening_provider" msgid="5633521771769175139">"<xliff:g id="PASSPOINTPROVIDER">%1$s</xliff:g> ашылуда."</string>
+    <string name="osu_connect_failed" msgid="8503501619299851793">"Байланыстырылмады."</string>
+    <string name="osu_completing_sign_up" msgid="7188493241442946231">"Тіркелу аяқталуда…"</string>
+    <string name="osu_sign_up_failed" msgid="2725057866968590279">"Тіркелу аяқталмады. Әрекетті қайталау үшін түртіңіз."</string>
+    <string name="osu_sign_up_complete" msgid="7013805426618985953">"Тіркелу аяқталды. Байланыс орнатылуда…"</string>
+    <string name="imsi_protection_warning" msgid="3207104049473134195">"Бұл желіге бірегей идентификатор беріледі, оның көмегімен құрылғының орналасқан жері қадағаланады. "<annotation id="url">"Толығырақ"</annotation></string>
+    <string name="speed_label_very_slow" msgid="2401582671941367179">"Өте баяу"</string>
+    <string name="speed_label_slow" msgid="8410385703344502127">"Баяу"</string>
+    <string name="speed_label_okay" msgid="3741857805086997968">"Жарайды"</string>
+    <string name="speed_label_medium" msgid="3175703848952862009">"Орташа"</string>
+    <string name="speed_label_fast" msgid="8344116097613544322">"Жылдам"</string>
+    <string name="speed_label_very_fast" msgid="1595806641512447877">"Өте жылдам"</string>
+</resources>

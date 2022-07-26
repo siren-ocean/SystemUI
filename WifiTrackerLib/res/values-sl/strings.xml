@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2020 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="summary_separator" msgid="6533720408587140819">" / "</string>
+    <string name="auto_connect_disable" msgid="1078319396240632542">"Samodejno povezovanje izklopljeno"</string>
+    <string name="saved_network" msgid="6241977554502802914">"Shranil(-a): <xliff:g id="NAME">%1$s</xliff:g>"</string>
+    <string name="wifi_no_internet_no_reconnect" msgid="3089980800841926268">"Povezava ne bo samodejno vzpostavljena"</string>
+    <string name="wifi_no_internet" msgid="4461212237521310895">"Ni dostopa do interneta"</string>
+    <string name="wifi_disabled_password_failure" msgid="3015007143699702403">"Težava pri preverjanju pristnosti"</string>
+    <string name="wifi_check_password_try_again" msgid="2643230209986217827">"Preverite geslo in poskusite znova"</string>
+    <string name="wifi_disabled_network_failure" msgid="6506742207778007439">"Konfiguracija IP-ja ni uspela"</string>
+    <string name="wifi_disabled_generic" msgid="8307050327779256414">"Onemogočeno"</string>
+    <string name="wifi_ap_unable_to_handle_new_sta" msgid="6552198761671428871">"Dostopna točka je trenutno zasedena"</string>
+    <string name="wifi_disconnected" msgid="3720926757662831062">"Ni povezave"</string>
+    <string name="wifi_remembered" msgid="5126903736498678708">"Shranjeno"</string>
+    <string name="wifi_metered_label" msgid="1362621600006544014">"Omejen prenos podatkov"</string>
+    <string name="wifi_unmetered_label" msgid="499466875639448350">"Z neomejenim prenosom podatkov"</string>
+    <string name="connected_via_app" msgid="1818040967936972127">"Povezava vzpostavljena prek omrežja <xliff:g id="NAME">%1$s</xliff:g>"</string>
+    <string name="available_via_app" msgid="9110324040292242769">"Na voljo prek aplikacije <xliff:g id="NAME">%1$s</xliff:g>"</string>
+    <string name="connected_via_network_scorer" msgid="209764314005159012">"Povezava je samodejno vzpostavljena prek: <xliff:g id="NAME">%1$s</xliff:g>"</string>
+    <string name="connected_via_network_scorer_default" msgid="3084818437004202462">"Samodejno vzpostavljena povezava prek ponudnika ocenjevanja omrežij"</string>
+    <string name="wifi_limited_connection" msgid="3646701342701276239">"Omejena povezava"</string>
+    <string name="private_dns_broken" msgid="2212227512243587416">"Do zasebnega strežnika DNS ni mogoče dostopati"</string>
+    <string name="wifi_connected_no_internet" msgid="7273909077465731259">"Ni internetne povezave"</string>
+    <string name="wifi_security_none" msgid="6680263031386719053">"Brez"</string>
+    <string name="wifi_passpoint_expired" msgid="3257021415099577815">"Poteklo"</string>
+    <string name="tap_to_sign_up" msgid="2409214576606918295">"Dotaknite se, če se želite registrirati"</string>
+    <string name="tap_to_renew_subscription_and_connect" msgid="375976298920840105">"Dotaknite se za podaljšanje naročnine in vzpostavitev povezave"</string>
+    <string name="osu_opening_provider" msgid="5633521771769175139">"Odpiranje ponudnika <xliff:g id="PASSPOINTPROVIDER">%1$s</xliff:g>"</string>
+    <string name="osu_connect_failed" msgid="8503501619299851793">"Povezave ni bilo mogoče vzpostaviti"</string>
+    <string name="osu_completing_sign_up" msgid="7188493241442946231">"Dokončevanje registracije …"</string>
+    <string name="osu_sign_up_failed" msgid="2725057866968590279">"Registracije ni bilo mogoče dokončati. Če želite poskusiti znova, se dotaknite."</string>
+    <string name="osu_sign_up_complete" msgid="7013805426618985953">"Registracija je končana. Povezovanje …"</string>
+    <string name="imsi_protection_warning" msgid="3207104049473134195">"To omrežje prejme enolični ID, s katerim je mogoče spremljati lokacijo naprave. "<annotation id="url">"Več o tem"</annotation></string>
+    <string name="speed_label_very_slow" msgid="2401582671941367179">"Zelo počasna"</string>
+    <string name="speed_label_slow" msgid="8410385703344502127">"Počasna"</string>
+    <string name="speed_label_okay" msgid="3741857805086997968">"V redu"</string>
+    <string name="speed_label_medium" msgid="3175703848952862009">"Srednje hitra"</string>
+    <string name="speed_label_fast" msgid="8344116097613544322">"Hitra"</string>
+    <string name="speed_label_very_fast" msgid="1595806641512447877">"Zelo hitra"</string>
+</resources>

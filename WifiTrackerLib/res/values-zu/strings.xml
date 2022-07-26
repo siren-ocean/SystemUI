@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2020 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="summary_separator" msgid="6533720408587140819">" / "</string>
+    <string name="auto_connect_disable" msgid="1078319396240632542">"Ukuxhuma ngokuzenzakalelayo kuvaliwe"</string>
+    <string name="saved_network" msgid="6241977554502802914">"Kulondolozwe ngu-<xliff:g id="NAME">%1$s</xliff:g>"</string>
+    <string name="wifi_no_internet_no_reconnect" msgid="3089980800841926268">"Ngeke ixhume ngokuzenzekelayo"</string>
+    <string name="wifi_no_internet" msgid="4461212237521310895">"Akukho ukufinyelela kwe-inthanethi"</string>
+    <string name="wifi_disabled_password_failure" msgid="3015007143699702403">"Inkinga yokufakazela ubuqiniso"</string>
+    <string name="wifi_check_password_try_again" msgid="2643230209986217827">"Hlola iphasiwedi uphinde uzame futhi"</string>
+    <string name="wifi_disabled_network_failure" msgid="6506742207778007439">"Ukwehluleka kokulungiswa kwe-IP"</string>
+    <string name="wifi_disabled_generic" msgid="8307050327779256414">"Akusebenzi"</string>
+    <string name="wifi_ap_unable_to_handle_new_sta" msgid="6552198761671428871">"Iphoyinti lokufinyelela ligcwele okwesikhashana"</string>
+    <string name="wifi_disconnected" msgid="3720926757662831062">"Inqamukile"</string>
+    <string name="wifi_remembered" msgid="5126903736498678708">"Kulondoloziwe"</string>
+    <string name="wifi_metered_label" msgid="1362621600006544014">"Kulinganisiwe"</string>
+    <string name="wifi_unmetered_label" msgid="499466875639448350">"Akulinganiselwa"</string>
+    <string name="connected_via_app" msgid="1818040967936972127">"Ixhumeke nge-<xliff:g id="NAME">%1$s</xliff:g>"</string>
+    <string name="available_via_app" msgid="9110324040292242769">"Kutholakala nge-<xliff:g id="NAME">%1$s</xliff:g>"</string>
+    <string name="connected_via_network_scorer" msgid="209764314005159012">"Kuxhunywe ngokuzenzekelayo nge-<xliff:g id="NAME">%1$s</xliff:g>"</string>
+    <string name="connected_via_network_scorer_default" msgid="3084818437004202462">"Kuxhunywe ngokuzenzakalelayo ngomhlinzeki wesilinganiso wenethiwekhi"</string>
+    <string name="wifi_limited_connection" msgid="3646701342701276239">"Iqoqo elikhawulelwe"</string>
+    <string name="private_dns_broken" msgid="2212227512243587416">"Iseva eyimfihlo ye-DNS ayikwazi ukufinyelelwa"</string>
+    <string name="wifi_connected_no_internet" msgid="7273909077465731259">"Ayikho i-inthanethi"</string>
+    <string name="wifi_security_none" msgid="6680263031386719053">"Lutho"</string>
+    <string name="wifi_passpoint_expired" msgid="3257021415099577815">"Iphelelwe isikhathi"</string>
+    <string name="tap_to_sign_up" msgid="2409214576606918295">"Thepha ukuze ubhalisele"</string>
+    <string name="tap_to_renew_subscription_and_connect" msgid="375976298920840105">"Thepha ukuze wenze kabusha okubhalisile futhi uxhume"</string>
+    <string name="osu_opening_provider" msgid="5633521771769175139">"Ivula i-<xliff:g id="PASSPOINTPROVIDER">%1$s</xliff:g>"</string>
+    <string name="osu_connect_failed" msgid="8503501619299851793">"Ayikwazanga ukuxhumeka"</string>
+    <string name="osu_completing_sign_up" msgid="7188493241442946231">"Iqedela ukubhalisa…"</string>
+    <string name="osu_sign_up_failed" msgid="2725057866968590279">"Ayikwazanga ukuqedelela ukubhalisa. Thepha ukuze uzame futhi."</string>
+    <string name="osu_sign_up_complete" msgid="7013805426618985953">"Ukubhalisa kuqediwe. Iyaxhuma…"</string>
+    <string name="imsi_protection_warning" msgid="3207104049473134195">"Le nethiwekhi ithola i-ID ehlukile engasetshenziselwa ukulandelela indawo yedivayisi. "<annotation id="url">"Funda kabanzi"</annotation></string>
+    <string name="speed_label_very_slow" msgid="2401582671941367179">"Phansi kakhulu"</string>
+    <string name="speed_label_slow" msgid="8410385703344502127">"Phansi"</string>
+    <string name="speed_label_okay" msgid="3741857805086997968">"KULUNGILE"</string>
+    <string name="speed_label_medium" msgid="3175703848952862009">"Okumaphakathi"</string>
+    <string name="speed_label_fast" msgid="8344116097613544322">"Sheshayo"</string>
+    <string name="speed_label_very_fast" msgid="1595806641512447877">"Kushesha kakhulu"</string>
+</resources>

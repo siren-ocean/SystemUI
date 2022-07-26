@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2020 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="summary_separator" msgid="6533720408587140819">" / "</string>
+    <string name="auto_connect_disable" msgid="1078319396240632542">"Otomatik bağlanma kapalı"</string>
+    <string name="saved_network" msgid="6241977554502802914">"<xliff:g id="NAME">%1$s</xliff:g> tarafından kaydedildi"</string>
+    <string name="wifi_no_internet_no_reconnect" msgid="3089980800841926268">"Otomatik olarak bağlanmayacak"</string>
+    <string name="wifi_no_internet" msgid="4461212237521310895">"İnternet erişimi yok"</string>
+    <string name="wifi_disabled_password_failure" msgid="3015007143699702403">"Kimlik doğrulama sorunu"</string>
+    <string name="wifi_check_password_try_again" msgid="2643230209986217827">"Şifreyi kontrol edin ve tekrar deneyin"</string>
+    <string name="wifi_disabled_network_failure" msgid="6506742207778007439">"IP yapılandırması hatası"</string>
+    <string name="wifi_disabled_generic" msgid="8307050327779256414">"Devre dışı"</string>
+    <string name="wifi_ap_unable_to_handle_new_sta" msgid="6552198761671428871">"Erişim noktası geçici olarak dolu"</string>
+    <string name="wifi_disconnected" msgid="3720926757662831062">"Bağlı değil"</string>
+    <string name="wifi_remembered" msgid="5126903736498678708">"Kaydedildi"</string>
+    <string name="wifi_metered_label" msgid="1362621600006544014">"Sayaçlı"</string>
+    <string name="wifi_unmetered_label" msgid="499466875639448350">"Sayaçsız"</string>
+    <string name="connected_via_app" msgid="1818040967936972127">"<xliff:g id="NAME">%1$s</xliff:g> ile bağlandı"</string>
+    <string name="available_via_app" msgid="9110324040292242769">"<xliff:g id="NAME">%1$s</xliff:g> ile kullanılabilir"</string>
+    <string name="connected_via_network_scorer" msgid="209764314005159012">"<xliff:g id="NAME">%1$s</xliff:g> ile otomatik olarak bağlandı"</string>
+    <string name="connected_via_network_scorer_default" msgid="3084818437004202462">"Ağ derecelendirme sağlayıcı aracılığıyla otomatik olarak bağlandı"</string>
+    <string name="wifi_limited_connection" msgid="3646701342701276239">"Sınırlı bağlantı"</string>
+    <string name="private_dns_broken" msgid="2212227512243587416">"Gizli DNS sunucusuna erişilemiyor"</string>
+    <string name="wifi_connected_no_internet" msgid="7273909077465731259">"İnternet yok"</string>
+    <string name="wifi_security_none" msgid="6680263031386719053">"Yok"</string>
+    <string name="wifi_passpoint_expired" msgid="3257021415099577815">"Süresi sona erdi"</string>
+    <string name="tap_to_sign_up" msgid="2409214576606918295">"Kaydolmak için dokunun"</string>
+    <string name="tap_to_renew_subscription_and_connect" msgid="375976298920840105">"Aboneliği yenilemek ve bağlanmak için dokunun"</string>
+    <string name="osu_opening_provider" msgid="5633521771769175139">"<xliff:g id="PASSPOINTPROVIDER">%1$s</xliff:g> açılıyor"</string>
+    <string name="osu_connect_failed" msgid="8503501619299851793">"Bağlanılamadı"</string>
+    <string name="osu_completing_sign_up" msgid="7188493241442946231">"Kayıt işlemi tamamlanıyor…"</string>
+    <string name="osu_sign_up_failed" msgid="2725057866968590279">"Kayıt işlemi tamamlanamadı. Tekrar denemek için dokunun."</string>
+    <string name="osu_sign_up_complete" msgid="7013805426618985953">"Kayıt tamamlandı. Bağlanıyor…"</string>
+    <string name="imsi_protection_warning" msgid="3207104049473134195">"Bu ağ, cihaz konumunu izlemek için kullanılabilecek benzersiz bir kimlik alır. "<annotation id="url">"Daha fazla bilgi"</annotation></string>
+    <string name="speed_label_very_slow" msgid="2401582671941367179">"Çok Yavaş"</string>
+    <string name="speed_label_slow" msgid="8410385703344502127">"Yavaş"</string>
+    <string name="speed_label_okay" msgid="3741857805086997968">"Tamam"</string>
+    <string name="speed_label_medium" msgid="3175703848952862009">"Orta"</string>
+    <string name="speed_label_fast" msgid="8344116097613544322">"Hızlı"</string>
+    <string name="speed_label_very_fast" msgid="1595806641512447877">"Çok Hızlı"</string>
+</resources>
