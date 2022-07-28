@@ -5,7 +5,7 @@
 
 ## 执行步骤如下
 #### 第一步：运行在Filter上的主函数，执行过滤任务
-![avatar](images/filter_main.jpg)
+<img src="images/filter_main.jpg" width = "600" height = "480"/>
 
 ### 第二步：执行Android Studio上Build APK的操作, 然后将apk推送到设备上SystemUI所在的目录
 
