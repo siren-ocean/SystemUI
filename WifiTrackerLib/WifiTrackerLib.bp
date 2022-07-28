@@ -1,0 +1,10 @@
+android_library {
+    name: "WifiTrackerLib",
+    srcs: ["src/**/*.java"],
+    static_libs: [
+        "androidx.preference_preference",
+        "SettingsLibHelpUtils",
+    ],
+
+    min_sdk_version: "21",
+}

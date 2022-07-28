@@ -1,0 +1,83 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+
+android {
+    compileSdkVersion COMPILE_SDK
+    buildToolsVersion BUILD_TOOLS_VERSION
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    afterEvaluate {
+        generateReleaseBuildConfig.enabled = false
+        generateDebugBuildConfig.enabled = false
+    }
+
+    sourceSets {
+        main {
+            java.srcDirs = ['src']
+            res.srcDirs = ['res']
+            manifest.srcFile 'AndroidManifest.xml'
+        }
+    }
+}
+
+repositories {
+    flatDir {
+        dirs '../libs'
+    }
+}
+
+dependencies {
+    compileOnly files('../libs/framework.jar')
+
+    implementation(libs.legacy_support_v4, {
+        exclude group: 'androidx.preference', module: 'preference'
+    })
+    implementation libs.recyclerview
+    implementation libs.appcompat
+    implementation libs.lifecycle_runtime
+    implementation libs.mediarouter
+    implementation libs.core_ktx
+    implementation libs.kotlin_stdlib_jdk7
+
+    implementation(name: 'preference-1.2.0-alpha01', ext: 'aar')
+    implementation project(':SettingsLib:RestrictedLockUtils')
+    implementation project(':SettingsLib:AdaptiveIcon')
+    implementation project(':SettingsLib:HelpUtils')
+    implementation project(':SettingsLib:ActionBarShadow')
+    implementation project(':SettingsLib:AppPreference')
+    implementation project(':SettingsLib:SearchWidget')
+    implementation project(':SettingsLib:SettingsSpinner')
+    implementation project(':SettingsLib:LayoutPreference')
+    implementation project(':SettingsLib:ActionButtonsPreference')
+    implementation project(':SettingsLib:EntityHeaderWidgets')
+    implementation project(':SettingsLib:BarChartPreference')
+    implementation project(':SettingsLib:ProgressBar')
+    implementation project(':SettingsLib:RadioButtonPreference')
+    implementation project(':SettingsLib:DisplayDensityUtils')
+    implementation project(':SettingsLib:Utils')
+    implementation project(':WifiTrackerLib')
+    implementation project(':iconloaderlib')
+}

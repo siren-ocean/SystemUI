@@ -48,8 +48,9 @@ public class AdaptiveOutlineDrawable extends DrawableWrapper {
     private static final float ADVANCED_ICON_CENTER = 50f;
     private static final float ADVANCED_ICON_RADIUS = 48f;
 
-    @Retention(RetentionPolicy.SOURCE)
-    @IntDef({TYPE_DEFAULT, TYPE_ADVANCED})
+    //@siren ignore
+    //@Retention(RetentionPolicy.SOURCE)
+    //@IntDef({TYPE_DEFAULT, TYPE_ADVANCED})
     public @interface AdaptiveOutlineIconType {
         int TYPE_DEFAULT = 0;
         int TYPE_ADVANCED = 1;
