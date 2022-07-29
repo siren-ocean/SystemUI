@@ -3,6 +3,13 @@
 ### 本项目会在关键的地方，利用脚本移除相关的在AndroidStudio上所不支持的属性和字段，并通过git命令将其忽略(不往仓库上提交)，使其在本地能正常运行的同时，也不影响它在AOSP总体仓库的份量。
 
 
+###  编译之后在pixel2上运行：Gradle编译 VS Android.bp编译
+---
+<img src="images/pixel2_systemui_gradle.jpg" width = "225" height = "400"/> <img src="images/pixel2_systemui_original.jpg" width = "225" height = "400"/>
+
+---
+######  此时我们发现运行的效果会与原生的还是有些许之间的差异，这是由于脱离源码之后，SystemUI在一些private属性上的引用失败所导致的样式差异，目前看来并没有什么特别的办法。
+
 ## 执行步骤如下
 #### 第一步：运行在Filter上的主函数，执行过滤任务
 <img src="images/filter_main.png" width = "600" height = "480"/>
@@ -19,11 +26,6 @@ adb shell killall com.android.systemui
 adb reboot
 ```
 
-###  测试在pixel2上运行结果：Gradle编译 VS Android.bp编译
-<img src="images/pixel2_systemui_gradle.jpg" width = "225" height = "400"/> <img src="images/pixel2_systemui_original.jpg" width = "225" height = "400"/>
-
----
-######  此时我们发现运行的效果会与原生的还是有些许之间的差异，这是由于脱离源码之后，SystemUI在一些private属性上的引用失败所导致的样式差异，目前看来并没有什么特别的办法。
 
 ## 构建步骤
 
@@ -200,3 +202,26 @@ include 'SettingsLib:ActionBarShadow'
         }
     }
 ```
+
+### PS:
+##### 查看被忽略的文件列表
+```
+git ls-files -v | grep '^h\ '
+```  
+
+##### 忽略和还原单个文件
+``` 
+git update-index --assume-unchanged $path
+git update-index --no-assume-unchanged $path
+``` 
+
+##### 还原全部被忽略的文件
+```
+git ls-files -v | grep '^h' | awk '{print $2}' |xargs git update-index --no-assume-unchanged 
+```
+
+---
+
+### 关联项目
+* [Settings](https://github.com/siren-ocean/Settings)
+* [Launcher3](https://github.com/siren-ocean/Launcher3)
