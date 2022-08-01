@@ -1,16 +1,21 @@
 ## SystemUI from android-11.0.0_r10
-### SystemUI脱离源码，并在Android Studio进行编译，最重要的一点是不试图改变它本身的目录结构，而是通过添加额外的配置和依赖，既能支持本地运行，又不影响其在AOSP上使用Android.bp进行系统编译。
-### 本项目会在关键的地方，利用脚本移除相关的在AndroidStudio上所不支持的属性和字段，并通过git命令将其忽略(不往仓库上提交)，使其在本地能正常运行的同时，也不影响它在AOSP总体仓库的份量。
+### SystemUI脱离源码在Android Studiod的编译
+
+### 支持说明
+* 不试图改变项目本身的目录结构
+* 通过添加额外的配置和依赖构建Gradle环境支持
+* 会使用脚本移除一些AS不支持的属性和字段，然后利用git本地忽略
+* 运行的效果会与原生的还是有些许差异，这是由于脱离源码之后，引用private属性失败所导致的样式差异（如下图）
 
 
-###  编译之后在pixel2上运行：Gradle编译 VS Android.bp编译
+###  pixel2运行效果：Gradle编译 VS Android.bp编译
 ---
 <img src="images/pixel2_systemui_gradle.jpg" width = "225" height = "400"/> <img src="images/pixel2_systemui_original.jpg" width = "225" height = "400"/>
 
 ---
-######  此时我们发现运行的效果会与原生的还是有些许之间的差异，这是由于脱离源码之后，SystemUI在一些private属性上的引用失败所导致的样式差异，目前看来并没有什么特别的办法。
 
-## 执行步骤如下
+
+## 执行步骤
 #### 第一步：运行在Filter上的主函数，执行过滤任务
 <img src="images/filter_main.png" width = "600" height = "480"/>
 
@@ -129,7 +134,7 @@ implementation files('libs/SystemUI-statsd.jar')
 ##### @iconloaderlib: 
 ```
 // AOSP/android-11/frameworks/libs/systemui/iconloaderlib
-include ':iconloaderlib' //settings.gradle
+implementation project(':iconloaderlib')
 ```
 ![avatar](images/iconloaderlib.png)
 
@@ -137,7 +142,7 @@ include ':iconloaderlib' //settings.gradle
 ##### @WifiTrackerLib: 
 ```
 // AOSP/android-11/frameworks/opt/net/wifi/libs/WifiTrackerLib
-include ':WifiTrackerLib' //settings.gradle
+implementation project(':WifiTrackerLib')
 ```
 ![avatar](images/WifiTrackerLib.png)
 
@@ -145,25 +150,21 @@ include ':WifiTrackerLib' //settings.gradle
 ##### @SettingsLib: 
 ```
 // AOSP/android-11/frameworks/base/packages/SettingsLib
-// settings.gradle
-include ':SettingsLib'
-include 'SettingsLib:Tile'
-include 'SettingsLib:AdaptiveIcon'
-include 'SettingsLib:RestrictedLockUtils'
-include 'SettingsLib:HelpUtils'
-include 'SettingsLib:SettingsTheme'
-include 'SettingsLib:AppPreference'
-include 'SettingsLib:SearchWidget'
-include 'SettingsLib:SettingsSpinner'
-include 'SettingsLib:LayoutPreference'
-include 'SettingsLib:ActionButtonsPreference'
-include 'SettingsLib:EntityHeaderWidgets'
-include 'SettingsLib:BarChartPreference'
-include 'SettingsLib:ProgressBar'
-include 'SettingsLib:RadioButtonPreference'
-include 'SettingsLib:DisplayDensityUtils'
-include 'SettingsLib:Utils'
-include 'SettingsLib:ActionBarShadow'
+implementation project(':SettingsLib:RestrictedLockUtils')
+implementation project(':SettingsLib:AdaptiveIcon')
+implementation project(':SettingsLib:HelpUtils')
+implementation project(':SettingsLib:ActionBarShadow')
+implementation project(':SettingsLib:AppPreference')
+implementation project(':SettingsLib:SearchWidget')
+implementation project(':SettingsLib:SettingsSpinner')
+implementation project(':SettingsLib:LayoutPreference')
+implementation project(':SettingsLib:ActionButtonsPreference')
+implementation project(':SettingsLib:EntityHeaderWidgets')
+implementation project(':SettingsLib:BarChartPreference')
+implementation project(':SettingsLib:ProgressBar')
+implementation project(':SettingsLib:RadioButtonPreference')
+implementation project(':SettingsLib:DisplayDensityUtils')
+implementation project(':SettingsLib:Utils')
 ```
 ![avatar](images/SettingsLib.png)
 
