@@ -1,0 +1,36 @@
+package {
+    // See: http://go/android-license-faq
+    // A large-scale-change added 'default_applicable_licenses' to import
+    // all of the 'license_kinds' from "frameworks_base_license"
+    // to get the below license kinds:
+    //   SPDX-license-identifier-Apache-2.0
+    default_applicable_licenses: ["frameworks_base_license"],
+}
+
+android_library {
+    name: "SettingsLib-search",
+    srcs: ["src/**/*.java"],
+
+    sdk_version: "system_current",
+    min_sdk_version: "21",
+}
+
+java_plugin {
+    name: "SettingsLib-annotation-processor",
+    processor_class: "com.android.settingslib.search.IndexableProcessor",
+    static_libs: [
+        "javapoet-prebuilt-jar",
+    ],
+    srcs: [
+        "processor-src/**/*.java",
+        "src/com/android/settingslib/search/SearchIndexable.java"
+    ],
+    java_resource_dirs: ["resources"],
+}
+
+// NOTE: Keep this module in sync with ./common.mk
+java_defaults {
+    name: "SettingsLib-search-defaults",
+    plugins: ["SettingsLib-annotation-processor"],
+    static_libs: ["SettingsLib-search"],
+}
