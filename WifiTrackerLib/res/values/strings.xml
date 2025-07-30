@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2020 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Summary text separator for short descriptions (eg. "Fast / Connected"). [CHAR LIMIT=NONE] -->
+    <string name="wifitrackerlib_summary_separator">" / "</string>
+
+    <!-- Strings for labeling Wi-Fi Auto-Connection is disabled. Wi-Fi Auto-Connection is a feature
+         for users to specify if a Wi-Fi network will be auto connected when it's reachable. [CHAR LIMIT=60] -->
+    <string name="wifitrackerlib_auto_connect_disable">Auto-connect is off</string>
+
+    <!-- Package name for Settings app-->
+    <string name="wifitrackerlib_settings_package" translatable="false">com.android.settings</string>
+
+    <!-- Package name for Certinstaller app-->
+    <string name="wifitrackerlib_certinstaller_package" translatable="false">com.android.certinstaller</string>
+
+    <!-- Summary for saved networks [CHAR LIMIT=NONE]-->
+    <string name="wifitrackerlib_saved_network">Saved by <xliff:g id="name" example="Wifi App">%1$s</xliff:g></string>
+
+    <!-- Summary for the network but no internet connection was detected. [CHAR LIMIT=NONE] -->
+    <string name="wifitrackerlib_wifi_no_internet_no_reconnect">Won\u2019t automatically connect</string>
+
+    <!-- Summary for the remembered network but no internet connection was detected. [CHAR LIMIT=NONE] -->
+    <string name="wifitrackerlib_wifi_no_internet">No internet access</string>
+
+    <!-- Status for networks disabled from authentication failure (wrong password
+         or certificate). [CHAR LIMIT=NONE] -->
+    <string name="wifitrackerlib_wifi_disabled_password_failure">Authentication problem</string>
+
+    <!-- Message shown when the user likely entered an incorrect password for a wifi network [CHAR LIMIT=NONE] -->
+    <string name="wifitrackerlib_wifi_check_password_try_again">Check password and try again</string>
+
+    <!-- Status for networked disabled from a DNS or DHCP failure [CHAR LIMIT=NONE] -->
+    <string name="wifitrackerlib_wifi_disabled_network_failure">IP configuration failure</string>
+
+    <!-- Status for networks disabled for unknown reason [CHAR LIMIT=NONE] -->
+    <string name="wifitrackerlib_wifi_disabled_generic">Disabled</string>
+
+    <!-- Summary for networks failing to connect due to one of the following reasons:
+     association rejection status 17 - AP full,
+     association rejection status 30 - AP rejected the device temporarily
+     disconnection reason code 5 - AP can't handle all existing stations [CHAR LIMIT=NONE] -->
+    <string name="wifitrackerlib_wifi_ap_unable_to_handle_new_sta">Access point temporarily full</string>
+
+    <!-- Summary for networks failing to connect due to association rejection status 34, poor channel conditions [CHAR LIMIT=NONE] -->
+    <string name="wifitrackerlib_wifi_poor_channel_conditions">Temporary poor network conditions</string>
+
+    <!-- Summary for networks failing to connect due to association rejection status 17 or 30, with
+         MBO association disallowed indication attribute reason code: Insufficient RSSI,
+         or association rejection status 34, with OCE RSSI based association rejection information [CHAR LIMIT=NONE] -->
+    <string name="wifitrackerlib_wifi_mbo_oce_assoc_disallowed_insufficient_rssi">Weak signal. Try moving closer to the router.</string>
+
+    <!-- Summary for networks failing to connect due to association rejection status 17 or 30, with
+         MBO association disallowed indication attribute reason code: maximum number of associated stations reached, [CHAR LIMIT=NONE] -->
+    <string name="wifitrackerlib_wifi_mbo_assoc_disallowed_max_num_sta_associated">Network is over capacity. Try again later.</string>
+
+    <!-- Summary for networks failing to connect due to association rejection status 17 or 30, with
+         MBO association disallowed indication attribute with one of the following reason codes:
+         Air interface is overloaded,
+         Authentication server overloaded,
+         Reserved/Unspecified [CHAR LIMIT=NONE] -->
+    <string name="wifitrackerlib_wifi_mbo_assoc_disallowed_cannot_connect">Can\'t connect. Try again later.</string>
+
+    <!-- Summary for networks failing to connect due to failed to find a network in supplicant scan result
+         which matches the network requested by framework for connection (including network capabilities) [CHAR LIMIT=NONE] -->
+    <string name="wifitrackerlib_wifi_network_not_found">Can\'t connect. Try again later.</string>
+
+    <!-- Summary for the disconnected network. [CHAR LIMIT=40] -->
+    <string name="wifitrackerlib_wifi_disconnected">Disconnected</string>
+
+    <!-- Summary for the remembered network. [CHAR LIMIT=NONE] -->
+    <string name="wifitrackerlib_wifi_remembered">Saved</string>
+
+    <!-- Label indicating network has been manually marked as metered [CHAR LIMIT=NONE] -->
+    <string name="wifitrackerlib_wifi_metered_label">Metered</string>
+
+    <!-- Label indicating network has been manually marked as unmetered [CHAR LIMIT=NONE] -->
+    <string name="wifitrackerlib_wifi_unmetered_label">Unmetered</string>
+
+    <!-- Status message of Wi-Fi when it is connected by a app (via suggestion or network request). [CHAR LIMIT=NONE] -->
+    <string name="wifitrackerlib_connected_via_app">Connected via <xliff:g id="name" example="Wifi App">%1$s</xliff:g></string>
+
+    <!-- Summary for a network suggested by an app. [CHAR LIMIT=NONE] -->
+    <string name="wifitrackerlib_available_via_app">Available via <xliff:g id="name" example="Wifi App">%1$s</xliff:g></string>
+
+    <!-- Status message of Wi-Fi when it is automatically connected by a network recommendation provider. [CHAR LIMIT=NONE] -->
+    <string name="wifitrackerlib_connected_via_network_scorer">Automatically connected via <xliff:g id="name" example="Wifi App">%1$s</xliff:g></string>
+
+    <!-- Status message of Wi-Fi when it is automatically connected by a default network recommendation provider. [CHAR LIMIT=NONE] -->
+    <string name="wifitrackerlib_connected_via_network_scorer_default">Automatically connected via network rating provider</string>
+
+    <!-- Summary for connected wifi network with partial internet connectivity [CHAR LIMIT=50] -->
+    <string name="wifitrackerlib_wifi_limited_connection">Limited connection</string>
+
+    <!-- Summary for connected network without internet due to private dns validation failed [CHAR LIMIT=NONE] -->
+    <string name="wifitrackerlib_private_dns_broken">Private DNS server cannot be accessed</string>
+
+    <!-- Summary for connected wifi network without internet [CHAR LIMIT=NONE] -->
+    <string name="wifitrackerlib_wifi_connected_cannot_provide_internet">
+        Connected to device. Can\'t provide internet.</string>
+
+    <!-- Summary for Connected wifi network with a low quality connection [CHAR LIMIT=NONE] -->
+    <string name="wifi_connected_low_quality">Low quality</string>
+
+    <!-- Do not translate.  Concise terminology for wifi with WPA/WPA2 802.1x EAP security -->
+    <string name="wifitrackerlib_wifi_security_short_eap_wpa_wpa2" translatable="false">WPA/WPA2-EAP</string>
+
+    <!-- Do not translate.  Concise terminology for wifi with WPA/WPA2 802.1x EAP security -->
+    <string name="wifitrackerlib_wifi_security_eap_wpa_wpa2" translatable="false">WPA/WPA2-Enterprise</string>
+
+    <!-- Do not translate.  Concise terminology for wifi with WPA3 802.1x EAP security -->
+    <string name="wifitrackerlib_wifi_security_short_eap_wpa3" translatable="false">WPA3-EAP</string>
+
+    <!-- Do not translate.  Concise terminology for wifi with WPA3 802.1x EAP security -->
+    <string name="wifitrackerlib_wifi_security_eap_wpa3" translatable="false">WPA3-Enterprise</string>
+
+    <!-- Do not translate.  Concise terminology for wifi with WPA/WPA2/WPA3 802.1x EAP security -->
+    <string name="wifitrackerlib_wifi_security_short_eap_wpa_wpa2_wpa3" translatable="false">WPA/WPA2/WPA3-EAP</string>
+
+    <!-- Do not translate.  Concise terminology for wifi with WPA/WPA2/WPA3 802.1x EAP security -->
+    <string name="wifitrackerlib_wifi_security_eap_wpa_wpa2_wpa3" translatable="false">WPA/WPA2/WPA3-Enterprise</string>
+
+    <!-- Do not translate.  Concise terminology for wifi with 802.1x EAP Suite-B-192 security -->
+    <string name="wifitrackerlib_wifi_security_short_eap_suiteb" translatable="false">Suite-B-192</string>
+
+    <!-- Do not translate.  Concise terminology for wifi with 802.1x EAP Suite-B-192 security -->
+    <string name="wifitrackerlib_wifi_security_eap_suiteb" translatable="false">WPA3-Enterprise 192-bit</string>
+
+    <!-- Do not translate.  Concise terminology for wifi with both WPA/WPA2 security -->
+    <string name="wifitrackerlib_wifi_security_short_wpa_wpa2" translatable="false">WPA/WPA2</string>
+
+    <!-- Do not translate.  Terminology for wifi with both WPA/WPA2 security -->
+    <string name="wifitrackerlib_wifi_security_wpa_wpa2" translatable="false">WPA/WPA2-Personal</string>
+
+    <!-- Do not translate.  Concise terminology for wifi with both WPA/WPA2/WPA3 security -->
+    <string name="wifitrackerlib_wifi_security_short_wpa_wpa2_wpa3" translatable="false">WPA/WPA2/WPA3</string>
+
+    <!-- Do not translate.  Terminology for wifi with both WPA/WPA2/WPA3 security -->
+    <string name="wifitrackerlib_wifi_security_wpa_wpa2_wpa3" translatable="false">WPA/WPA2/WPA3-Personal</string>
+
+    <!-- Do not translate.  Terminology for wifi with WEP security -->
+    <string name="wifitrackerlib_wifi_security_wep" translatable="false">WEP</string>
+
+    <!-- Do not translate.  Concise terminology for wifi with WPA3 security -->
+    <string name="wifitrackerlib_wifi_security_short_sae" translatable="false">WPA3</string>
+
+    <!-- Do not translate.  Terminology for wifi with WPA3 security -->
+    <string name="wifitrackerlib_wifi_security_sae" translatable="false">WPA3-Personal</string>
+
+    <!-- Do not translate.  Concise terminology for wifi with OWE security -->
+    <string name="wifitrackerlib_wifi_security_short_owe" translatable="false">OWE</string>
+
+    <!-- Do not translate.  Terminology for wifi with OWE security -->
+    <string name="wifitrackerlib_wifi_security_owe" translatable="false">Enhanced Open</string>
+
+    <!-- Used in Wi-Fi settings dialogs when Wi-Fi does not have any security. [CHAR LIMIT=40] -->
+    <string name="wifitrackerlib_wifi_security_none">None</string>
+
+    <!-- Do not translate.  Terminology for wifi with Passpoint security -->
+    <string name="wifitrackerlib_wifi_security_passpoint">Passpoint</string>
+
+    <!-- Passpoint summary for an expired passpoint [CHAR LIMIT=40] -->
+    <string name="wifitrackerlib_wifi_passpoint_expired">Expired</string>
+
+    <!-- Status message of OSU Provider network when not connected. [CHAR LIMIT=NONE] -->
+    <string name="wifitrackerlib_tap_to_sign_up">Tap to sign up</string>
+
+    <!-- Status message of OSU Provider network when existing profile is expired. [CHAR LIMIT=NONE] -->
+    <string name="wifitrackerlib_tap_to_renew_subscription_and_connect">Tap to renew subscription and connect</string>
+
+    <!-- Status message of OSU Provider upon initiating provisioning flow [CHAR LIMIT=NONE] -->
+    <string name="wifitrackerlib_osu_opening_provider">Opening <xliff:g id="passpointProvider" example="Passpoint Provider">%1$s</xliff:g></string>
+
+    <!-- Status message of OSU Provider when connection fails [CHAR LIMIT=NONE] -->
+    <string name="wifitrackerlib_osu_connect_failed">Couldn\u2019t connect</string>
+
+    <!-- Status message of OSU Provider after user completes provisioning flow [CHAR LIMIT=NONE] -->
+    <string name="wifitrackerlib_osu_completing_sign_up">Completing sign-up\u2026</string>
+
+    <!-- Status message of OSU Provider when sign up could not be completed [CHAR LIMIT=NONE] -->
+    <string name="wifitrackerlib_osu_sign_up_failed">Couldn\u2019t complete sign-up. Tap to try again.</string>
+
+    <!-- Status message of OSU Provider on completing provisioning. [CHAR LIMIT=NONE] -->
+    <string name="wifitrackerlib_osu_sign_up_complete">Sign-up complete. Connecting\u2026</string>
+
+    <!-- IMSI protection warning for non-protection network [CHAR LIMIT=NONE] -->
+    <string name="wifitrackerlib_imsi_protection_warning">This network receives a SIM ID that can be used to track device location. <annotation id="url">Learn more</annotation></string>
+
+    <!-- Help URL, IMSI protection [DO NOT TRANSLATE] -->
+    <string name="wifitrackerlib_help_url_imsi_protection" translatable="false"></string>
+
+    <!-- Speed label for very slow network speed -->
+    <string name="wifitrackerlib_speed_label_very_slow">Very Slow</string>
+
+    <!-- Speed label for slow network speed -->
+    <string name="wifitrackerlib_speed_label_slow">Slow</string>
+
+    <!-- Speed label for okay network speed -->
+    <string name="wifitrackerlib_speed_label_okay">OK</string>
+
+    <!-- Speed label for medium network speed -->
+    <string name="wifitrackerlib_speed_label_medium">Medium</string>
+
+    <!-- Speed label for fast network speed -->
+    <string name="wifitrackerlib_speed_label_fast">Fast</string>
+
+    <!-- Speed label for very fast network speed -->
+    <string name="wifitrackerlib_speed_label_very_fast">Very Fast</string>
+
+    <!-- Toast message for when the user selects cellular as the internet provider and Wi-Fi auto-connect is temporarily disabled -->
+    <string name="wifitrackerlib_wifi_wont_autoconnect_for_now">Wi-Fi won\u2019t auto-connect for now</string>
+
+    <!-- [DO NOT TRANSLATE] Comma-separated list of packages whose saved networks should show no attribution annotation. -->
+    <string name="wifitrackerlib_no_attribution_annotation_packages">com.google.android.setupwizard,com.google.android.gms</string>
+</resources>

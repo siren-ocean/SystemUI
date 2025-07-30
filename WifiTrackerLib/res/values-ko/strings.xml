@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2020 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="wifitrackerlib_summary_separator" msgid="6613897475167609815">" / "</string>
+    <string name="wifitrackerlib_auto_connect_disable" msgid="4714835547164460651">"자동 연결 꺼짐"</string>
+    <string name="wifitrackerlib_saved_network" msgid="5353460010746484376">"<xliff:g id="NAME">%1$s</xliff:g> 앱으로 저장됨"</string>
+    <string name="wifitrackerlib_wifi_no_internet_no_reconnect" msgid="6618216332537706908">"자동으로 연결되지 않음"</string>
+    <string name="wifitrackerlib_wifi_no_internet" msgid="4998563744669636949">"인터넷에 연결되어 있지 않음"</string>
+    <string name="wifitrackerlib_wifi_disabled_password_failure" msgid="2850244218754633550">"인증 문제"</string>
+    <string name="wifitrackerlib_wifi_check_password_try_again" msgid="2327777719175574699">"비밀번호를 확인하고 다시 시도하세요."</string>
+    <string name="wifitrackerlib_wifi_disabled_network_failure" msgid="3046956554224277166">"IP 구성 실패"</string>
+    <string name="wifitrackerlib_wifi_disabled_generic" msgid="4278806060337007814">"사용 안함"</string>
+    <string name="wifitrackerlib_wifi_ap_unable_to_handle_new_sta" msgid="931922372010639716">"액세스 포인트가 일시적으로 가득 참"</string>
+    <string name="wifitrackerlib_wifi_poor_channel_conditions" msgid="26484680900376236">"네트워크 연결이 일시적으로 불안정함"</string>
+    <string name="wifitrackerlib_wifi_mbo_oce_assoc_disallowed_insufficient_rssi" msgid="5078611817423181773">"신호가 약합니다. 라우터 가까이 이동해 보세요."</string>
+    <string name="wifitrackerlib_wifi_mbo_assoc_disallowed_max_num_sta_associated" msgid="4418848919914618807">"네트워크 용량을 초과했습니다. 나중에 다시 시도해 주세요."</string>
+    <string name="wifitrackerlib_wifi_mbo_assoc_disallowed_cannot_connect" msgid="2692286425448897083">"연결할 수 없습니다. 나중에 다시 시도해 주세요."</string>
+    <string name="wifitrackerlib_wifi_network_not_found" msgid="1308764769892463388">"연결할 수 없습니다. 나중에 다시 시도해 주세요."</string>
+    <string name="wifitrackerlib_wifi_disconnected" msgid="3320414360982942679">"연결 해제됨"</string>
+    <string name="wifitrackerlib_wifi_remembered" msgid="2406091442008343041">"저장됨"</string>
+    <string name="wifitrackerlib_wifi_metered_label" msgid="8818508951778620385">"종량제"</string>
+    <string name="wifitrackerlib_wifi_unmetered_label" msgid="1902150402929678469">"무제한"</string>
+    <string name="wifitrackerlib_connected_via_app" msgid="7823921840931347560">"<xliff:g id="NAME">%1$s</xliff:g> 앱을 통해 연결됨"</string>
+    <string name="wifitrackerlib_available_via_app" msgid="8556844256194837469">"<xliff:g id="NAME">%1$s</xliff:g> 앱을 통해 사용 가능"</string>
+    <string name="wifitrackerlib_connected_via_network_scorer" msgid="6306655070903763086">"<xliff:g id="NAME">%1$s</xliff:g> 앱을 통해 자동으로 연결됨"</string>
+    <string name="wifitrackerlib_connected_via_network_scorer_default" msgid="3436792128688839692">"네트워크 평가 제공업체를 통해 자동으로 연결됨"</string>
+    <string name="wifitrackerlib_wifi_limited_connection" msgid="4234326409980991740">"제한된 연결"</string>
+    <string name="wifitrackerlib_private_dns_broken" msgid="6049401148262718707">"비공개 DNS 서버에 액세스할 수 없음"</string>
+    <string name="wifitrackerlib_wifi_connected_cannot_provide_internet" msgid="3803471522215612745">"기기에 연결되었습니다. 인터넷을 이용할 수 없습니다."</string>
+    <string name="wifi_connected_low_quality" msgid="4478331645458058445">"품질 낮음"</string>
+    <string name="wifitrackerlib_wifi_security_none" msgid="2686062484642847280">"없음"</string>
+    <string name="wifitrackerlib_wifi_passpoint_expired" msgid="7974960573887452566">"만료됨"</string>
+    <string name="wifitrackerlib_tap_to_sign_up" msgid="3897017015910817402">"탭하여 가입"</string>
+    <string name="wifitrackerlib_tap_to_renew_subscription_and_connect" msgid="6048420776676138069">"탭하여 가입 갱신 및 연결"</string>
+    <string name="wifitrackerlib_osu_opening_provider" msgid="7128677439450712558">"<xliff:g id="PASSPOINTPROVIDER">%1$s</xliff:g> 여는 중"</string>
+    <string name="wifitrackerlib_osu_connect_failed" msgid="3872233609000700930">"연결할 수 없음"</string>
+    <string name="wifitrackerlib_osu_completing_sign_up" msgid="4359503050543182480">"가입 완료 중…"</string>
+    <string name="wifitrackerlib_osu_sign_up_failed" msgid="3964140125523395898">"가입을 완료할 수 없음. 탭하여 다시 시도"</string>
+    <string name="wifitrackerlib_osu_sign_up_complete" msgid="3279606633343124580">"가입 완료. 연결 중…"</string>
+    <string name="wifitrackerlib_imsi_protection_warning" msgid="7202210931586169466">"이 네트워크는 기기 위치 추적에 사용될 수 있는 SIM ID를 수신합니다. "<annotation id="url">"자세히 알아보기"</annotation></string>
+    <string name="wifitrackerlib_speed_label_very_slow" msgid="6606409259798814244">"매우 느림"</string>
+    <string name="wifitrackerlib_speed_label_slow" msgid="7327906382011957760">"느림"</string>
+    <string name="wifitrackerlib_speed_label_okay" msgid="6656684124654881956">"양호"</string>
+    <string name="wifitrackerlib_speed_label_medium" msgid="2249280306855290094">"보통"</string>
+    <string name="wifitrackerlib_speed_label_fast" msgid="2593921008376044650">"빠름"</string>
+    <string name="wifitrackerlib_speed_label_very_fast" msgid="4162759416291355173">"매우 빠름"</string>
+    <string name="wifitrackerlib_wifi_wont_autoconnect_for_now" msgid="4923161724964349851">"지금은 Wi-Fi가 자동으로 연결되지 않습니다."</string>
+</resources>

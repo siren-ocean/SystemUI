@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2020 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="wifitrackerlib_summary_separator" msgid="6613897475167609815">" / "</string>
+    <string name="wifitrackerlib_auto_connect_disable" msgid="4714835547164460651">"Conectarea automată este dezactivată"</string>
+    <string name="wifitrackerlib_saved_network" msgid="5353460010746484376">"Salvate de <xliff:g id="NAME">%1$s</xliff:g>"</string>
+    <string name="wifitrackerlib_wifi_no_internet_no_reconnect" msgid="6618216332537706908">"Nu se va conecta automat"</string>
+    <string name="wifitrackerlib_wifi_no_internet" msgid="4998563744669636949">"Nu există acces la internet"</string>
+    <string name="wifitrackerlib_wifi_disabled_password_failure" msgid="2850244218754633550">"Problemă la autentificare"</string>
+    <string name="wifitrackerlib_wifi_check_password_try_again" msgid="2327777719175574699">"Verificați parola și încercați din nou"</string>
+    <string name="wifitrackerlib_wifi_disabled_network_failure" msgid="3046956554224277166">"Eroare de configurare a IP-ului"</string>
+    <string name="wifitrackerlib_wifi_disabled_generic" msgid="4278806060337007814">"Dezactivată"</string>
+    <string name="wifitrackerlib_wifi_ap_unable_to_handle_new_sta" msgid="931922372010639716">"Punctul de acces este temporar plin"</string>
+    <string name="wifitrackerlib_wifi_poor_channel_conditions" msgid="26484680900376236">"Momentan, conexiunea la rețea este slabă"</string>
+    <string name="wifitrackerlib_wifi_mbo_oce_assoc_disallowed_insufficient_rssi" msgid="5078611817423181773">"Semnal slab. Apropiați-vă de router."</string>
+    <string name="wifitrackerlib_wifi_mbo_assoc_disallowed_max_num_sta_associated" msgid="4418848919914618807">"Capacitatea rețelei a fost depășită. Încercați din nou mai târziu."</string>
+    <string name="wifitrackerlib_wifi_mbo_assoc_disallowed_cannot_connect" msgid="2692286425448897083">"Nu se poate conecta. Încercați din nou mai târziu."</string>
+    <string name="wifitrackerlib_wifi_network_not_found" msgid="1308764769892463388">"Nu se poate conecta. Reîncercați mai târziu."</string>
+    <string name="wifitrackerlib_wifi_disconnected" msgid="3320414360982942679">"Deconectată"</string>
+    <string name="wifitrackerlib_wifi_remembered" msgid="2406091442008343041">"Salvată"</string>
+    <string name="wifitrackerlib_wifi_metered_label" msgid="8818508951778620385">"Contorizată"</string>
+    <string name="wifitrackerlib_wifi_unmetered_label" msgid="1902150402929678469">"Necontorizată"</string>
+    <string name="wifitrackerlib_connected_via_app" msgid="7823921840931347560">"Conectată prin <xliff:g id="NAME">%1$s</xliff:g>"</string>
+    <string name="wifitrackerlib_available_via_app" msgid="8556844256194837469">"Disponibilă prin <xliff:g id="NAME">%1$s</xliff:g>"</string>
+    <string name="wifitrackerlib_connected_via_network_scorer" msgid="6306655070903763086">"Conectată automat prin <xliff:g id="NAME">%1$s</xliff:g>"</string>
+    <string name="wifitrackerlib_connected_via_network_scorer_default" msgid="3436792128688839692">"Conectată automat prin furnizor de evaluări ale rețelei"</string>
+    <string name="wifitrackerlib_wifi_limited_connection" msgid="4234326409980991740">"Conexiune limitată"</string>
+    <string name="wifitrackerlib_private_dns_broken" msgid="6049401148262718707">"Serverul DNS privat nu poate fi accesat"</string>
+    <string name="wifitrackerlib_wifi_connected_cannot_provide_internet" msgid="3803471522215612745">"S-a conectat la dispozitiv. Nu se poate stabili o conexiune la internet."</string>
+    <string name="wifi_connected_low_quality" msgid="4478331645458058445">"Calitate slabă"</string>
+    <string name="wifitrackerlib_wifi_security_none" msgid="2686062484642847280">"Fără"</string>
+    <string name="wifitrackerlib_wifi_passpoint_expired" msgid="7974960573887452566">"Expirată"</string>
+    <string name="wifitrackerlib_tap_to_sign_up" msgid="3897017015910817402">"Atingeți pentru a vă înscrie"</string>
+    <string name="wifitrackerlib_tap_to_renew_subscription_and_connect" msgid="6048420776676138069">"Atingeți pentru a reînnoi abonamentul și a vă conecta"</string>
+    <string name="wifitrackerlib_osu_opening_provider" msgid="7128677439450712558">"Se deschide <xliff:g id="PASSPOINTPROVIDER">%1$s</xliff:g>"</string>
+    <string name="wifitrackerlib_osu_connect_failed" msgid="3872233609000700930">"Nu s-a putut conecta"</string>
+    <string name="wifitrackerlib_osu_completing_sign_up" msgid="4359503050543182480">"Se finalizează înscrierea…"</string>
+    <string name="wifitrackerlib_osu_sign_up_failed" msgid="3964140125523395898">"Nu s-a putut finaliza înscrierea. Atingeți pentru a încerca din nou."</string>
+    <string name="wifitrackerlib_osu_sign_up_complete" msgid="3279606633343124580">"Înscrierea a fost finalizată. Se conectează…"</string>
+    <string name="wifitrackerlib_imsi_protection_warning" msgid="7202210931586169466">"Această rețea primește un cod SIM care se poate folosi pentru a urmări locația dispozitivului. "<annotation id="url">"Aflați mai multe"</annotation></string>
+    <string name="wifitrackerlib_speed_label_very_slow" msgid="6606409259798814244">"Foarte lentă"</string>
+    <string name="wifitrackerlib_speed_label_slow" msgid="7327906382011957760">"Lentă"</string>
+    <string name="wifitrackerlib_speed_label_okay" msgid="6656684124654881956">"OK"</string>
+    <string name="wifitrackerlib_speed_label_medium" msgid="2249280306855290094">"Medie"</string>
+    <string name="wifitrackerlib_speed_label_fast" msgid="2593921008376044650">"Rapidă"</string>
+    <string name="wifitrackerlib_speed_label_very_fast" msgid="4162759416291355173">"Foarte rapidă"</string>
+    <string name="wifitrackerlib_wifi_wont_autoconnect_for_now" msgid="4923161724964349851">"Deocamdată, Wi-Fi nu se poate conecta automat"</string>
+</resources>

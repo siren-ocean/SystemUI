@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2020 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="wifitrackerlib_summary_separator" msgid="6613897475167609815">" / "</string>
+    <string name="wifitrackerlib_auto_connect_disable" msgid="4714835547164460651">"ការភ្ជាប់​ដោយស្វ័យប្រវត្តិ​ត្រូវបានបិទ"</string>
+    <string name="wifitrackerlib_saved_network" msgid="5353460010746484376">"បានរក្សាទុកដោយ <xliff:g id="NAME">%1$s</xliff:g>"</string>
+    <string name="wifitrackerlib_wifi_no_internet_no_reconnect" msgid="6618216332537706908">"នឹងមិនភ្ជាប់ដោយស្វ័យប្រវត្តិទេ"</string>
+    <string name="wifitrackerlib_wifi_no_internet" msgid="4998563744669636949">"មិនមាន​ការតភ្ជាប់​អ៊ីនធឺណិតទេ"</string>
+    <string name="wifitrackerlib_wifi_disabled_password_failure" msgid="2850244218754633550">"បញ្ហា​ការ​ផ្ទៀងផ្ទាត់"</string>
+    <string name="wifitrackerlib_wifi_check_password_try_again" msgid="2327777719175574699">"សូមពិនិត្យមើលពាក្យសម្ងាត់ រួចព្យាយាមម្ដងទៀត"</string>
+    <string name="wifitrackerlib_wifi_disabled_network_failure" msgid="3046956554224277166">"ការ​កំណត់​រចនាសម្ព័ន្ធ IP មិនបានសម្រេច"</string>
+    <string name="wifitrackerlib_wifi_disabled_generic" msgid="4278806060337007814">"បានបិទ"</string>
+    <string name="wifitrackerlib_wifi_ap_unable_to_handle_new_sta" msgid="931922372010639716">"ដុំភ្ជាប់បណ្ដាញ​ឥតខ្សែពេញ​ជាបណ្តោះអាសន្ន"</string>
+    <string name="wifitrackerlib_wifi_poor_channel_conditions" msgid="26484680900376236">"ស្ថានភាព​បណ្ដាញ​ខ្សោយ​ជាបណ្ដោះអាសន្ន"</string>
+    <string name="wifitrackerlib_wifi_mbo_oce_assoc_disallowed_insufficient_rssi" msgid="5078611817423181773">"រលកសញ្ញាខ្សោយ។ សូមសាកល្បងខិតឱ្យកាន់តែជិតរ៉ោទ័រ។"</string>
+    <string name="wifitrackerlib_wifi_mbo_assoc_disallowed_max_num_sta_associated" msgid="4418848919914618807">"បណ្ដាលកំពុងដំណើរការហួសសមត្ថភាព។ សូមព្យាយាម​ម្តងទៀត​នៅពេលក្រោយ។"</string>
+    <string name="wifitrackerlib_wifi_mbo_assoc_disallowed_cannot_connect" msgid="2692286425448897083">"មិនអាច​ភ្ជាប់​បានទេ។ សូមព្យាយាម​ម្តងទៀត​នៅពេលក្រោយ។"</string>
+    <string name="wifitrackerlib_wifi_network_not_found" msgid="1308764769892463388">"មិនអាច​ភ្ជាប់​បានទេ។ សូមព្យាយាម​ម្តងទៀត​នៅពេលក្រោយ។"</string>
+    <string name="wifitrackerlib_wifi_disconnected" msgid="3320414360982942679">"បាន​ផ្ដាច់"</string>
+    <string name="wifitrackerlib_wifi_remembered" msgid="2406091442008343041">"បាន​រក្សាទុក"</string>
+    <string name="wifitrackerlib_wifi_metered_label" msgid="8818508951778620385">"ផ្អែកតាម​ទិន្នន័យ​ដែលប្រើ"</string>
+    <string name="wifitrackerlib_wifi_unmetered_label" msgid="1902150402929678469">"មិនផ្អែកតាម​ទិន្នន័យ​ដែលប្រើ"</string>
+    <string name="wifitrackerlib_connected_via_app" msgid="7823921840931347560">"បានភ្ជាប់​តាមរយៈ <xliff:g id="NAME">%1$s</xliff:g>"</string>
+    <string name="wifitrackerlib_available_via_app" msgid="8556844256194837469">"អាចប្រើបាន​តាមរយៈ <xliff:g id="NAME">%1$s</xliff:g>"</string>
+    <string name="wifitrackerlib_connected_via_network_scorer" msgid="6306655070903763086">"បានភ្ជាប់ដោយស្វ័យប្រវត្តិតាមរយៈ <xliff:g id="NAME">%1$s</xliff:g>"</string>
+    <string name="wifitrackerlib_connected_via_network_scorer_default" msgid="3436792128688839692">"បានភ្ជាប់​ដោយស្វ័យប្រវត្តិ​តាម​រយៈក្រុមហ៊ុនផ្តល់​ការ​វាយ​តម្លៃលើ​បណ្តាញ"</string>
+    <string name="wifitrackerlib_wifi_limited_connection" msgid="4234326409980991740">"ការតភ្ជាប់មានកម្រិត"</string>
+    <string name="wifitrackerlib_private_dns_broken" msgid="6049401148262718707">"មិនអាច​ចូលប្រើ​ម៉ាស៊ីនមេ DNS ឯកជន​បានទេ"</string>
+    <string name="wifitrackerlib_wifi_connected_cannot_provide_internet" msgid="3803471522215612745">"បានភ្ជាប់​ជាមួយ​ឧបករណ៍។ មិនអាចផ្ដល់​អ៊ីនធឺណិតបានទេ។"</string>
+    <string name="wifi_connected_low_quality" msgid="4478331645458058445">"គុណភាព​ទាប"</string>
+    <string name="wifitrackerlib_wifi_security_none" msgid="2686062484642847280">"គ្មាន"</string>
+    <string name="wifitrackerlib_wifi_passpoint_expired" msgid="7974960573887452566">"បាន​ផុត​កំណត់"</string>
+    <string name="wifitrackerlib_tap_to_sign_up" msgid="3897017015910817402">"ចុច​ដើម្បី​ចុះឈ្មោះ"</string>
+    <string name="wifitrackerlib_tap_to_renew_subscription_and_connect" msgid="6048420776676138069">"ចុច ដើម្បី​បន្តការ​ជាវជាថ្មី និង​ភ្ជាប់"</string>
+    <string name="wifitrackerlib_osu_opening_provider" msgid="7128677439450712558">"កំពុង​បើក <xliff:g id="PASSPOINTPROVIDER">%1$s</xliff:g>"</string>
+    <string name="wifitrackerlib_osu_connect_failed" msgid="3872233609000700930">"មិន​អាចភ្ជាប់​បានទេ"</string>
+    <string name="wifitrackerlib_osu_completing_sign_up" msgid="4359503050543182480">"កំពុង​បញ្ចប់​ការចុះឈ្មោះ…"</string>
+    <string name="wifitrackerlib_osu_sign_up_failed" msgid="3964140125523395898">"មិនអាច​បញ្ចប់​ការចុះឈ្មោះ​បានទេ។ សូមចុច ដើម្បី​ព្យាយាម​ម្ដង​ទៀត។"</string>
+    <string name="wifitrackerlib_osu_sign_up_complete" msgid="3279606633343124580">"ការចុះ​ឈ្មោះ​បានបញ្ចប់។ កំពុងភ្ជាប់…"</string>
+    <string name="wifitrackerlib_imsi_protection_warning" msgid="7202210931586169466">"បណ្ដាញ​នេះ​ទទួលបាន​លេខសម្គាល់ស៊ីម ដែល​អាចប្រើ​ដើម្បី​តាមដាន​ទីតាំង​ឧបករណ៍។ "<annotation id="url">"ស្វែងយល់បន្ថែម"</annotation></string>
+    <string name="wifitrackerlib_speed_label_very_slow" msgid="6606409259798814244">"យឺតណាស់"</string>
+    <string name="wifitrackerlib_speed_label_slow" msgid="7327906382011957760">"យឺត"</string>
+    <string name="wifitrackerlib_speed_label_okay" msgid="6656684124654881956">"យល់ព្រម"</string>
+    <string name="wifitrackerlib_speed_label_medium" msgid="2249280306855290094">"មធ្យម"</string>
+    <string name="wifitrackerlib_speed_label_fast" msgid="2593921008376044650">"លឿន"</string>
+    <string name="wifitrackerlib_speed_label_very_fast" msgid="4162759416291355173">"លឿន​ណាស់"</string>
+    <string name="wifitrackerlib_wifi_wont_autoconnect_for_now" msgid="4923161724964349851">"Wi-Fi នឹងមិនភ្ជាប់ដោយស្វ័យប្រវត្តិក្នុងពេលនេះទេ"</string>
+</resources>
