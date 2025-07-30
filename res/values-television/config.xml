@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright 2019, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+
+<!-- These resources are around just to allow their values to be customized
+     for different hardware and product builds. -->
+<resources>
+    <!-- SystemUIFactory component -->
+    <string name="config_systemUIFactoryComponent" translatable="false">
+        com.android.systemui.tv.TvSystemUIFactory
+    </string>
+    <!-- SystemUI Services: The classes of the stuff to start. -->
+    <string-array name="config_systemUIServiceComponents" translatable="false">
+        <item>com.android.systemui.util.NotificationChannels</item>
+        <item>com.android.systemui.volume.VolumeUI</item>
+        <item>com.android.systemui.privacy.television.TvOngoingPrivacyChip</item>
+        <item>com.android.systemui.statusbar.tv.TvStatusBar</item>
+        <item>com.android.systemui.statusbar.tv.notifications.TvNotificationPanel</item>
+        <item>com.android.systemui.statusbar.tv.notifications.TvNotificationHandler</item>
+        <item>com.android.systemui.statusbar.tv.VpnStatusObserver</item>
+        <item>com.android.systemui.globalactions.GlobalActionsComponent</item>
+        <item>com.android.systemui.usb.StorageNotification</item>
+        <item>com.android.systemui.power.PowerUI</item>
+        <item>com.android.systemui.media.RingtonePlayer</item>
+        <item>com.android.systemui.keyboard.KeyboardUI</item>
+        <item>com.android.systemui.shortcut.ShortcutKeyDispatcher</item>
+        <item>@string/config_systemUIVendorServiceComponent</item>
+        <item>com.android.systemui.SliceBroadcastRelayHandler</item>
+        <item>com.android.systemui.statusbar.notification.InstantAppNotifier</item>
+        <item>com.android.systemui.toast.ToastUI</item>
+        <item>com.android.systemui.wmshell.WMShell</item>
+        <item>com.android.systemui.media.systemsounds.HomeSoundEffectController</item>
+    </string-array>
+
+    <!-- Svelte specific logic, see RecentsConfiguration.SVELTE_* constants. -->
+    <integer name="recents_svelte_level">3</integer>
+
+    <!-- Show a separate icon for low and high volume on the volume dialog -->
+    <bool name="config_showLowMediaVolumeIcon">true</bool>
+
+    <!-- Change the volume row tint when it is inactive, i.e. when it is being dismissed -->
+    <bool name="config_changeVolumeRowTintWhenInactive">false</bool>
+
+    <!-- The duraction of the show animation for the volume dialog in milliseconds -->
+    <integer name="config_dialogShowAnimationDurationMs">600</integer>
+
+    <!-- The duraction of the hide animation for the volume dialog in milliseconds -->
+    <integer name="config_dialogHideAnimationDurationMs">400</integer>
+
+    <!-- Whether to use window background blur for the volume dialog. -->
+    <bool name="config_volumeDialogUseBackgroundBlur">true</bool>
+</resources>
