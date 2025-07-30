@@ -50,7 +50,7 @@ buildscript {
     }
 
     dependencies {
-        classpath "com.android.tools.build:gradle:3.5.1"
+        classpath "com.android.tools.build:gradle:4.1.2"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
 }
@@ -145,7 +145,7 @@ dependencies {
     implementation files('libs/SystemUI-proto.jar')
     implementation files('libs/SystemUI-statsd.jar')
     implementation files('libs/libprotobuf-java-nano.jar')
-    implementation files('libs/iconloader_base.jar')
+    implementation project(':iconloaderlib')
     implementation project(':plugin_core')
     implementation project(':SettingsLib')
     implementation project(':SettingsLib:RestrictedLockUtils')
