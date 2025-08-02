@@ -47,14 +47,16 @@ class RecommendationViewHolder private constructor(itemView: View) {
         itemView.requireViewById(R.id.media_cover4_container),
         itemView.requireViewById(R.id.media_cover5_container),
         itemView.requireViewById(R.id.media_cover6_container))
-    val mediaCoverItemsResIds = listOf<@IntegerRes Int>(
+    @IntegerRes
+    val mediaCoverItemsResIds = listOf<Int>(
         R.id.media_cover1,
         R.id.media_cover2,
         R.id.media_cover3,
         R.id.media_cover4,
         R.id.media_cover5,
         R.id.media_cover6)
-    val mediaCoverContainersResIds = listOf<@IntegerRes Int>(
+    @IntegerRes
+    val mediaCoverContainersResIds = listOf<Int>(
         R.id.media_cover1_container,
         R.id.media_cover2_container,
         R.id.media_cover3_container,
