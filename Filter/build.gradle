@@ -1,0 +1,7 @@
+apply plugin: 'java'
+apply plugin: 'application'
+mainClassName = 'com.siren.filter.Main'
+
+run {
+    workingDir = rootProject.projectDir
+}

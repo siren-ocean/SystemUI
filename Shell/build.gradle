@@ -1,0 +1,80 @@
+plugins {
+    id 'com.android.library'
+}
+
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion COMPILE_SDK
+
+    defaultConfig {
+        minSdkVersion MIN_SDK_VERSION
+        targetSdkVersion TARGET_SDK_VERSION
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    afterEvaluate {
+        generateReleaseBuildConfig.enabled = false
+        generateDebugBuildConfig.enabled = false
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+        freeCompilerArgs += [
+                '-Xjvm-default=all'
+        ]
+    }
+
+    sourceSets {
+        main {
+            java.srcDirs = ['src']
+            aidl.srcDirs = ['src']
+            res.srcDirs = ['res']
+            manifest.srcFile 'AndroidManifest.xml'
+        }
+    }
+}
+
+repositories {
+    flatDir {
+        dirs '../libs'
+    }
+}
+
+dependencies {
+    compileOnly files('../libs/framework.jar')
+    implementation files('../libs/protolog-lib.jar')
+    implementation files('../libs/libprotobuf-java-nano.jar')
+    implementation files('../libs/WindowManager-Shell-proto.jar')
+
+    implementation project(':iconloaderlib')
+    implementation(name: 'dynamicanimation-1.1.0-alpha04', ext: 'aar')
+
+    implementation libs.appcompat
+    implementation libs.core_runtime
+    implementation libs.recyclerview
+
+    implementation libs.kotlinx_coroutines_android
+    implementation libs.kotlinx_coroutines_core
+    implementation libs.core_ktx
+    implementation libs.inject
+
+    implementation libs.dagger_android
+    kapt libs.dagger_compiler
+}
