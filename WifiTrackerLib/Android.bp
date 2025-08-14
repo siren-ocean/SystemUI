@@ -1,0 +1,41 @@
+package {
+    default_applicable_licenses: ["Android-Apache-2.0"],
+}
+
+java_defaults {
+    name: "WifiTrackerLibDefaults",
+    srcs: ["src/**/*.java"],
+    resource_dirs: [],
+    static_libs: [
+        "androidx.annotation_annotation",
+        "androidx.core_core",
+        "androidx.lifecycle_lifecycle-runtime",
+        "WifiTrackerLibRes",
+        "SettingsLibHelpUtils",
+    ],
+
+    min_sdk_version: "S",
+}
+
+android_library {
+    name: "WifiTrackerLib",
+    defaults: ["WifiTrackerLibDefaults"],
+    srcs: ["src/**/*.java"],
+}
+
+android_library {
+    name: "SdkWifiTrackerLib",
+    defaults: ["WifiTrackerLibDefaults"],
+    srcs: ["sdk_src/**/NonSdkApiWrapper.java"],
+    exclude_srcs: ["src/**/NonSdkApiWrapper.java"],
+
+    sdk_version: "system_current",
+}
+
+// Define the resources as a separate library so that external apps may use them without needing to
+// be up-to-date with WifiTrackerLib's min_sdk_version
+android_library {
+    name: "WifiTrackerLibRes",
+    resource_dirs: ["res"],
+    min_sdk_version: "1",
+}

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2020 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="wifitrackerlib_summary_separator" msgid="6613897475167609815">" / "</string>
+    <string name="wifitrackerlib_auto_connect_disable" msgid="4714835547164460651">"ස්වයං සබැඳීම ක්‍රියාවිරහිතයි"</string>
+    <string name="wifitrackerlib_saved_network" msgid="5353460010746484376">"<xliff:g id="NAME">%1$s</xliff:g> විසින් සුරකින ලදී"</string>
+    <string name="wifitrackerlib_wifi_no_internet_no_reconnect" msgid="6618216332537706908">"ස්වයංක්‍රියව සම්බන්ධ නොවනු ඇත"</string>
+    <string name="wifitrackerlib_wifi_no_internet" msgid="4998563744669636949">"අන්තර්ජාල ප්‍රවේශය නැත"</string>
+    <string name="wifitrackerlib_wifi_disabled_password_failure" msgid="2850244218754633550">"සත්‍යාපනයේ ගැටලුවකි"</string>
+    <string name="wifitrackerlib_wifi_check_password_try_again" msgid="2327777719175574699">"මුරපදය පරික්ෂා කර නැවත උත්සාහ කරන්න"</string>
+    <string name="wifitrackerlib_wifi_disabled_network_failure" msgid="3046956554224277166">"IP වින්‍යාස කිරීම අසාර්ථකයි"</string>
+    <string name="wifitrackerlib_wifi_disabled_generic" msgid="4278806060337007814">"අබල කළ"</string>
+    <string name="wifitrackerlib_wifi_ap_unable_to_handle_new_sta" msgid="931922372010639716">"ප්‍රවේශ ලක්ෂ්‍යය තාවකාලිකව පිරී ඇත"</string>
+    <string name="wifitrackerlib_wifi_poor_channel_conditions" msgid="26484680900376236">"තාවකාලික දුර්වල ජාල තත්ත්ව"</string>
+    <string name="wifitrackerlib_wifi_mbo_oce_assoc_disallowed_insufficient_rssi" msgid="5078611817423181773">"දුර්වල සංඥා. රවුටරය වෙත වඩාත් සමීප වීමට උත්සාහ කරන්න."</string>
+    <string name="wifitrackerlib_wifi_mbo_assoc_disallowed_max_num_sta_associated" msgid="4418848919914618807">"ජාලයේ ධාරිතාව ඉක්මවා ඇත. පසුව නැවත උත්සාහ කරන්න."</string>
+    <string name="wifitrackerlib_wifi_mbo_assoc_disallowed_cannot_connect" msgid="2692286425448897083">"සම්බන්ධ විය නොහැකිය. පසුව නැවත උත්සාහ කරන්න."</string>
+    <string name="wifitrackerlib_wifi_network_not_found" msgid="1308764769892463388">"සම්බන්ධ විය නොහැකිය. පසුව නැවත උත්සාහ කරන්න."</string>
+    <string name="wifitrackerlib_wifi_disconnected" msgid="3320414360982942679">"විසන්ධි විය"</string>
+    <string name="wifitrackerlib_wifi_remembered" msgid="2406091442008343041">"සුරකින ලදි"</string>
+    <string name="wifitrackerlib_wifi_metered_label" msgid="8818508951778620385">"මනුගත"</string>
+    <string name="wifitrackerlib_wifi_unmetered_label" msgid="1902150402929678469">"මනුගත නොකළ"</string>
+    <string name="wifitrackerlib_connected_via_app" msgid="7823921840931347560">"<xliff:g id="NAME">%1$s</xliff:g> හරහා සම්බන්ධිතයි"</string>
+    <string name="wifitrackerlib_available_via_app" msgid="8556844256194837469">"<xliff:g id="NAME">%1$s</xliff:g> හරහා ලබා ගත හැකිය"</string>
+    <string name="wifitrackerlib_wifi_limited_connection" msgid="4234326409980991740">"සීමිත සම්බන්ධතාව"</string>
+    <string name="wifitrackerlib_private_dns_broken" msgid="6049401148262718707">"පුද්ගලික DNS සේවාදායකයට ප්‍රවේශ වීමට නොහැකිය"</string>
+    <string name="wifitrackerlib_wifi_connected_cannot_provide_internet" msgid="3803471522215612745">"උපාංගයට සම්බන්ධයි. අන්තර්ජාලය සැපයීමට නොහැකිය."</string>
+    <string name="wifi_connected_low_quality" msgid="4478331645458058445">"අඩු ගුණත්වය"</string>
+    <string name="wifitrackerlib_admin_restricted_network" msgid="5439914801076897515">"ඔබගේ සංවිධානය විසින් ඉඩ නොදේ"</string>
+    <string name="wifitrackerlib_wifi_security_short_eap_wpa_wpa2" msgid="4815223667006927841">"WPA/WPA2-EAP"</string>
+    <string name="wifitrackerlib_wifi_security_eap_wpa_wpa2" msgid="6425661975745405271">"WPA/WPA2-Enterprise"</string>
+    <string name="wifitrackerlib_wifi_security_short_eap_wpa3" msgid="6210273302049534874">"WPA3-EAP"</string>
+    <string name="wifitrackerlib_wifi_security_eap_wpa3" msgid="3945746966044709030">"WPA3-Enterprise"</string>
+    <string name="wifitrackerlib_wifi_security_short_eap_wpa_wpa2_wpa3" msgid="1461382917566262495">"WPA/WPA2/WPA3-EAP"</string>
+    <string name="wifitrackerlib_wifi_security_eap_wpa_wpa2_wpa3" msgid="5793439868239112839">"WPA/WPA2/WPA3-Enterprise"</string>
+    <string name="wifitrackerlib_wifi_security_short_eap_suiteb" msgid="6335062557041604336">"Suite-B-192"</string>
+    <string name="wifitrackerlib_wifi_security_eap_suiteb" msgid="4715703239786225763">"WPA3-Enterprise බිටු-192"</string>
+    <string name="wifitrackerlib_wifi_security_short_wpa_wpa2" msgid="6770438383385707243">"WPA/WPA2"</string>
+    <string name="wifitrackerlib_wifi_security_wpa_wpa2" msgid="5767878305316110228">"WPA/WPA2-පුද්ගලික"</string>
+    <string name="wifitrackerlib_wifi_security_short_wpa_wpa2_wpa3" msgid="4489424775550194618">"WPA/WPA2/WPA3"</string>
+    <string name="wifitrackerlib_wifi_security_wpa_wpa2_wpa3" msgid="4154428413248489642">"WPA/WPA2/WPA3-පුද්ගලික"</string>
+    <string name="wifitrackerlib_wifi_security_wep" msgid="7714779033848180369">"WEP"</string>
+    <string name="wifitrackerlib_wifi_security_short_sae" msgid="107913757758514692">"WPA3"</string>
+    <string name="wifitrackerlib_wifi_security_sae" msgid="6191706087425911867">"WPA3-පුද්ගලික"</string>
+    <string name="wifitrackerlib_wifi_security_short_owe" msgid="224333285610280433">"OWE"</string>
+    <string name="wifitrackerlib_wifi_security_owe" msgid="1018282395106838649">"වැඩි දියුණු කළ විවෘත"</string>
+    <string name="wifitrackerlib_wifi_security_none" msgid="2686062484642847280">"කිසිවක් නැත"</string>
+    <string name="wifitrackerlib_wifi_security_passpoint" msgid="3980446437188585906">"පාස්පොයින්ට්"</string>
+    <string name="wifitrackerlib_wifi_passpoint_expired" msgid="7974960573887452566">"කල් ඉකුත් විය"</string>
+    <string name="wifitrackerlib_tap_to_sign_up" msgid="3897017015910817402">"ලියාපදිංචි වීමට තට්ටු කරන්න"</string>
+    <string name="wifitrackerlib_tap_to_renew_subscription_and_connect" msgid="6048420776676138069">"දායකත්වය අලුත් කිරීමට තට්ටු කර සම්බන්ධ වන්න"</string>
+    <string name="wifitrackerlib_osu_opening_provider" msgid="7128677439450712558">"<xliff:g id="PASSPOINTPROVIDER">%1$s</xliff:g> විවෘත කරමින්"</string>
+    <string name="wifitrackerlib_osu_connect_failed" msgid="3872233609000700930">"සබැඳීමට නොහැකි විය"</string>
+    <string name="wifitrackerlib_osu_completing_sign_up" msgid="4359503050543182480">"ලියාපදිංචිය සම්පූර්ණ කරමින්…"</string>
+    <string name="wifitrackerlib_osu_sign_up_failed" msgid="3964140125523395898">"ලියාපදිංචිය සම්පූර්ණ කළ නොහැකි විය. නැවත උත්සාහ කිරීමට තට්ටු කරන්න."</string>
+    <string name="wifitrackerlib_osu_sign_up_complete" msgid="3279606633343124580">"ලියාපදිංචිය සම්පූර්ණයි. සබැඳෙමින්…"</string>
+    <string name="wifitrackerlib_imsi_protection_warning" msgid="7202210931586169466">"උපාංග ස්ථානය නිරීක්ෂණය කිරීමට භාවිත කළ හැකි SIM ID එකක් මෙම ජාලයට ලැබේ "<annotation id="url">"තව දැන ගන්න"</annotation></string>
+    <string name="wifitrackerlib_wifi_wont_autoconnect_for_now" msgid="4923161724964349851">"Wi-Fi දැනට ස්වයංක්‍රියව සබැඳි නොවනු ඇත"</string>
+    <string name="wifitrackerlib_wifi_standard_unknown" msgid="8339211498889012019">"නොදනී"</string>
+    <string name="wifitrackerlib_wifi_standard_legacy" msgid="7760511318791054384">"ලෙගසිය"</string>
+    <string name="wifitrackerlib_wifi_standard_11n" msgid="2642177213395884818">"Wi‑Fi 4"</string>
+    <string name="wifitrackerlib_wifi_standard_11ac" msgid="4347870672254411383">"Wi‑Fi 5"</string>
+    <string name="wifitrackerlib_wifi_standard_11ax" msgid="4071875115186480116">"Wi‑Fi 6"</string>
+    <string name="wifitrackerlib_wifi_standard_11ad" msgid="4955749187120493383">"WiGig"</string>
+    <string name="wifitrackerlib_wifi_standard_11be" msgid="1886834788680487835">"Wi‑Fi 7"</string>
+</resources>

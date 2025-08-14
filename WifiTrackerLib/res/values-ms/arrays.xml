@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+/*
+**
+** Copyright 2020 The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string-array name="wifitrackerlib_wifi_status">
+    <item msgid="4878873480828298657"></item>
+    <item msgid="5782995872855767551">"Mengimbas…"</item>
+    <item msgid="9055468790485684083">"Menyambung…"</item>
+    <item msgid="6099499723199990208">"Mengesahkan…"</item>
+    <item msgid="6794055951297347103">"Mendapatkan alamat IP…"</item>
+    <item msgid="5450920562291300229">"Disambungkan"</item>
+    <item msgid="6332116533879646145">"Digantung"</item>
+    <item msgid="294459081501073818">"Memutuskan sambungn…"</item>
+    <item msgid="1577368920272598676">"Diputuskan sambungan"</item>
+    <item msgid="7655843177582495451">"Tidak berjaya"</item>
+    <item msgid="8953752690917593623">"Disekat"</item>
+    <item msgid="4400457817750243671">"Mengelakkan sambungan lemah buat sementara waktu"</item>
+  </string-array>
+</resources>
