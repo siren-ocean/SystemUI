@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+**
+** Copyright 2018, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License")
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+
+<!-- This is a view that shows clock information in Keyguard. -->
+<com.android.keyguard.KeyguardClockSwitch
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/keyguard_clock_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal|top">
+    <FrameLayout
+        android:id="@+id/lockscreen_clock_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:paddingStart="@dimen/clock_padding_start">
+        <com.android.keyguard.AnimatableClockView
+            android:id="@+id/animatable_clock_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:gravity="start"
+            android:textSize="@dimen/clock_text_size"
+            android:fontFamily="@font/clock"
+            android:elegantTextHeight="false"
+            android:singleLine="true"
+            android:fontFeatureSettings="pnum"
+            chargeAnimationDelay="350"
+            dozeWeight="200"
+            lockScreenWeight="400"
+        />
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/lockscreen_clock_view_large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/keyguard_slice_view"
+        android:visibility="gone">
+        <com.android.keyguard.AnimatableClockView
+            android:id="@+id/animatable_clock_view_large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/large_clock_text_size"
+            android:fontFamily="@font/clock"
+            android:typeface="monospace"
+            android:elegantTextHeight="false"
+            chargeAnimationDelay="200"
+            dozeWeight="200"
+            lockScreenWeight="400"
+        />
+    </FrameLayout>
+
+    <!-- Not quite optimal but needed to translate these items as a group. The
+         NotificationIconContainer has its own logic for translation. -->
+    <LinearLayout
+        android:id="@+id/keyguard_status_area"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/lockscreen_clock_view">
+
+      <include layout="@layout/keyguard_slice_view"
+               android:id="@+id/keyguard_slice_view"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" />
+
+      <com.android.systemui.statusbar.phone.NotificationIconContainer
+          android:id="@+id/left_aligned_notification_icon_container"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/notification_shelf_height"
+          android:paddingStart="@dimen/below_clock_padding_start_icons"
+          android:visibility="invisible"
+          />
+    </LinearLayout>
+</com.android.keyguard.KeyguardClockSwitch>

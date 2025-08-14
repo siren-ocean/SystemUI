@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2021 The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<resources>
+    <bool name="are_flags_overrideable">false</bool>
+
+    <bool name="flag_monet">true</bool>
+
+    <!-- People Tile flag -->
+    <bool name="flag_conversations">false</bool>
+
+    <!-- Whether the multi-user icon on the lockscreen opens the QS user detail. If false, clicking
+         the multi-user icon will display a list of users directly on the lockscreen. The multi-user
+         icon is only shown if config_keyguardUserSwitcher=false in the frameworks config. -->
+    <bool name="flag_lockscreen_qs_user_detail_shortcut">false</bool>
+
+    <bool name="flag_charging_ripple">false</bool>
+
+    <bool name="flag_smartspace">false</bool>
+
+    <!--  Whether the user switcher chip shows in the status bar. When true, the multi user
+      avatar will no longer show on the lockscreen -->
+    <bool name="flag_user_switcher_chip">false</bool>
+
+</resources>

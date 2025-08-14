@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/* //device/apps/common/assets/res/any/dimens.xml
+**
+** Copyright 2006, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources>
+
+    <!-- Size of the generic status lines keyguard's status view  -->
+    <dimen name="kg_status_line_font_size">14sp</dimen>
+
+    <!-- Maximum width of the sliding KeyguardSecurityContainer -->
+    <dimen name="keyguard_security_width">420dp</dimen>
+
+    <!-- Height of the sliding KeyguardSecurityContainer
+         (includes 2x keyguard_security_view_top_margin) -->
+    <dimen name="keyguard_security_height">420dp</dimen>
+
+    <!-- Max Height of the sliding KeyguardSecurityContainer
+         (includes 2x keyguard_security_view_top_margin) -->
+
+    <!-- pin/password field max height -->
+    <dimen name="keyguard_password_height">80dp</dimen>
+
+    <!-- Margin around the various security views -->
+    <dimen name="keyguard_security_view_top_margin">8dp</dimen>
+
+    <!-- Minimum bottom margin under the security view -->
+    <dimen name="keyguard_security_view_bottom_margin">60dp</dimen>
+
+    <dimen name="keyguard_eca_top_margin">18dp</dimen>
+    <dimen name="keyguard_eca_bottom_margin">12dp</dimen>
+
+    <!-- EmergencyCarrierArea overlap - amount to overlap the emergency button and carrier text.
+         Should be 0 on devices with plenty of room (e.g. tablets) -->
+    <dimen name="eca_overlap">-10dip</dimen>
+
+    <!-- Slice header -->
+    <dimen name="widget_title_font_size">20dp</dimen>
+    <dimen name="widget_title_line_height">24dp</dimen>
+    <dimen name="header_icon_size">16dp</dimen>
+    <!-- Slice subtitle -->
+    <dimen name="widget_label_font_size">16dp</dimen>
+    <dimen name="widget_label_line_height">20dp</dimen>
+    <!-- Clock without header -->
+    <dimen name="widget_big_font_size">54dp</dimen>
+    <dimen name="bottom_text_spacing_digital">0dp</dimen>
+    <!-- Clock with header -->
+    <dimen name="widget_small_font_size">@dimen/widget_title_font_size</dimen>
+    <dimen name="widget_vertical_padding">5dp</dimen>
+    <dimen name="widget_vertical_padding_with_header">25dp</dimen>
+    <dimen name="widget_vertical_padding_clock">12dp</dimen>
+    <!-- Subtitle paddings -->
+    <dimen name="widget_horizontal_padding">8dp</dimen>
+    <dimen name="widget_icon_size">18dp</dimen>
+    <dimen name="widget_icon_padding">8dp</dimen>
+    <!-- Notification shelf padding when dark -->
+
+    <!-- The y translation to apply at the start in appear animations. -->
+
+    <!-- The size of the dots in the PIN unlock method. -->
+    <dimen name="password_dot_size">9dp</dimen>
+    <!-- The size of PIN text in the PIN unlock method. -->
+    <integer name="scaled_password_text_size">40</integer>
+
+    <!-- The padding between chars of the password view. -->
+    <dimen name="password_char_padding">8dp</dimen>
+
+    <!-- The vertical margin between the date and the owner info. -->
+
+    <!-- The translation for disappearing security views after having solved them. -->
+    <dimen name="disappear_y_translation">-32dp</dimen>
+
+    <!-- Spacing around each button used for PIN view -->
+    <dimen name="num_pad_key_width">72dp</dimen>
+    <dimen name="num_pad_entry_row_margin_bottom">16dp</dimen>
+    <dimen name="num_pad_row_margin_bottom">6dp</dimen>
+    <dimen name="num_pad_key_margin_end">12dp</dimen>
+
+    <!-- additional offset for clock switch area items -->
+    <dimen name="clock_padding_start">28dp</dimen>
+    <dimen name="below_clock_padding_start">32dp</dimen>
+    <dimen name="below_clock_padding_end">16dp</dimen>
+    <dimen name="below_clock_padding_start_icons">28dp</dimen>
+
+    <!-- Proportion of the screen height to use to set the maximum height of the bouncer to when
+         the device is in the DEVICE_POSTURE_HALF_OPENED posture, for the PIN/pattern entry. 0 will
+         allow it to use the whole screen space, 0.6 will allow it to use just under half of the
+         screen. -->
+    <item name="half_opened_bouncer_height_ratio" type="dimen" format="float">0.0</item>
+
+    <!-- The actual amount of translation that is applied to the bouncer when it animates from one
+         side of the screen to the other in one-handed mode. Note that it will always translate from
+         the side of the screen to the other (it will "jump" closer to the destination while the
+         opacity is zero), but this controls how much motion will actually be applied to it while
+         animating. Larger values will cause it to move "faster" while fading out/in. -->
+    <dimen name="one_handed_bouncer_move_animation_translation">120dp</dimen>
+
+
+    <dimen name="bouncer_user_switcher_header_text_size">20sp</dimen>
+    <dimen name="bouncer_user_switcher_item_text_size">20sp</dimen>
+    <dimen name="bouncer_user_switcher_item_line_height">24sp</dimen>
+    <dimen name="bouncer_user_switcher_item_icon_size">28dp</dimen>
+    <dimen name="bouncer_user_switcher_item_icon_padding">12dp</dimen>
+    <dimen name="bouncer_user_switcher_width">248dp</dimen>
+    <dimen name="bouncer_user_switcher_popup_header_height">12dp</dimen>
+    <dimen name="bouncer_user_switcher_popup_divider_height">4dp</dimen>
+    <dimen name="bouncer_user_switcher_item_padding_vertical">10dp</dimen>
+    <dimen name="bouncer_user_switcher_item_padding_horizontal">12dp</dimen>
+    <dimen name="bouncer_user_switcher_header_padding_end">44dp</dimen>
+    <dimen name="bouncer_user_switcher_y_trans">0dp</dimen>
+
+    <!-- 2 * the margin + size should equal the plus_margin -->
+    <dimen name="user_switcher_icon_large_margin">16dp</dimen>
+    <dimen name="bouncer_user_switcher_icon_size">190dp</dimen>
+    <dimen name="bouncer_user_switcher_icon_size_plus_margin">222dp</dimen>
+
+    <dimen name="user_switcher_fullscreen_horizontal_gap">64dp</dimen>
+    <dimen name="user_switcher_icon_selected_width">8dp</dimen>
+    <dimen name="user_switcher_fullscreen_button_text_size">14sp</dimen>
+    <dimen name="user_switcher_fullscreen_button_padding">12dp</dimen>
+
+    <!-- Translation y for appear animation -->
+    <dimen name="keyguard_host_view_translation_y">80dp</dimen>
+</resources>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2011 The Android Open Source Project
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:androidprv="http://schemas.android.com/apk/prv/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:sharedUserId="android.uid.system"
+    package="com.android.systemui" >
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_VOICE_INTERACTION_SERVICE" />
+    <uses-permission android:name="android.permission.INJECT_EVENTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.MANAGE_USERS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BIND_QUICK_SETTINGS_TILE" />
+    <uses-permission android:name="android.permission.ACCESS_KEYGUARD_SECURE_STORAGE" />
+    <uses-permission android:name="android.permission.STATUS_BAR_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_VR_MANAGER" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_NETWORK_POLICY" />
+    <uses-permission android:name="android.permission.REQUEST_NETWORK_SCORES" />
+    <uses-permission android:name="android.permission.CONTROL_VPN" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_APP_OPS_STATS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.TRUST_LISTENER" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <uses-permission android:name="android.permission.DEVICE_POWER" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.STATUS_BAR" />
+    <uses-permission android:name="android.permission.MANAGE_ACTIVITY_TASKS" />
+    <uses-permission android:name="android.permission.REAL_GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERNAL_SYSTEM_WINDOW" />
+    <uses-permission android:name="android.permission.NETWORK_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.REGISTER_WINDOW_MANAGER_LISTENERS" />
+
+    <application android:debuggable="true" android:largeHeap="true">
+        <uses-library android:name="android.test.runner" />
+
+        <receiver android:name="com.android.systemui.SliceBroadcastRelayHandlerTest$Receiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.systemui.action.TEST_ACTION" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".wmshell.BubblesTestActivity"
+            android:allowEmbedded="true"
+            android:documentLaunchMode="always"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:resizeableActivity="true" />
+
+        <activity android:name="com.android.systemui.emergency.EmergencyActivityTest"
+                  android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.systemui.action.LAUNCH_EMERGENCY"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.android.systemui.globalactions.GlobalActionsImeTest$TestActivity"
+            android:excludeFromRecents="true"
+            android:exported="false" />
+
+        <activity android:name="com.android.systemui.controls.management.TestControlsRequestDialog"
+                  android:exported="false"
+                  android:excludeFromRecents="true"
+                  />
+
+        <activity android:name="com.android.systemui.screenshot.ScrollViewActivity"
+                  android:exported="false" />
+
+        <activity android:name="com.android.systemui.screenshot.RecyclerViewActivity"
+                  android:exported="false" />
+
+        <!-- started from UsbDeviceSettingsManager -->
+        <activity android:name=".usb.UsbPermissionActivityTest$UsbPermissionActivityTestable"
+                  android:exported="false"
+                  android:theme="@style/Theme.SystemUI.Dialog.Alert"
+                  android:finishOnCloseSystemDialogs="true"
+                  android:excludeFromRecents="true" />
+
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            tools:replace="android:authorities"
+            android:authorities="${applicationId}.startup-tests"
+            android:exported="false"
+            android:enabled="false"
+            android:multiprocess="true" />
+        <provider android:name="com.android.systemui.keyguard.KeyguardSliceProvider"
+            android:authorities="com.android.systemui.test.keyguard.disabled"
+            android:enabled="false"
+            tools:replace="android:authorities"
+            tools:node="remove" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.android.systemui.test.fileprovider"
+            android:exported="false"
+            android:enabled="false"
+            tools:replace="android:authorities"
+            android:grantUriPermissions="true" />
+    </application>
+
+    <instrumentation android:name="android.testing.TestableInstrumentation"
+        android:targetPackage="com.android.systemui.tests"
+        android:label="Tests for SystemUI">
+    </instrumentation>
+</manifest>

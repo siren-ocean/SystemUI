@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2018 The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License
+
+  NOTE: You might also want to edit: core/res/res/values-night/*.xml
+  -->
+<resources>
+    <!-- The color of the legacy notifications with customs backgrounds (gingerbread and lollipop.)
+    It's fine to override this color since at that point the shade was dark. -->
+    <color name="notification_legacy_background_color">@color/GM2_grey_900</color>
+
+    <!-- The color of the dividing line between grouped notifications. -->
+    <color name="notification_divider_color">@*android:color/background_device_default_dark</color>
+
+    <!-- The color of the gear shown behind a notification -->
+    <color name="notification_gear_color">@color/GM2_grey_500</color>
+
+    <!-- The color of the ripples on the untinted notifications -->
+    <color name="notification_ripple_untinted_color">#30ffffff</color>
+
+    <!-- The color of the text inside a notification -->
+    <color name="notification_primary_text_color">@*android:color/notification_primary_text_color_dark</color>
+
+    <color name="notif_pill_text">@color/material_dynamic_neutral95</color>
+
+    <color name="notification_guts_link_icon_tint">@color/GM2_grey_500</color>
+    <color name="notification_guts_sub_text_color">@color/GM2_grey_300</color>
+    <color name="notification_guts_header_text_color">@color/GM2_grey_200</color>
+    <color name="notification_guts_priority_button_content_color">@color/GM2_grey_500</color>
+    <color name="notification_guts_priority_button_bg_fill_color">@color/transparent</color>
+    <color name="notification_guts_priority_button_bg_fill_color_selected">@color/GM2_grey_800</color>
+    <color name="notification_guts_priority_button_bg_stroke_color">@color/GM2_grey_700</color>
+    <color name="notification_section_header_label_color">@color/GM2_grey_200</color>
+    <color name="notification_section_clear_all_btn_color">@color/GM2_grey_500</color>
+    <color name="notification_channel_dialog_separator">@color/GM2_grey_700</color>
+
+    <!-- The color of the background in the separated list of the Global Actions menu -->
+    <color name="global_actions_separated_background">@color/GM2_grey_900</color>
+
+    <!-- The color of the background in the grid of the Global Actions menu -->
+    <color name="global_actions_grid_background">@color/GM2_grey_800</color>
+
+    <!-- The color of the text in the Global Actions menu -->
+    <color name="global_actions_text">@color/GM2_grey_200</color>
+
+    <!-- The color of the text in the Global Actions menu -->
+    <color name="global_actions_alert_text">@color/GM2_red_300</color>
+
+    <!-- Floating overlay actions -->
+    <color name="overlay_background_protection_start">#80000000</color> <!-- 50% black -->
+
+    <!-- Media -->
+    <color name="media_divider">#85ffffff</color>
+
+    <!-- media output dialog-->
+    <color name="media_dialog_background">@color/material_dynamic_neutral10</color>
+    <color name="media_dialog_item_main_content">@color/material_dynamic_primary90</color>
+    <color name="media_dialog_item_background">@color/material_dynamic_neutral_variant20</color>
+    <color name="media_dialog_connected_item_background">@color/material_dynamic_secondary20</color>
+    <color name="media_dialog_seekbar_progress">@color/material_dynamic_secondary40</color>
+    <color name="media_dialog_button_background">@color/material_dynamic_primary70</color>
+    <color name="media_dialog_solid_button_text">@color/material_dynamic_secondary20</color>
+
+    <!-- Biometric dialog colors -->
+    <color name="biometric_dialog_gray">#ffcccccc</color>
+    <color name="biometric_dialog_accent">@color/material_dynamic_primary70</color>
+    <color name="biometric_dialog_error">#fff28b82</color> <!-- red 300 -->
+
+    <!-- UDFPS colors -->
+    <color name="udfps_enroll_icon">#7DA7F1</color>
+
+    <color name="GM2_green_500">#FF41Af6A</color>
+    <color name="GM2_blue_500">#5195EA</color>
+    <color name="GM2_red_500">#E25142</color>
+    <color name="GM2_yellow_500">#F5C518</color>
+
+    <!-- Icon color for user avatars in keyguard user switcher -->
+    <color name="kg_user_switcher_avatar_icon_color">@android:color/background_light</color>
+    <!-- Icon color for selected user avatars in keyguard user switcher -->
+    <color name="kg_user_switcher_selected_avatar_icon_color">#202124</color>
+    <!-- Icon color for user avatars in quick settings user switcher  -->
+    <color name="qs_user_switcher_avatar_icon_color">@android:color/background_light</color>
+    <!-- Icon color for selected user avatars in quick settings user switcher  -->
+    <color name="qs_user_switcher_selected_avatar_icon_color">#202124</color>
+    <!-- Color of background circle of user avatars in quick settings user switcher -->
+    <color name="qs_user_switcher_avatar_background">#3C4043</color>
+
+    <!-- Accessibility floating menu -->
+    <color name="accessibility_floating_menu_background">#B3000000</color> <!-- 70% -->
+
+    <color name="people_tile_background">@color/material_dynamic_secondary20</color>
+</resources>
