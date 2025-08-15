@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="5" by="lint 4.1.0" client="cli" variant="all" version="4.1.0">
+
+    <issue
+        id="NewApi"
+        message="`android:datePickerDialogTheme` requires API level 21 (current min is 14)"
+        errorLine1="        &lt;item name=&quot;android:datePickerDialogTheme&quot;>@style/SudDateTimePickerDialogTheme&lt;/item>"
+        errorLine2="              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="external/setupdesign/main/res/values/styles.xml"
+            line="291"
+            column="15"/>
+    </issue>
+
+    <issue
+        id="NewApi"
+        message="`android:timePickerDialogTheme` requires API level 21 (current min is 14)"
+        errorLine1="        &lt;item name=&quot;android:timePickerDialogTheme&quot;>@style/SudDateTimePickerDialogTheme&lt;/item>"
+        errorLine2="              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="external/setupdesign/main/res/values/styles.xml"
+            line="292"
+            column="15"/>
+    </issue>
+
+    <issue
+        id="NewApi"
+        message="`android:datePickerDialogTheme` requires API level 21 (current min is 14)"
+        errorLine1="        &lt;item name=&quot;android:datePickerDialogTheme&quot;>@style/SudDateTimePickerDialogTheme.Light&lt;/item>"
+        errorLine2="              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="external/setupdesign/main/res/values/styles.xml"
+            line="302"
+            column="15"/>
+    </issue>
+
+    <issue
+        id="NewApi"
+        message="`android:timePickerDialogTheme` requires API level 21 (current min is 14)"
+        errorLine1="        &lt;item name=&quot;android:timePickerDialogTheme&quot;>@style/SudDateTimePickerDialogTheme.Light&lt;/item>"
+        errorLine2="              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="external/setupdesign/main/res/values/styles.xml"
+            line="303"
+            column="15"/>
+    </issue>
+
+    <issue
+        id="NewApi"
+        message="`android:stateListAnimator` requires API level 21 (current min is 14)"
+        errorLine1="        &lt;item name=&quot;android:stateListAnimator&quot;>@null&lt;/item>"
+        errorLine2="              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="external/setupdesign/main/res/values/styles.xml"
+            line="523"
+            column="15"/>
+    </issue>
+
+    <issue
+        id="NewApi"
+        message="`android:fontFamily` requires API level 16 (current min is 14)"
+        errorLine1="        &lt;item name=&quot;android:fontFamily&quot;>@string/sudFontSecondaryMedium&lt;/item>"
+        errorLine2="              ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="external/setupdesign/main/res/values/styles.xml"
+            line="619"
+            column="15"/>
+    </issue>
+
+    <issue
+        id="NewApi"
+        message="Attribute `paddingStart` referenced here can result in a crash on some specific devices older than API 17 (current min is 14)"
+        errorLine1="        android:paddingStart=&quot;?attr/listPreferredItemPaddingLeft&quot;>"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="external/setupdesign/main/res/layout/sud_items_expandable_switch.xml"
+            line="38"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="NewApi"
+        message="`@android:interpolator/linear_out_slow_in` requires API level 21 (current min is 14)"
+        errorLine1="        android:interpolator=&quot;@android:interpolator/linear_out_slow_in&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="external/setupdesign/main/res/anim/sud_pre_p_activity_close_enter.xml"
+            line="21"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="NewApi"
+        message="`@android:interpolator/fast_out_slow_in` requires API level 21 (current min is 14)"
+        errorLine1="        android:interpolator=&quot;@android:interpolator/fast_out_slow_in&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="external/setupdesign/main/res/anim/sud_pre_p_activity_open_exit.xml"
+            line="22"
+            column="9"/>
+    </issue>
+
+</issues>
