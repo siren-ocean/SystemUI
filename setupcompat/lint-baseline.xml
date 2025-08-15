@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="5" by="lint 4.1.0" client="cli" variant="all" version="4.1.0">
+
+    <issue
+        id="NewApi"
+        message="`android:Widget.Material.Button.Colored` requires API level 23 (current min is 14)"
+        errorLine1="    &lt;style name=&quot;SucPartnerCustomizationButton.Primary&quot; parent=&quot;android:Widget.Material.Button.Colored&quot;>"
+        errorLine2="                                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="external/setupcompat/main/res/values/styles.xml"
+            line="40"
+            column="57"/>
+    </issue>
+
+    <issue
+        id="NewApi"
+        message="`android:fontFamily` requires API level 16 (current min is 14)"
+        errorLine1="        &lt;item name=&quot;android:fontFamily&quot;>?attr/sucFooterBarButtonFontFamily&lt;/item>"
+        errorLine2="              ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="external/setupcompat/main/res/values/styles.xml"
+            line="48"
+            column="15"/>
+    </issue>
+
+    <issue
+        id="NewApi"
+        message="`android:stateListAnimator` requires API level 21 (current min is 14)"
+        errorLine1="        &lt;item name=&quot;android:stateListAnimator&quot;>@null&lt;/item>"
+        errorLine2="              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="external/setupcompat/main/res/values/styles.xml"
+            line="54"
+            column="15"/>
+    </issue>
+
+    <issue
+        id="NewApi"
+        message="`android:Widget.Material.Button.Borderless.Colored` requires API level 21 (current min is 14)"
+        errorLine1="    &lt;style name=&quot;SucPartnerCustomizationButton.Secondary&quot; parent=&quot;android:Widget.Material.Button.Borderless.Colored&quot;>"
+        errorLine2="                                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="external/setupcompat/main/res/values/styles.xml"
+            line="60"
+            column="59"/>
+    </issue>
+
+    <issue
+        id="NewApi"
+        message="`android:fontFamily` requires API level 16 (current min is 14)"
+        errorLine1="        &lt;item name=&quot;android:fontFamily&quot;>?attr/sucFooterBarButtonFontFamily&lt;/item>"
+        errorLine2="              ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="external/setupcompat/main/res/values/styles.xml"
+            line="68"
+            column="15"/>
+    </issue>
+
+</issues>

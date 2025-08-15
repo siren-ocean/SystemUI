@@ -1,0 +1,17 @@
+third_party/java_src/android_libs/setupcompat/main/java/com/google/android/setupcompat/PartnerCustomizationLayout.java: CustomViewStyleable: attrs, R.styleable.SucPartnerCustomizationLayout, defStyleAttr, 0);
+third_party/java_src/android_libs/setupcompat/main/java/com/google/android/setupcompat/internal/TemplateLayout.java: CustomViewStyleable: getContext().obtainStyledAttributes(attrs, R.styleable.SucTemplateLayout, defStyleAttr, 0);
+third_party/java_src/android_libs/setupcompat/main/java/com/google/android/setupcompat/PartnerCustomizationLayout.java: CustomViewStyleable: attrs, R.styleable.SucPartnerCustomizationLayout, defStyleAttr, 0);
+third_party/java_src/android_libs/setupcompat/main/java/com/google/android/setupcompat/internal/TemplateLayout.java: CustomViewStyleable: getContext().obtainStyledAttributes(attrs, R.styleable.SucTemplateLayout, defStyleAttr, 0);
+third_party/java_src/android_libs/setupcompat/main/java/com/google/android/setupcompat/PartnerCustomizationLayout.java: CustomViewStyleable: attrs, R.styleable.SucPartnerCustomizationLayout, defStyleAttr, 0);
+third_party/java_src/android_libs/setupcompat/main/java/com/google/android/setupcompat/internal/TemplateLayout.java: CustomViewStyleable: getContext().obtainStyledAttributes(attrs, R.styleable.SucTemplateLayout, defStyleAttr, 0);
+third_party/java_src/android_libs/setupcompat/main/java/com/google/android/setupcompat/util/SystemBarHelper.java: AnnotateVersionCheck: public static void setImeInsetView(final View view) {
+third_party/java_src/android_libs/setupcompat/main/java/com/google/android/setupcompat/PartnerCustomizationLayout.java: CustomViewStyleable: attrs, R.styleable.SucPartnerCustomizationLayout, defStyleAttr, 0);
+third_party/java_src/android_libs/setupcompat/main/java/com/google/android/setupcompat/PartnerCustomizationLayout.java: ObsoleteSdkInt: @TargetApi(VERSION_CODES.HONEYCOMB)
+third_party/java_src/android_libs/setupcompat/main/java/com/google/android/setupcompat/internal/TemplateLayout.java: CustomViewStyleable: getContext().obtainStyledAttributes(attrs, R.styleable.SucTemplateLayout, defStyleAttr, 0);
+third_party/java_src/android_libs/setupcompat/main/java/com/google/android/setupcompat/internal/TemplateLayout.java: ObsoleteSdkInt: @TargetApi(VERSION_CODES.HONEYCOMB)
+third_party/java_src/android_libs/setupcompat/main/java/com/google/android/setupcompat/logging/internal/MetricBundleConverter.java: NewApi: bundle.putParcelable(MetricBundleKeys.CUSTOM_EVENT_BUNDLE, CustomEvent.toBundle(customEvent));
+third_party/java_src/android_libs/setupcompat/main/java/com/google/android/setupcompat/template/FooterBarMixin.java: NewApi: onFooterButtonApplyPartnerResource(button, footerButtonPartnerConfig);
+third_party/java_src/android_libs/setupcompat/main/java/com/google/android/setupcompat/template/FooterButtonStyleUtils.java: NewApi: FooterButtonStyleUtils.updateButtonBackgroundWithPartnerConfig(
+third_party/java_src/android_libs/setupcompat/main/java/com/google/android/setupcompat/template/FooterButtonStyleUtils.java: NewApi: FooterButtonStyleUtils.updateButtonRippleColorWithPartnerConfig(
+third_party/java_src/android_libs/setupcompat/main/java/com/google/android/setupcompat/util/SystemBarHelper.java: AnnotateVersionCheck: public static void setImeInsetView(final View view) {
+third_party/java_src/android_libs/setupcompat/main/java/com/google/android/setupcompat/view/StatusBarBackgroundLayout.java: ObsoleteSdkInt: @TargetApi(VERSION_CODES.HONEYCOMB)
