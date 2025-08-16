@@ -1,0 +1,63 @@
+plugins {
+    id 'com.android.library'
+}
+
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdk COMPILE_SDK.toInteger()
+
+    defaultConfig {
+        minSdk MIN_SDK_VERSION.toInteger()
+        targetSdk TARGET_SDK_VERSION.toInteger()
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    buildFeatures {
+        buildConfig = false
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+        freeCompilerArgs += [
+                '-Xjvm-default=all'
+        ]
+    }
+
+    sourceSets {
+        main {
+            java.srcDirs = ['src']
+            aidl.srcDirs = ['src']
+            manifest.srcFile 'AndroidManifest.xml'
+        }
+    }
+}
+
+dependencies {
+    compileOnly files('../libs/framework.jar')
+    compileOnly files('../libs/core-all.jar')
+    implementation project(':Shell')
+    implementation project(':plugin_core')
+    implementation(':dynamicanimation-1.1.0-alpha04@aar')
+    implementation libs.appcompat
+    implementation libs.concurrent.futures
+    implementation libs.javax.inject
+    implementation libs.dagger.android
+    kapt libs.dagger.compiler
+}

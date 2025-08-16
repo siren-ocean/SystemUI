@@ -1,12 +1,12 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion COMPILE_SDK
-    buildToolsVersion BUILD_TOOLS_VERSION
+    compileSdk COMPILE_SDK.toInteger()
 
     defaultConfig {
-        minSdkVersion 26
-        targetSdkVersion 28
+        minSdk MIN_SDK_VERSION.toInteger()
+        targetSdk TARGET_SDK_VERSION.toInteger()
+        vectorDrawables.useSupportLibrary = true
     }
 
     sourceSets {
@@ -32,5 +32,5 @@ android {
 }
 
 dependencies {
-    implementation "androidx.core:core:${ANDROID_X_VERSION}"
+    implementation libs.appcompat
 }

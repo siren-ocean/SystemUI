@@ -1,0 +1,69 @@
+[versions]
+agp = "7.4.2"
+protobuf-plugin = "0.8.17"
+kotlin = "1.6.0"
+dagger = "2.40.5"
+recyclerview = "1.2.1"
+legacy-support = "1.0.0"
+appcompat = "1.4.0"
+mediarouter = "1.2.0-alpha01"
+lifecycle-runtime = "2.4.0-alpha03"
+lifecycle-extensions = "2.2.0"
+constraintlayout = "2.0.1"
+slice = "1.1.0-alpha02"
+cardview = "1.0.0"
+window = "1.1.0-alpha01"
+material = "1.6.1"
+lottie = "6.0.0"
+errorprone = "2.26.0"
+core-ktx = "1.3.1"
+viewpager2 = "1.0.0"
+palette = "1.0.0"
+leanback = "1.1.0-alpha04"
+core-runtime = "2.1.0"
+exifinterface = "1.3.6"
+concurrent = "1.2.0-alpha01"
+javax-inject = "1"
+media = "1.7.0-alpha01"
+
+[libraries]
+recyclerview = { module = "androidx.recyclerview:recyclerview", version.ref = "recyclerview" }
+legacy-support-v4 = { module = "androidx.legacy:legacy-support-v4", version.ref = "legacy-support" }
+legacy_preference_v14 = { module = "androidx.legacy:legacy-preference-v14", version.ref = "legacy-support" }
+appcompat = { module = "androidx.appcompat:appcompat", version.ref = "appcompat" }
+mediarouter = { module = "androidx.mediarouter:mediarouter", version.ref = "mediarouter" }
+lifecycle-runtime = { module = "androidx.lifecycle:lifecycle-runtime", version.ref = "lifecycle-runtime" }
+lifecycle-extensions = { module = "androidx.lifecycle:lifecycle-extensions", version.ref = "lifecycle-extensions" }
+constraintlayout = { module = "androidx.constraintlayout:constraintlayout", version.ref = "constraintlayout" }
+constraintlayout-solver = { module = "androidx.constraintlayout:constraintlayout-solver", version.ref = "constraintlayout" }
+slice-builders = { module = "androidx.slice:slice-builders", version.ref = "slice" }
+slice-core = { module = "androidx.slice:slice-core", version.ref = "slice" }
+slice-view = { module = "androidx.slice:slice-view", version.ref = "slice" }
+cardview = { module = "androidx.cardview:cardview", version.ref = "cardview" }
+window = { module = "androidx.window:window", version.ref = "window" }
+core-ktx = { module = "androidx.core:core-ktx", version.ref = "core-ktx" }
+material = { module = "com.google.android.material:material", version.ref = "material" }
+errorprone-annotations = { module = "com.google.errorprone:error_prone_annotations", version.ref = "errorprone" }
+lottie = { module = "com.airbnb.android:lottie", version.ref = "lottie" }
+viewpager2 = { module = "androidx.viewpager2:viewpager2", version.ref = "viewpager2" }
+palette = { module = "androidx.palette:palette", version.ref = "palette" }
+leanback = { module = "androidx.leanback:leanback", version.ref = "leanback" }
+core-runtime = { module = "androidx.arch.core:core-runtime", version.ref = "core-runtime" }
+exifinterface = { module = "androidx.exifinterface:exifinterface", version.ref = "exifinterface" }
+concurrent-futures = { module = "androidx.concurrent:concurrent-futures", version.ref = "concurrent" }
+javax-inject = { module = "javax.inject:javax.inject", version.ref = "javax-inject" }
+media = { module = "androidx.media:media", version.ref = "media" }
+
+kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlin" }
+kotlinx_coroutines_core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlin" }
+kotlin_reflect = { module = "org.jetbrains.kotlin:kotlin-reflect", version.ref = "kotlin" }
+
+dagger_android = { module = "com.google.dagger:dagger-android", version.ref = "dagger" }
+dagger_compiler = { module = "com.google.dagger:dagger-compiler", version.ref = "dagger" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+android-library = { id = "com.android.library", version.ref = "agp" }
+protobuf = { id = "com.google.protobuf", version.ref = "protobuf-plugin" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }

@@ -1,0 +1,146 @@
+plugins {
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.kotlin.kapt)
+    alias(libs.plugins.android.library) apply false
+}
+
+android {
+    compileSdk COMPILE_SDK.toInteger()
+
+    defaultConfig {
+        applicationId "com.android.systemui"
+        minSdk MIN_SDK_VERSION.toInteger()
+        targetSdk TARGET_SDK_VERSION.toInteger()
+        versionCode 33
+        versionName "13"
+    }
+
+    signingConfigs {
+        platform {
+            storeFile file("platform.keystore")
+            storePassword '123456'
+            keyAlias 'platform'
+            keyPassword '123456'
+        }
+    }
+
+    buildTypes {
+        release {
+            debuggable false
+            minifyEnabled false
+            signingConfig signingConfigs.platform
+        }
+
+        debug {
+            debuggable true
+            minifyEnabled false
+            signingConfig signingConfigs.platform
+        }
+
+        applicationVariants.all { variant ->
+            variant.outputs.all {
+                outputFileName = "SystemUI.apk"
+            }
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+        freeCompilerArgs += [
+                '-Xjvm-default=all-compatibility'
+        ]
+    }
+
+    sourceSets {
+        main {
+            java.srcDirs = ['src', 'src-debug']
+            aidl.srcDirs = ['src']
+            res.srcDirs = ['res-product', 'res-keyguard', 'res']
+            manifest.srcFile 'AndroidManifest.xml'
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+}
+
+dependencies {
+    compileOnly files('libs/framework.jar')
+    compileOnly files('libs/core-all.jar')
+
+    implementation files('libs/SystemUI-statsd.jar')
+    implementation files('libs/SystemUI-tags.jar')
+    implementation files('libs/SystemUI-proto.jar')
+    implementation files('libs/libprotobuf-java-nano.jar')
+    implementation files('libs/WindowManager-Shell-proto.jar')
+    implementation files('libs/zxing-core-1.7.jar')
+    implementation project(':animation')
+    implementation project(':plugin')
+    implementation project(':shared')
+    implementation project(':iconloaderlib')
+    implementation project(':plugin_core')
+    implementation project(':monet')
+    implementation project(':Shell')
+    implementation project(':WifiTrackerLib')
+    implementation project(':SettingsLib')
+    implementation project(':SettingsLib:RestrictedLockUtils')
+    implementation project(':SettingsLib:AdaptiveIcon')
+
+    implementation(libs.legacy.support.v4, {
+        exclude group: 'androidx.preference', module: 'preference'
+    })
+    implementation(libs.legacy.preference.v14, {
+        exclude group: 'androidx.preference', module: 'preference'
+    })
+
+    implementation(':preference-1.2.0-alpha01@aar')
+    implementation(':dynamicanimation-1.1.0-alpha04@aar')
+    implementation libs.viewpager2
+    implementation libs.recyclerview
+    implementation libs.appcompat
+    implementation libs.mediarouter
+    implementation libs.palette
+    implementation libs.constraintlayout
+    implementation libs.constraintlayout.solver
+    implementation libs.leanback
+    implementation libs.slice.builders
+    implementation libs.slice.core
+    implementation libs.slice.view
+    implementation libs.core.runtime
+    implementation libs.cardview
+    implementation libs.lifecycle.runtime
+    implementation libs.lifecycle.extensions
+    implementation libs.exifinterface
+    implementation libs.concurrent.futures
+    implementation libs.lottie
+    implementation libs.javax.inject
+    implementation libs.media
+
+    implementation libs.kotlinx.coroutines.android
+    implementation libs.kotlinx.coroutines.core
+    implementation libs.kotlin.reflect
+    implementation libs.core.ktx
+
+    implementation libs.dagger.android
+    kapt libs.dagger.compiler
+}
+
+allprojects {
+    tasks.withType(JavaCompile).configureEach { task ->
+        task.doFirst {
+            def originalClasspath = options.bootstrapClasspath ?: files()
+            options.bootstrapClasspath = files(
+                    file("${rootDir}/libs/framework.jar"),
+                    file("${rootDir}/libs/core-all.jar")
+            ).plus(originalClasspath)
+        }
+    }
+}

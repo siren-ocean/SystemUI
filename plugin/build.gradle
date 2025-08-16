@@ -1,0 +1,53 @@
+plugins {
+    id 'com.android.library'
+}
+
+apply plugin: 'kotlin-android'
+
+android {
+    compileSdk COMPILE_SDK.toInteger()
+
+    defaultConfig {
+        minSdk MIN_SDK_VERSION.toInteger()
+        targetSdk TARGET_SDK_VERSION.toInteger()
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    buildFeatures {
+        buildConfig = false
+    }
+
+    sourceSets {
+        main {
+            java.srcDirs = ['src', 'bcsmartspace']
+            manifest.srcFile 'AndroidManifest.xml'
+        }
+    }
+}
+
+dependencies {
+    implementation project(':plugin_core')
+    implementation project(':animation')
+    implementation(':dynamicanimation-1.1.0-alpha04@aar')
+    implementation libs.appcompat
+    implementation libs.concurrent.futures
+}
