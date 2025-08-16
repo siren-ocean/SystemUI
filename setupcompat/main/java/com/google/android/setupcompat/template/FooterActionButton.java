@@ -25,6 +25,7 @@ import android.widget.Button;
 import androidx.annotation.Nullable;
 
 /** Button that can react to touch when disabled. */
+@SuppressLint("AppCompatCustomView")
 public class FooterActionButton extends Button {
 
   @Nullable private FooterButton footerButton;
