@@ -68,6 +68,10 @@ open class ThemedBatteryDrawable(private val context: Context, frameColor: Int) 
     private val plusPath = Path()
     private val scaledPlus = Path()
 
+    // Smart Battery Saver mark (custom state below charging and power save)
+    private val smartSaverPath = Path()
+    private val scaledSmartSaver = Path()
+
     private var intrinsicHeight: Int
     private var intrinsicWidth: Int
 
@@ -106,6 +110,12 @@ open class ThemedBatteryDrawable(private val context: Context, frameColor: Int) 
             postInvalidate()
         }
 
+    var smartBatterySaver = false
+        set(value) {
+            field = value
+            postInvalidate()
+        }
+
     private val fillColorStrokePaint = Paint(Paint.ANTI_ALIAS_FLAG).also { p ->
         p.color = frameColor
         p.alpha = 255
@@ -136,6 +146,15 @@ open class ThemedBatteryDrawable(private val context: Context, frameColor: Int) 
 
     private val errorPaint = Paint(Paint.ANTI_ALIAS_FLAG).also { p ->
         p.color = Utils.getColorStateListDefaultColor(context, R.color.batterymeter_plus_color)
+        p.alpha = 255
+        p.isDither = true
+        p.strokeWidth = 0f
+        p.style = Paint.Style.FILL_AND_STROKE
+        p.blendMode = BlendMode.SRC
+    }
+
+    private val smartSaverPaint = Paint(Paint.ANTI_ALIAS_FLAG).also { p ->
+        p.color = Color.parseColor(SMART_SAVER_COLOR)
         p.alpha = 255
         p.isDither = true
         p.strokeWidth = 0f
@@ -248,6 +267,11 @@ open class ThemedBatteryDrawable(private val context: Context, frameColor: Int) 
             c.drawPath(scaledErrorPerimeter, errorPaint)
             // And draw the plus sign on top of the fill
             c.drawPath(scaledPlus, errorPaint)
+        } else if (smartBatterySaver) {
+            // Smart Battery Saver: recolor entire battery and draw the mark
+            fillPaint.color = Color.parseColor(SMART_SAVER_COLOR)
+            c.drawPath(unifiedPath, fillPaint)
+            c.drawPath(scaledSmartSaver, smartSaverPaint)
         }
         c.restore()
     }
@@ -293,6 +317,8 @@ open class ThemedBatteryDrawable(private val context: Context, frameColor: Int) 
         fillPaint.colorFilter = colorFilter
         fillColorStrokePaint.colorFilter = colorFilter
         dualToneBackgroundFill.colorFilter = colorFilter
+        errorPaint.colorFilter = colorFilter
+        smartSaverPaint.colorFilter = colorFilter
     }
 
     /**
@@ -372,6 +398,18 @@ open class ThemedBatteryDrawable(private val context: Context, frameColor: Int) 
         scaledFill.computeBounds(fillRect, true)
         boltPath.transform(scaleMatrix, scaledBolt)
         plusPath.transform(scaleMatrix, scaledPlus)
+        smartSaverPath.transform(scaleMatrix, scaledSmartSaver)
+
+        // Center the smart saver mark within the fill area
+        val smartBounds = RectF()
+        scaledSmartSaver.computeBounds(smartBounds, true)
+        if (!smartBounds.isEmpty && !fillRect.isEmpty) {
+            val dx = fillRect.centerX() - smartBounds.centerX()
+            val dy = fillRect.centerY() - smartBounds.centerY()
+            val translate = Matrix()
+            translate.setTranslate(dx, dy)
+            scaledSmartSaver.transform(translate)
+        }
 
         // It is expected that this view only ever scale by the same factor in each dimension, so
         // just pick one to scale the strokeWidths
@@ -407,6 +445,13 @@ open class ThemedBatteryDrawable(private val context: Context, frameColor: Int) 
                 com.android.internal.R.string.config_batterymeterPowersavePath)
         plusPath.set(PathParser.createPathFromPathData(plusPathString))
 
+        // Smart Battery Saver mark path (from product spec)
+        try {
+            smartSaverPath.set(PathParser.createPathFromPathData(SMART_SAVER_PATH_DATA))
+        } catch (t: Throwable) {
+            // Ignore invalid path; feature will simply skip drawing the mark
+        }
+
         dualTone = context.resources.getBoolean(
                 com.android.internal.R.bool.config_batterymeterDualTone)
     }
@@ -421,5 +466,7 @@ open class ThemedBatteryDrawable(private val context: Context, frameColor: Int) 
         private const val PROTECTION_STROKE_WIDTH = 3f
         // Arbitrarily chosen for visibility at small sizes
         private const val PROTECTION_MIN_STROKE_WIDTH = 6f
+        private const val SMART_SAVER_COLOR = "#2fb3fd"
+        private const val SMART_SAVER_PATH_DATA = "M13.09,3.57,12.79,5h0c-.66,3.27-1.2,6-3.27,8A6.73,6.73,0,0,1,4.6,14.79a7.22,7.22,0,0,1-2.43-.46l.05,0A13.33,13.33,0,0,0,6,11.53,13.59,13.59,0,0,0,8.44,7.35l.3-.73c.94-2.3,1.11-2.52,1.07-2.57l0,0c-.1-.05-.31.21-1.08,1.61a14.69,14.69,0,0,1-4.92,5.84A14.91,14.91,0,0,1,.1,13.19a11.63,11.63,0,0,1,1-6.62A11.27,11.27,0,0,1,5.22,1.86c2.59-1.6,7.24-2,9.16-1.81.21,0,.3,0,.31.06S13.73.53,13.09,3.57Z"
     }
 }
