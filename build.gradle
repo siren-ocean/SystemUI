@@ -72,6 +72,29 @@ android {
     }
 }
 
+tasks.register('pushApk', Exec) {
+    description = "push apk to device"
+    dependsOn("assembleDebug")
+
+    doFirst {
+        exec { commandLine("adb", "root") }
+        exec { commandLine("adb", "remount") }
+    }
+
+    doLast {
+        exec { commandLine("adb", "shell", "killall", "com.android.systemui") }
+    }
+
+    def pathOut = new ByteArrayOutputStream()
+    exec {
+        commandLine("adb", "shell", "pm", "path", "com.android.systemui")
+        standardOutput = pathOut
+    }
+    def devicePackagePath = pathOut.toString().trim().replace("package:", "")
+    logger.warn("device package path: $devicePackagePath")
+    commandLine("adb", "push", "build/outputs/apk/debug/SystemUI.apk", devicePackagePath)
+}
+
 dependencies {
     compileOnly files('libs/framework.jar')
     compileOnly files('libs/core-all.jar')
