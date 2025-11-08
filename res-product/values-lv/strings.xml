@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+/**
+ * Copyright (c) 2009, The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="dock_alignment_slow_charging" product="default" msgid="6997633396534416792">"Pārvietojiet tālruni citā vietā, lai uzlāde notiktu ātrāk."</string>
+    <string name="dock_alignment_not_charging" product="default" msgid="3980752926226749808">"Pārvietojiet tālruni citā vietā, lai veiktu bezvadu uzlādi."</string>
+    <string name="inattentive_sleep_warning_message" product="tv" msgid="6844464574089665063">"Android TV ierīce drīz izslēgsies. Nospiediet pogu, lai ierīce paliktu ieslēgta."</string>
+    <string name="inattentive_sleep_warning_message" product="default" msgid="5693904520452332224">"Ierīce drīz izslēgsies. Nospiediet pogu, lai ierīce paliktu ieslēgta."</string>
+    <string name="keyguard_missing_sim_message" product="tablet" msgid="408124574073032188">"Planšetdatorā nav SIM kartes."</string>
+    <string name="keyguard_missing_sim_message" product="default" msgid="2605468359948247208">"Tālrunī nav SIM kartes."</string>
+    <string name="kg_invalid_confirm_pin_hint" product="default" msgid="6278551068943958651">"PIN kodi neatbilst."</string>
+    <string name="kg_failed_attempts_almost_at_wipe" product="tablet" msgid="302165994845009232">"Jūs <xliff:g id="NUMBER_0">%1$d</xliff:g> reizi(-es) nesekmīgi mēģinājāt atbloķēt planšetdatoru. Pēc vēl <xliff:g id="NUMBER_1">%2$d</xliff:g> nesekmīga(-iem) mēģinājuma(-iem) šis planšetdators tiks atiestatīts, kā arī visi planšetdatora dati tiks dzēsti."</string>
+    <string name="kg_failed_attempts_almost_at_wipe" product="default" msgid="2594813176164266847">"Jūs <xliff:g id="NUMBER_0">%1$d</xliff:g> reizi(-es) nesekmīgi mēģinājāt atbloķēt tālruni. Pēc vēl <xliff:g id="NUMBER_1">%2$d</xliff:g> nesekmīga(-iem) mēģinājuma(-iem) šis tālrunis tiks atiestatīts, kā arī visi tālruņa dati tiks dzēsti."</string>
+    <string name="kg_failed_attempts_now_wiping" product="tablet" msgid="8710104080409538587">"Jūs <xliff:g id="NUMBER">%d</xliff:g> reizi(-es) nesekmīgi mēģinājāt atbloķēt planšetdatoru. Šis planšetdators tiks atiestatīts, kā arī visi planšetdatora dati tiks dzēsti."</string>
+    <string name="kg_failed_attempts_now_wiping" product="default" msgid="6381835450014881813">"Jūs <xliff:g id="NUMBER">%d</xliff:g> reizi(-es) nesekmīgi mēģinājāt atbloķēt tālruni. Šis tālrunis tiks atiestatīts, kā arī visi tālruņa dati tiks dzēsti."</string>
+    <string name="kg_failed_attempts_almost_at_erase_user" product="tablet" msgid="7325071812832605911">"Jūs <xliff:g id="NUMBER_0">%1$d</xliff:g> reizi(-es) nesekmīgi mēģinājāt atbloķēt planšetdatoru. Pēc vēl <xliff:g id="NUMBER_1">%2$d</xliff:g> nesekmīga(-iem) mēģinājuma(-iem) šis lietotājs tiks noņemts, kā arī visi lietotāja dati tiks dzēsti."</string>
+    <string name="kg_failed_attempts_almost_at_erase_user" product="default" msgid="8110939900089863103">"Jūs <xliff:g id="NUMBER_0">%1$d</xliff:g> reizi(-es) nesekmīgi mēģinājāt atbloķēt tālruni. Pēc vēl <xliff:g id="NUMBER_1">%2$d</xliff:g> nesekmīga(-iem) mēģinājuma(-iem) šis lietotājs tiks noņemts, kā arī visi lietotāja dati tiks dzēsti."</string>
+    <string name="kg_failed_attempts_now_erasing_user" product="tablet" msgid="8509811676952707883">"Jūs <xliff:g id="NUMBER">%d</xliff:g> reizi(-es) nesekmīgi mēģinājāt atbloķēt planšetdatoru. Šis lietotājs tiks noņemts, kā arī visi lietotāja dati tiks dzēsti."</string>
+    <string name="kg_failed_attempts_now_erasing_user" product="default" msgid="3051962486994265014">"Jūs <xliff:g id="NUMBER">%d</xliff:g> reizi(-es) nesekmīgi mēģinājāt atbloķēt tālruni. Šis lietotājs tiks noņemts, kā arī visi lietotāja dati tiks dzēsti."</string>
+    <string name="kg_failed_attempts_almost_at_erase_profile" product="tablet" msgid="1049523640263353830">"Jūs <xliff:g id="NUMBER_0">%1$d</xliff:g> reizi(-es) nesekmīgi mēģinājāt atbloķēt planšetdatoru. Pēc vēl <xliff:g id="NUMBER_1">%2$d</xliff:g> nesekmīga(-iem) mēģinājuma(-iem) darba profils tiks noņemts, kā arī visi profila dati tiks dzēsti."</string>
+    <string name="kg_failed_attempts_almost_at_erase_profile" product="default" msgid="3280816298678433681">"Jūs <xliff:g id="NUMBER_0">%1$d</xliff:g> reizi(-es) nesekmīgi mēģinājāt atbloķēt tālruni. Pēc vēl <xliff:g id="NUMBER_1">%2$d</xliff:g> nesekmīga(-iem) mēģinājuma(-iem) darba profils tiks noņemts, kā arī visi profila dati tiks dzēsti."</string>
+    <string name="kg_failed_attempts_now_erasing_profile" product="tablet" msgid="4417100487251371559">"Jūs <xliff:g id="NUMBER">%d</xliff:g> reizi(-es) nesekmīgi mēģinājāt atbloķēt planšetdatoru. Darba profils tiks noņemts, kā arī visi profila dati tiks dzēsti."</string>
+    <string name="kg_failed_attempts_now_erasing_profile" product="default" msgid="4682221342671290678">"Jūs <xliff:g id="NUMBER">%d</xliff:g> reizi(-es) nesekmīgi mēģinājāt atbloķēt tālruni. Darba profils tiks noņemts, kā arī visi profila dati tiks dzēsti."</string>
+    <string name="kg_failed_attempts_almost_at_login" product="tablet" msgid="1860049973474855672">"Jūs <xliff:g id="NUMBER_0">%1$d</xliff:g> reizi(-es) nepareizi norādījāt atbloķēšanas kombināciju. Pēc vēl <xliff:g id="NUMBER_1">%2$d</xliff:g> neveiksmīga(-iem) mēģinājuma(-iem) planšetdators būs jāatbloķē, izmantojot e-pasta kontu.\n\nMēģiniet vēlreiz pēc <xliff:g id="NUMBER_2">%3$d</xliff:g> sekundes(-ēm)."</string>
+    <string name="kg_failed_attempts_almost_at_login" product="default" msgid="44112553371516141">"Jūs <xliff:g id="NUMBER_0">%1$d</xliff:g> reizi(-es) nepareizi norādījāt atbloķēšanas kombināciju. Pēc vēl <xliff:g id="NUMBER_1">%2$d</xliff:g> nesekmīga(-iem) mēģinājuma(-iem) tālrunis būs jāatbloķē, izmantojot e-pasta kontu.\n\nMēģiniet vēlreiz pēc <xliff:g id="NUMBER_2">%3$d</xliff:g> sekundes(-ēm)."</string>
+    <string name="thermal_shutdown_title" product="default" msgid="8039593017174903505">"Tālrunis izslēgts karstuma dēļ"</string>
+    <string name="thermal_shutdown_title" product="device" msgid="2954206342842856379">"Ierīce izslēgta karstuma dēļ"</string>
+    <string name="thermal_shutdown_title" product="tablet" msgid="8941033526856177533">"Planšetdators izslēgts karstuma dēļ"</string>
+    <string name="thermal_shutdown_message" product="default" msgid="6685194547904051408">"Tagad jūsu tālrunis darbojas normāli.\nPieskarieties, lai uzzinātu vairāk."</string>
+    <string name="thermal_shutdown_message" product="device" msgid="3039675532521590478">"Tagad jūsu ierīce darbojas normāli.\nPieskarieties, lai uzzinātu vairāk."</string>
+    <string name="thermal_shutdown_message" product="tablet" msgid="5285898074484811386">"Tagad jūsu planšetdators darbojas normāli.\nPieskarieties, lai uzzinātu vairāk."</string>
+    <string name="thermal_shutdown_dialog_message" product="default" msgid="6145923570358574186">"Jūsu tālrunis bija pārkarsis un tika izslēgts. Tagad tas darbojas normāli.\n\nTālrunis var sakarst, ja:\n	• tiek izmantotas lietotnes, kas patērē daudz enerģijas (piem., spēles, video lietotnes vai navigācija);\n	• tiek lejupielādēti/augšupielādēti lieli faili;\n	• tālrunis tiek lietots augstā temperatūrā."</string>
+    <string name="thermal_shutdown_dialog_message" product="device" msgid="3647879000909527365">"Jūsu ierīce bija pārkarsusi un tika izslēgta. Tagad tā darbojas normāli.\n\nIerīce var sakarst, ja:\n	• tiek izmantotas lietotnes, kas patērē daudz enerģijas (piem., spēles, video lietotnes vai navigācija);\n	• tiek lejupielādēti/augšupielādēti lieli faili;\n	• ierīce tiek lietota augstā temperatūrā."</string>
+    <string name="thermal_shutdown_dialog_message" product="tablet" msgid="8274487811928782165">"Jūsu planšetdators bija pārkarsis un tika izslēgts. Tagad tas darbojas normāli.\n\nPlanšetdators var sakarst, ja:\n	• tiek izmantotas lietotnes, kas patērē daudz enerģijas (piem., spēles, video lietotnes vai navigācija);\n	• tiek lejupielādēti/augšupielādēti lieli faili;\n	• planšetdators tiek lietots augstā temperatūrā."</string>
+    <string name="high_temp_title" product="default" msgid="5365000411304924115">"Tālrunis kļūst silts"</string>
+    <string name="high_temp_title" product="device" msgid="6622009907401563664">"Ierīce kļūst silta"</string>
+    <string name="high_temp_title" product="tablet" msgid="9039733706606446616">"Planšetdators kļūst silts"</string>
+    <string name="high_temp_notif_message" product="default" msgid="3928947950087257452">"Dažas funkcijas ir ierobežotas, kamēr notiek tālruņa atdzišana.\nPieskarieties, lai uzzinātu vairāk."</string>
+    <string name="high_temp_notif_message" product="device" msgid="6105125771372547292">"Dažas funkcijas ir ierobežotas, kamēr notiek ierīces atdzišana.\nPieskarieties, lai uzzinātu vairāk."</string>
+    <string name="high_temp_notif_message" product="tablet" msgid="7799279192797476850">"Dažas funkcijas ir ierobežotas, kamēr notiek planšetdatora atdzišana.\nPieskarieties, lai uzzinātu vairāk."</string>
+    <string name="high_temp_dialog_message" product="default" msgid="4272882413847595625">"Jūsu tālrunis automātiski mēģinās atdzist. Jūs joprojām varat izmantot tālruni, taču tas, iespējams, darbosies lēnāk.\n\nTiklīdz tālrunis būs atdzisis, tas darbosies normāli."</string>
+    <string name="high_temp_dialog_message" product="device" msgid="263861943935989046">"Jūsu ierīce automātiski mēģinās atdzist. Jūs joprojām varat izmantot ierīci, taču tā, iespējams, darbosies lēnāk.\n\nTiklīdz ierīce būs atdzisusi, tā darbosies normāli."</string>
+    <string name="high_temp_dialog_message" product="tablet" msgid="5613713326841935537">"Jūsu planšetdators automātiski mēģinās atdzist. Jūs joprojām varat izmantot planšetdatoru, taču tas, iespējams, darbosies lēnāk.\n\nTiklīdz planšetdators būs atdzisis, tas darbosies normāli."</string>
+    <string name="security_settings_sfps_enroll_find_sensor_message" product="tablet" msgid="3726972508570143945">"Pirksta nospieduma sensors atrodas uz barošanas pogas. Tā ir plakanā poga, kas atrodas blakus augstākai skaļuma pogai planšetdatora sānos."</string>
+    <string name="security_settings_sfps_enroll_find_sensor_message" product="device" msgid="2929467060295094725">"Pirksta nospieduma sensors atrodas uz barošanas pogas. Tā ir plakanā poga, kas atrodas blakus augstākai skaļuma pogai ierīces sānos."</string>
+    <string name="security_settings_sfps_enroll_find_sensor_message" product="default" msgid="8582726566542997639">"Pirksta nospieduma sensors atrodas uz barošanas pogas. Tā ir plakanā poga, kas atrodas blakus augstākai skaļuma pogai tālruņa sānos."</string>
+    <string name="global_action_lock_message" product="default" msgid="7092460751050168771">"Atbloķējiet tālruni, lai skatītu citas opcijas."</string>
+    <string name="global_action_lock_message" product="tablet" msgid="1024230056230539493">"Atbloķējiet planšetdatoru, lai skatītu citas opcijas."</string>
+    <string name="global_action_lock_message" product="device" msgid="3165224897120346096">"Atbloķējiet ierīci, lai skatītu citas opcijas."</string>
+    <string name="media_transfer_playing_this_device" product="default" msgid="5795784619523545556">"Notiek atskaņošana šajā tālrunī"</string>
+    <string name="media_transfer_playing_this_device" product="tablet" msgid="222514408550408633">"Notiek atskaņošana šajā planšetdatorā"</string>
+</resources>

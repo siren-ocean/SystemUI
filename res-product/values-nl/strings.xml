@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+/**
+ * Copyright (c) 2009, The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="dock_alignment_slow_charging" product="default" msgid="6997633396534416792">"Lijn de telefoon opnieuw uit om sneller op te laden"</string>
+    <string name="dock_alignment_not_charging" product="default" msgid="3980752926226749808">"Lijn de telefoon opnieuw uit om draadloos op te laden"</string>
+    <string name="inattentive_sleep_warning_message" product="tv" msgid="6844464574089665063">"Het Android TV-apparaat wordt binnenkort uitgezet. Druk op een knop om het aan te laten."</string>
+    <string name="inattentive_sleep_warning_message" product="default" msgid="5693904520452332224">"Het apparaat wordt binnenkort uitgezet. Druk om het aan te laten."</string>
+    <string name="keyguard_missing_sim_message" product="tablet" msgid="408124574073032188">"Geen simkaart in tablet."</string>
+    <string name="keyguard_missing_sim_message" product="default" msgid="2605468359948247208">"Geen simkaart in telefoon."</string>
+    <string name="kg_invalid_confirm_pin_hint" product="default" msgid="6278551068943958651">"Pincodes komen niet overeen"</string>
+    <string name="kg_failed_attempts_almost_at_wipe" product="tablet" msgid="302165994845009232">"Je hebt <xliff:g id="NUMBER_0">%1$d</xliff:g> mislukte pogingen ondernomen om de tablet te ontgrendelen. Na nog eens <xliff:g id="NUMBER_1">%2$d</xliff:g> mislukte pogingen wordt deze tablet gereset, waardoor alle gegevens worden verwijderd."</string>
+    <string name="kg_failed_attempts_almost_at_wipe" product="default" msgid="2594813176164266847">"Je hebt <xliff:g id="NUMBER_0">%1$d</xliff:g> mislukte pogingen ondernomen om de telefoon te ontgrendelen. Na nog eens <xliff:g id="NUMBER_1">%2$d</xliff:g> mislukte pogingen wordt deze telefoon gereset, waardoor alle gegevens worden verwijderd."</string>
+    <string name="kg_failed_attempts_now_wiping" product="tablet" msgid="8710104080409538587">"Je hebt <xliff:g id="NUMBER">%d</xliff:g> mislukte pogingen ondernomen om de tablet te ontgrendelen. Deze tablet wordt gereset, waardoor alle gegevens worden verwijderd."</string>
+    <string name="kg_failed_attempts_now_wiping" product="default" msgid="6381835450014881813">"Je hebt <xliff:g id="NUMBER">%d</xliff:g> mislukte pogingen ondernomen om de telefoon te ontgrendelen. Deze telefoon wordt gereset, waardoor alle gegevens worden verwijderd."</string>
+    <string name="kg_failed_attempts_almost_at_erase_user" product="tablet" msgid="7325071812832605911">"Je hebt <xliff:g id="NUMBER_0">%1$d</xliff:g> mislukte pogingen ondernomen om de tablet te ontgrendelen. Na nog eens <xliff:g id="NUMBER_1">%2$d</xliff:g> mislukte pogingen wordt deze gebruiker verwijderd, waardoor alle gebruikersgegevens worden verwijderd."</string>
+    <string name="kg_failed_attempts_almost_at_erase_user" product="default" msgid="8110939900089863103">"Je hebt <xliff:g id="NUMBER_0">%1$d</xliff:g> mislukte pogingen ondernomen om de telefoon te ontgrendelen. Na nog eens <xliff:g id="NUMBER_1">%2$d</xliff:g> mislukte pogingen wordt deze gebruiker verwijderd, waardoor alle gebruikersgegevens worden verwijderd."</string>
+    <string name="kg_failed_attempts_now_erasing_user" product="tablet" msgid="8509811676952707883">"Je hebt <xliff:g id="NUMBER">%d</xliff:g> mislukte pogingen ondernomen om de tablet te ontgrendelen. Deze gebruiker wordt verwijderd, waardoor alle gebruikersgegevens worden verwijderd."</string>
+    <string name="kg_failed_attempts_now_erasing_user" product="default" msgid="3051962486994265014">"Je hebt <xliff:g id="NUMBER">%d</xliff:g> mislukte pogingen ondernomen om de telefoon te ontgrendelen. Deze gebruiker wordt verwijderd, waardoor alle gebruikersgegevens worden verwijderd."</string>
+    <string name="kg_failed_attempts_almost_at_erase_profile" product="tablet" msgid="1049523640263353830">"Je hebt <xliff:g id="NUMBER_0">%1$d</xliff:g> mislukte pogingen ondernomen om de tablet te ontgrendelen. Na nog eens <xliff:g id="NUMBER_1">%2$d</xliff:g> mislukte pogingen wordt het werkprofiel verwijderd, waardoor alle profielgegevens worden verwijderd."</string>
+    <string name="kg_failed_attempts_almost_at_erase_profile" product="default" msgid="3280816298678433681">"Je hebt <xliff:g id="NUMBER_0">%1$d</xliff:g> mislukte pogingen ondernomen om de telefoon te ontgrendelen. Na nog eens <xliff:g id="NUMBER_1">%2$d</xliff:g> mislukte pogingen wordt het werkprofiel verwijderd, waardoor alle profielgegevens worden verwijderd."</string>
+    <string name="kg_failed_attempts_now_erasing_profile" product="tablet" msgid="4417100487251371559">"Je hebt <xliff:g id="NUMBER">%d</xliff:g> mislukte pogingen ondernomen om de tablet te ontgrendelen. Het werkprofiel wordt verwijderd, waardoor alle profielgegevens worden verwijderd."</string>
+    <string name="kg_failed_attempts_now_erasing_profile" product="default" msgid="4682221342671290678">"Je hebt <xliff:g id="NUMBER">%d</xliff:g> mislukte pogingen ondernomen om de telefoon te ontgrendelen. Het werkprofiel wordt verwijderd, waardoor alle profielgegevens worden verwijderd."</string>
+    <string name="kg_failed_attempts_almost_at_login" product="tablet" msgid="1860049973474855672">"Je hebt je ontgrendelingspatroon <xliff:g id="NUMBER_0">%1$d</xliff:g> keer onjuist getekend. Na nog eens <xliff:g id="NUMBER_1">%2$d</xliff:g> mislukte pogingen wordt je gevraagd je tablet te ontgrendelen via een e-mailaccount.\n\n Probeer het over <xliff:g id="NUMBER_2">%3$d</xliff:g> seconden opnieuw."</string>
+    <string name="kg_failed_attempts_almost_at_login" product="default" msgid="44112553371516141">"Je hebt je ontgrendelingspatroon <xliff:g id="NUMBER_0">%1$d</xliff:g> keer onjuist getekend. Na nog eens <xliff:g id="NUMBER_1">%2$d</xliff:g> mislukte pogingen wordt je gevraagd je telefoon te ontgrendelen via een e-mailaccount.\n\n Probeer het over <xliff:g id="NUMBER_2">%3$d</xliff:g> seconden opnieuw."</string>
+    <string name="thermal_shutdown_title" product="default" msgid="8039593017174903505">"Telefoon uitgezet wegens hitte"</string>
+    <string name="thermal_shutdown_title" product="device" msgid="2954206342842856379">"Apparaat uitgezet wegens hitte"</string>
+    <string name="thermal_shutdown_title" product="tablet" msgid="8941033526856177533">"Tablet uitgezet wegens hitte"</string>
+    <string name="thermal_shutdown_message" product="default" msgid="6685194547904051408">"Je telefoon functioneert nu weer zoals normaal.\nTik voor meer informatie"</string>
+    <string name="thermal_shutdown_message" product="device" msgid="3039675532521590478">"Je apparaat functioneert nu weer zoals normaal.\nTik voor meer informatie"</string>
+    <string name="thermal_shutdown_message" product="tablet" msgid="5285898074484811386">"Je tablet functioneert nu weer zoals normaal.\nTik voor meer informatie"</string>
+    <string name="thermal_shutdown_dialog_message" product="default" msgid="6145923570358574186">"Je telefoon was te warm en is uitgezet om af te koelen. Je telefoon presteert nu weer zoals normaal.\n\nJe telefoon kan warm worden als je:\n	• bronintensieve apps gebruikt (zoals game-, video-, of navigatie-apps),\n	• grote bestanden up- of downloadt,\n	• je telefoon gebruikt bij hoge temperaturen."</string>
+    <string name="thermal_shutdown_dialog_message" product="device" msgid="3647879000909527365">"Je apparaat was te warm en is uitgezet om af te koelen. Je apparaat presteert nu weer zoals normaal.\n\nJe apparaat kan warm worden als je:\n	• bronintensieve apps gebruikt (zoals game-, video-, of navigatie-apps),\n	• grote bestanden up- of downloadt,\n	• je apparaat gebruikt bij hoge temperaturen."</string>
+    <string name="thermal_shutdown_dialog_message" product="tablet" msgid="8274487811928782165">"Je tablet was te warm en is uitgezet om af te koelen. Je tablet presteert nu weer zoals normaal.\n\nJe tablet kan warm worden als je:\n	• bronintensieve apps gebruikt (zoals game-, video-, of navigatie-apps),\n	• grote bestanden up- of downloadt,\n	• je tablet gebruikt bij hoge temperaturen."</string>
+    <string name="high_temp_title" product="default" msgid="5365000411304924115">"De telefoon wordt warm"</string>
+    <string name="high_temp_title" product="device" msgid="6622009907401563664">"Het apparaat wordt warm"</string>
+    <string name="high_temp_title" product="tablet" msgid="9039733706606446616">"De tablet wordt warm"</string>
+    <string name="high_temp_notif_message" product="default" msgid="3928947950087257452">"Bepaalde functies zijn beperkt terwijl de telefoon afkoelt.\nTik voor meer informatie"</string>
+    <string name="high_temp_notif_message" product="device" msgid="6105125771372547292">"Bepaalde functies zijn beperkt terwijl het apparaat afkoelt.\nTik voor meer informatie"</string>
+    <string name="high_temp_notif_message" product="tablet" msgid="7799279192797476850">"Bepaalde functies zijn beperkt terwijl de tablet afkoelt.\nTik voor meer informatie"</string>
+    <string name="high_temp_dialog_message" product="default" msgid="4272882413847595625">"Je telefoon probeert automatisch af te koelen. Je kunt je telefoon nog steeds gebruiken, maar deze kan langzamer werken.\n\nZodra de telefoon is afgekoeld, werkt deze weer normaal."</string>
+    <string name="high_temp_dialog_message" product="device" msgid="263861943935989046">"Je apparaat probeert automatisch af te koelen. Je kunt je apparaat nog steeds gebruiken, maar het kan langzamer werken.\n\nZodra het apparaat is afgekoeld, werkt het weer normaal."</string>
+    <string name="high_temp_dialog_message" product="tablet" msgid="5613713326841935537">"Je tablet probeert automatisch af te koelen. Je kunt je tablet nog steeds gebruiken, maar deze kan langzamer werken.\n\nZodra de tablet is afgekoeld, werkt deze weer normaal."</string>
+    <string name="security_settings_sfps_enroll_find_sensor_message" product="tablet" msgid="3726972508570143945">"Je vindt de vingerafdruksensor op de aan/uit-knop. Het is de platte knop naast de verhoogde volumeknop aan de zijkant van de tablet."</string>
+    <string name="security_settings_sfps_enroll_find_sensor_message" product="device" msgid="2929467060295094725">"Je vindt de vingerafdruksensor op de aan/uit-knop. Het is de platte knop naast de verhoogde volumeknop aan de zijkant van het apparaat."</string>
+    <string name="security_settings_sfps_enroll_find_sensor_message" product="default" msgid="8582726566542997639">"Je vindt de vingerafdruksensor op de aan/uit-knop. Het is de platte knop naast de verhoogde volumeknop aan de zijkant van de telefoon."</string>
+    <string name="global_action_lock_message" product="default" msgid="7092460751050168771">"Ontgrendel je telefoon voor meer opties"</string>
+    <string name="global_action_lock_message" product="tablet" msgid="1024230056230539493">"Ontgrendel je tablet voor meer opties"</string>
+    <string name="global_action_lock_message" product="device" msgid="3165224897120346096">"Ontgrendel je apparaat voor meer opties"</string>
+    <string name="media_transfer_playing_this_device" product="default" msgid="5795784619523545556">"Afspelen op deze telefoon"</string>
+    <string name="media_transfer_playing_this_device" product="tablet" msgid="222514408550408633">"Afspelen op deze tablet"</string>
+</resources>

@@ -1,0 +1,157 @@
+{
+  // Curious where your @Scenario tests are running?
+  //
+  // @Ignore: Will not run in any configuration
+  //
+  // @FlakyTest: Tests that don't block pre/postsubmit but are staged to run known failures.
+  //             Tests will run in postsubmit on sysui-e2e-staged suite.
+  //
+  //
+  // @PlatinumTest: Marking your test with this annotation will put your tests in presubmit.
+  //                Please DO NOT annotate new or old tests with @PlatinumTest annotation
+  //                without discussing with mdb:android-platinum
+  //
+  // @Postsubmit: Do not use this annotation for e2e tests. This won't have any affect.
+
+  // For all other e2e tests which are not platinum, they run in sysui-silver suite,that
+  // primarily runs in postsubmit with an exception to e2e test related changes.
+  // If you want to see one shot place to monitor all e2e tests, look for
+  // sysui-e2e-staged suite.
+
+  // v2/android-virtual-infra/test_mapping/presubmit-avd
+  "presubmit": [
+    {
+      "name": "SystemUIGoogleTests",
+      "options": [
+        {
+          "exclude-annotation": "org.junit.Ignore"
+        },
+        {
+          "exclude-annotation": "androidx.test.filters.FlakyTest"
+        }
+      ]
+    },
+    {
+      // Permission indicators
+      "name": "CtsPermissionUiTestCases",
+      "options": [
+        {
+          "exclude-annotation": "org.junit.Ignore"
+        },
+        {
+          "exclude-annotation": "androidx.test.filters.FlakyTest"
+        },
+        {
+          "include-filter": "android.permissionui.cts.CameraMicIndicatorsPermissionTest"
+        }
+      ]
+    },
+    {
+      // Permission indicators
+      "name": "CtsVoiceRecognitionTestCases",
+      "options": [
+        {
+          "exclude-annotation": "org.junit.Ignore"
+        },
+        {
+          "exclude-annotation": "androidx.test.filters.FlakyTest"
+        }
+      ]
+    }
+  ],
+  
+  "auto-end-to-end-postsubmit": [
+    {
+      "name": "AndroidAutomotiveHomeTests",
+      "options" : [
+        {
+          "include-filter": "android.platform.tests.HomeTest"
+        }
+      ]
+    },
+    {
+      "name": "AndroidAutomotiveNotificationsTests",
+      "options" : [
+        {
+          "include-filter": "android.platform.tests.NotificationTest"
+        }
+      ]
+    }
+  ],
+  
+  "postsubmit": [
+    {
+      // Permission indicators
+      "name": "CtsPermissionUiTestCases",
+      "options": [
+        {
+          "include-filter": "android.permissionui.cts.CameraMicIndicatorsPermissionTest"
+        }
+      ]
+    }
+  ],
+  
+  // v2/sysui/suite/test-mapping-sysui-screenshot-test
+  "sysui-screenshot-test": [
+    {
+      "name": "SystemUIGoogleScreenshotTests",
+      "options": [
+        {
+          "exclude-annotation": "org.junit.Ignore"
+        },
+        {
+          "exclude-annotation": "androidx.test.filters.FlakyTest"
+        },
+        {
+          "exclude-annotation": "android.platform.test.annotations.FlakyTest"
+        },
+        {
+          "exclude-annotation": "android.platform.test.annotations.Postsubmit"
+        }
+      ]
+    },
+    {
+      "name": "SystemUIGoogleKeyguardScreenshotTests",
+      "options": [
+        {
+          "exclude-annotation": "org.junit.Ignore"
+        },
+        {
+          "exclude-annotation": "androidx.test.filters.FlakyTest"
+        },
+        {
+          "exclude-annotation": "android.platform.test.annotations.FlakyTest"
+        },
+        {
+          "exclude-annotation": "android.platform.test.annotations.Postsubmit"
+        }
+      ]
+    }
+  ],
+  
+  // v2/sysui/suite/test-mapping-sysui-screenshot-test-staged
+  "sysui-screenshot-test-staged": [
+    {
+      "name": "SystemUIGoogleScreenshotTests",
+      "options": [
+        {
+          "exclude-annotation": "org.junit.Ignore"
+        },
+        {
+          "include-annotation": "androidx.test.filters.FlakyTest"
+        }
+      ]
+    },
+    {
+      "name": "SystemUIGoogleKeyguardScreenshotTests",
+      "options": [
+        {
+          "exclude-annotation": "org.junit.Ignore"
+        },
+        {
+          "include-annotation": "androidx.test.filters.FlakyTest"
+        }
+      ]
+    }
+  ]
+}

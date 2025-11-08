@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+/**
+ * Copyright (c) 2009, The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="dock_alignment_slow_charging" product="default" msgid="6997633396534416792">"Телефонду ыкчам кубаттоо үчүн туура коюңуз"</string>
+    <string name="dock_alignment_not_charging" product="default" msgid="3980752926226749808">"Телефонду зымсыз кубаттоо үчүн туура коюңуз"</string>
+    <string name="inattentive_sleep_warning_message" product="tv" msgid="6844464574089665063">"Android TV түзмөгү жакында өчүрүлөт, аны күйүк боюнча калтыруу үчүн баскычты басыңыз."</string>
+    <string name="inattentive_sleep_warning_message" product="default" msgid="5693904520452332224">"Түзмөк жакында өчүрүлөт, күйүк боюнча калтыруу үчүн басып коюңуз."</string>
+    <string name="keyguard_missing_sim_message" product="tablet" msgid="408124574073032188">"Планшетте SIM карта жок."</string>
+    <string name="keyguard_missing_sim_message" product="default" msgid="2605468359948247208">"Телефондо SIM карта жок."</string>
+    <string name="kg_invalid_confirm_pin_hint" product="default" msgid="6278551068943958651">"PIN-коддор дал келген жок"</string>
+    <string name="kg_failed_attempts_almost_at_wipe" product="tablet" msgid="302165994845009232">"Планшеттин кулпусун <xliff:g id="NUMBER_0">%1$d</xliff:g> жолу туура эмес ачууга аракет жасадыңыз. Дагы <xliff:g id="NUMBER_1">%2$d</xliff:g> жолу ийгиликсиз аракет кылсаңыз, бул планшет баштапкы абалга келтирилип, андагы бардык нерселер өчүрүлөт."</string>
+    <string name="kg_failed_attempts_almost_at_wipe" product="default" msgid="2594813176164266847">"Телефондун кулпусун <xliff:g id="NUMBER_0">%1$d</xliff:g> жолу туура эмес ачууга аракет жасадыңыз. Дагы <xliff:g id="NUMBER_1">%2$d</xliff:g> жолу ийгиликсиз аракет кылсаңыз, бул телефон баштапкы абалга келтирилип, андагы бардык нерселер өчүрүлөт."</string>
+    <string name="kg_failed_attempts_now_wiping" product="tablet" msgid="8710104080409538587">"Планшеттин кулпусун <xliff:g id="NUMBER">%d</xliff:g> жолу туура эмес ачууга аракет жасадыңыз. Бул планшет баштапкы абалга келтирилип, андагы бардык нерселер өчүрүлөт."</string>
+    <string name="kg_failed_attempts_now_wiping" product="default" msgid="6381835450014881813">"Телефондун кулпусун <xliff:g id="NUMBER">%d</xliff:g> жолу туура эмес аракет жасадыңыз. Бул телефон баштапкы абалга келтирилип, андагы бардык нерселер өчүрүлөт."</string>
+    <string name="kg_failed_attempts_almost_at_erase_user" product="tablet" msgid="7325071812832605911">"Планшеттин кулпусун <xliff:g id="NUMBER_0">%1$d</xliff:g> жолу туура эмес ачууга аракет жасадыңыз. Дагы <xliff:g id="NUMBER_1">%2$d</xliff:g> жолу ийгиликсиз аракет кылсаңыз, бул колдонуучу өчүрүлүп, колдонуучунун бардык маалыматы өчүрүлөт."</string>
+    <string name="kg_failed_attempts_almost_at_erase_user" product="default" msgid="8110939900089863103">"Телефондун кулпусун <xliff:g id="NUMBER_0">%1$d</xliff:g> жолу туура эмес ачууга аракет жасадыңыз. Дагы <xliff:g id="NUMBER_1">%2$d</xliff:g> жолу ийгиликсиз аракет кылсаңыз, бул колдонуучу өчүрүлүп, колдонуучунун бардык маалыматы өчүрүлөт."</string>
+    <string name="kg_failed_attempts_now_erasing_user" product="tablet" msgid="8509811676952707883">"Планшеттин кулпусун <xliff:g id="NUMBER">%d</xliff:g> жолу туура эмес ачууга аракет жасадыңыз. Бул колдонуучу өчүрүлүп, колдонуучунун бардык маалыматы өчүрүлөт."</string>
+    <string name="kg_failed_attempts_now_erasing_user" product="default" msgid="3051962486994265014">"Телефондун кулпусун <xliff:g id="NUMBER">%d</xliff:g> жолу туура эмес ачууга аракет жасадыңыз. Бул колдонуучу өчүрүлүп, колдонуучунун бардык маалыматы өчүрүлөт."</string>
+    <string name="kg_failed_attempts_almost_at_erase_profile" product="tablet" msgid="1049523640263353830">"Планшетиңиздин кулпусун <xliff:g id="NUMBER_0">%1$d</xliff:g> жолу туура эмес ачууга аракет жасадыңыз. Дагы <xliff:g id="NUMBER_1">%2$d</xliff:g> жолу ийгиликсиз аракет кылсаңыз, жумуш профилиңиз өчүрүлүп, профилдеги бардык нерселер өчүрүлөт."</string>
+    <string name="kg_failed_attempts_almost_at_erase_profile" product="default" msgid="3280816298678433681">"Телефондун кулпусун <xliff:g id="NUMBER_0">%1$d</xliff:g> жолу туура эмес ачууга аракет жасадыңыз. Дагы <xliff:g id="NUMBER_1">%2$d</xliff:g> жолу ийгиликсиз аракет кылсаңыз, жумуш профилиңиз өчүрүлүп, профилдеги бардык нерселер өчүрүлөт."</string>
+    <string name="kg_failed_attempts_now_erasing_profile" product="tablet" msgid="4417100487251371559">"Планшеттин кулпусун <xliff:g id="NUMBER">%d</xliff:g> жолу туура эмес ачууга аракет жасадыңыз. Жумуш профили өчүрүлүп, андагы бардык нерселер өчүрүлөт."</string>
+    <string name="kg_failed_attempts_now_erasing_profile" product="default" msgid="4682221342671290678">"Телефондун кулпусун <xliff:g id="NUMBER">%d</xliff:g> жолу туура эмес ачууга аракет жасадыңыз. Жумуш профили өчүрүлүп, андагы бардык нерселер өчүрүлөт."</string>
+    <string name="kg_failed_attempts_almost_at_login" product="tablet" msgid="1860049973474855672">"Графикалык ачкычты <xliff:g id="NUMBER_0">%1$d</xliff:g> жолу туура эмес тарттыңыз. Дагы <xliff:g id="NUMBER_1">%2$d</xliff:g> ийгиликсиз аракеттен кийин планшетиңизди бөгөттөн электрондук почтаңыз аркылуу чыгаруу талап кылынат.\n\n <xliff:g id="NUMBER_2">%3$d</xliff:g> секунддан кийин кайра аракеттениңиз."</string>
+    <string name="kg_failed_attempts_almost_at_login" product="default" msgid="44112553371516141">"Графикалык ачкычты <xliff:g id="NUMBER_0">%1$d</xliff:g> жолу туура эмес тарттыңыз. Дагы <xliff:g id="NUMBER_1">%2$d</xliff:g> ийгиликсиз аракеттен кийин телефонуңузду бөгөттөн электрондук почтаңыз аркылуу чыгаруу талап кылынат.\n\n <xliff:g id="NUMBER_2">%3$d</xliff:g> секунддан кийин кайра аракеттениңиз."</string>
+    <string name="thermal_shutdown_title" product="default" msgid="8039593017174903505">"Телефон ысыгандыктан өчүрүлдү"</string>
+    <string name="thermal_shutdown_title" product="device" msgid="2954206342842856379">"Түзмөк ысыгандыктан өчүрүлдү"</string>
+    <string name="thermal_shutdown_title" product="tablet" msgid="8941033526856177533">"Планшет ысыгандыктан өчүрүлдү"</string>
+    <string name="thermal_shutdown_message" product="default" msgid="6685194547904051408">"Телефонуңуз кадимкидей иштеп жатат.\nКеңири маалымат алуу үчүн таптап коюңуз"</string>
+    <string name="thermal_shutdown_message" product="device" msgid="3039675532521590478">"Түзмөгүңүз кадимкидей иштеп жатат.\nКеңири маалымат алуу үчүн таптап коюңуз"</string>
+    <string name="thermal_shutdown_message" product="tablet" msgid="5285898074484811386">"Планшетиңиз кадимкидей иштеп жатат.\nКеңири маалымат алуу үчүн таптап коюңуз"</string>
+    <string name="thermal_shutdown_dialog_message" product="default" msgid="6145923570358574186">"Телефонуңуз өтө ысып кеткендиктен, аны муздатуу үчүн өчүрүлдү. Эми телефонуңуз кадимкидей иштеп жатат.\n\nТелефонуңуз төмөнкү шарттарда ысып кетиши мүмкүн:\n	• Ашыкча ресурс короткон колдонмолорду (оюндар, видео же чабыттоо колдонмолору) пайдалансаңыз \n	• Ири көлөмдөгү файлдарды жүктөп алсаңыз же берсеңиз\n	• Телефонуңузду жогорку температураларда пайдалансаңыз"</string>
+    <string name="thermal_shutdown_dialog_message" product="device" msgid="3647879000909527365">"Түзмөгүңүз өтө ысып кеткендиктен, аны муздатуу үчүн өчүрүлдү. Эми түзмөгүңүз кадимкидей иштеп жатат.\n\nТүзмөгүңүз төмөнкү шарттарда ысып кетиши мүмкүн:\n	• Ашыкча ресурс короткон колдонмолорду (оюндар, видео же чабыттоо колдонмолору) пайдалансаңыз \n	• Ири көлөмдөгү файлдарды жүктөп алсаңыз же берсеңиз\n	• Түзмөгүңүздү жогорку температураларда пайдалансаңыз"</string>
+    <string name="thermal_shutdown_dialog_message" product="tablet" msgid="8274487811928782165">"Планшетиңиз өтө ысып кеткендиктен, аны муздатуу үчүн өчүрүлдү. Эми планшетиңиз кадимкидей иштеп жатат.\n\nПланшетиңиз төмөнкү шарттарда ысып кетиши мүмкүн:\n	• Ашыкча ресурс короткон колдонмолорду (оюндар, видео же чабыттоо колдонмолору) пайдалансаңыз \n	• Ири көлөмдөгү файлдарды жүктөп алсаңыз же берсеңиз\n	• Планшетиңизди жогорку температураларда пайдалансаңыз"</string>
+    <string name="high_temp_title" product="default" msgid="5365000411304924115">"Телефон ысып баратат"</string>
+    <string name="high_temp_title" product="device" msgid="6622009907401563664">"Түзмөк ысып баратат"</string>
+    <string name="high_temp_title" product="tablet" msgid="9039733706606446616">"Планшет ысып баратат"</string>
+    <string name="high_temp_notif_message" product="default" msgid="3928947950087257452">"Телефон сууганча айрым элементтердин иши чектелген.\nКеңири маалымат алуу үчүн таптап коюңуз"</string>
+    <string name="high_temp_notif_message" product="device" msgid="6105125771372547292">"Түзмөк сууганча айрым элементтердин иши чектелген.\nКеңири маалымат алуу үчүн таптап коюңуз"</string>
+    <string name="high_temp_notif_message" product="tablet" msgid="7799279192797476850">"Планшет сууганча айрым элементтердин иши чектелген.\nКеңири маалымат алуу үчүн таптап коюңуз"</string>
+    <string name="high_temp_dialog_message" product="default" msgid="4272882413847595625">"Телефонуңуз автоматтык түрдө сууйт. Аны колдоно берсеңиз болот, бирок ал жайыраак иштеп калат.\n\nТелефонуңуз суугандан кийин адаттагыдай эле иштеп баштайт."</string>
+    <string name="high_temp_dialog_message" product="device" msgid="263861943935989046">"Түзмөгүңүз автоматтык түрдө сууйт. Аны колдоно берсеңиз болот, бирок ал жайыраак иштеп калат.\n\nТүзмөгүңүз суугандан кийин адаттагыдай эле иштеп баштайт."</string>
+    <string name="high_temp_dialog_message" product="tablet" msgid="5613713326841935537">"Планшетиңиз автоматтык түрдө сууйт. Аны колдоно берсеңиз болот, бирок ал жайыраак иштеп калат.\n\nПланшетиңиз суугандан кийин адаттагыдай эле иштеп баштайт."</string>
+    <string name="security_settings_sfps_enroll_find_sensor_message" product="tablet" msgid="3726972508570143945">"Манжа изинин сенсору кубат баскычында жайгашкан. Бул планшеттин четиндеги үндү катуулатуу/акырындатуу баскычынын (көтөрүлгөн) жанындагы жалпак баскыч."</string>
+    <string name="security_settings_sfps_enroll_find_sensor_message" product="device" msgid="2929467060295094725">"Манжа изинин сенсору кубат баскычында жайгашкан. Бул түзмөктүн четиндеги үндү катуулатуу/акырындатуу баскычынын (көтөрүлгөн) жанындагы жалпак баскыч."</string>
+    <string name="security_settings_sfps_enroll_find_sensor_message" product="default" msgid="8582726566542997639">"Манжа изинин сенсору кубат баскычында жайгашкан. Бул телефондун четиндеги үндү катуулатуу/акырындатуу баскычынын (көтөрүлгөн) жанындагы жалпак баскыч."</string>
+    <string name="global_action_lock_message" product="default" msgid="7092460751050168771">"Дагы башка параметрлерди көрүү үчүн телефонуңуздун кулпусун ачыңыз"</string>
+    <string name="global_action_lock_message" product="tablet" msgid="1024230056230539493">"Дагы башка параметрлерди көрүү үчүн планшетиңиздин кулпусун ачыңыз"</string>
+    <string name="global_action_lock_message" product="device" msgid="3165224897120346096">"Дагы башка параметрлерди көрүү үчүн түзмөгүңүздүн кулпусун ачыңыз"</string>
+    <string name="media_transfer_playing_this_device" product="default" msgid="5795784619523545556">"Ушул телефондо ойнотулууда"</string>
+    <string name="media_transfer_playing_this_device" product="tablet" msgid="222514408550408633">"Ушул планшетте ойнотулууда"</string>
+</resources>

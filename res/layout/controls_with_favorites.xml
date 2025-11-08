@@ -1,0 +1,105 @@
+<!--
+  ~ Copyright (C) 2019 The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:orientation="vertical"
+    tools:parentTag="android.widget.LinearLayout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/controls_header_menu_size"
+        android:paddingHorizontal="@dimen/controls_header_horizontal_padding"
+        android:layout_marginBottom="@dimen/controls_header_bottom_margin"
+        android:orientation="horizontal">
+
+        <!-- make sure the header stays centered in the layout by adding a spacer -->
+        <Space
+            android:id="@+id/controls_spacer"
+            android:layout_width="@dimen/controls_header_menu_button_size"
+            android:layout_height="1dp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/controls_close"
+            android:layout_width="@dimen/controls_header_menu_button_size"
+            android:layout_height="@dimen/controls_header_menu_button_size"
+            android:layout_gravity="center_vertical"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/accessibility_desc_close"
+            android:padding="12dp"
+            android:src="@drawable/ic_close"
+            android:tint="@color/control_primary_text"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <!-- need to keep this outer view in order to have a correctly sized anchor
+             for the dropdown menu, as well as dropdown background in the right place -->
+        <LinearLayout
+            android:id="@+id/controls_header"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/app_or_structure_spinner"
+                style="@style/Control.Spinner.Header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:clickable="false"
+                tools:text="@tools:sample/lorem" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/controls_more"
+            android:layout_width="@dimen/controls_header_menu_button_size"
+            android:layout_height="@dimen/controls_header_menu_button_size"
+            android:layout_gravity="center_vertical"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/accessibility_menu"
+            android:padding="12dp"
+            android:src="@drawable/ic_more_vert"
+            android:tint="@color/control_more_vert" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/controls_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="@dimen/controls_content_margin_horizontal"
+        android:layout_weight="1"
+        android:clipChildren="true"
+        android:orientation="vertical"
+        android:padding="@dimen/controls_content_padding"
+        android:background="@drawable/controls_panel_background"
+        android:scrollbars="none">
+
+        <include layout="@layout/controls_list_view" />
+
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/controls_panel"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="@dimen/controls_content_margin_horizontal"
+        android:layout_weight="1"
+        android:background="@drawable/controls_panel_background"
+        android:visibility="gone"
+        tools:visibility="visible" />
+</merge>

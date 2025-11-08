@@ -1,0 +1,40 @@
+<!--
+  ~ Copyright (C) 2019 The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/control_apps_popup_item_height"
+    android:background="@drawable/controls_popup_item_background"
+    android:gravity="center_vertical|start"
+    android:orientation="horizontal"
+    android:paddingStart="@dimen/control_menu_horizontal_padding"
+    android:paddingEnd="@dimen/control_menu_horizontal_padding">
+
+  <ImageView
+      android:id="@+id/app_icon"
+      android:layout_width="@dimen/controls_header_app_icon_size"
+      android:layout_height="@dimen/controls_header_app_icon_size"
+      android:layout_marginEnd="@dimen/control_menu_horizontal_padding"
+      android:contentDescription="@null"
+      tools:src="@drawable/ic_android" />
+
+  <TextView
+      android:id="@+id/controls_spinner_item"
+      style="@style/Control.Spinner.Item"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      tools:text="Android" />
+</LinearLayout>

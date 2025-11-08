@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+/**
+ * Copyright (c) 2009, The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="dock_alignment_slow_charging" product="default" msgid="6997633396534416792">"Realinhe o telemóvel para um carregamento mais rápido."</string>
+    <string name="dock_alignment_not_charging" product="default" msgid="3980752926226749808">"Realinhe o telemóvel para carregar sem fios."</string>
+    <string name="inattentive_sleep_warning_message" product="tv" msgid="6844464574089665063">"O dispositivo Android TV irá desligar-se brevemente. Prima um botão para o manter ligado."</string>
+    <string name="inattentive_sleep_warning_message" product="default" msgid="5693904520452332224">"O dispositivo irá desligar-se brevemente. Prima para o manter ligado."</string>
+    <string name="keyguard_missing_sim_message" product="tablet" msgid="408124574073032188">"Nenhum SIM no tablet."</string>
+    <string name="keyguard_missing_sim_message" product="default" msgid="2605468359948247208">"Nenhum SIM no telemóvel."</string>
+    <string name="kg_invalid_confirm_pin_hint" product="default" msgid="6278551068943958651">"Os códigos PIN não coincidem."</string>
+    <string name="kg_failed_attempts_almost_at_wipe" product="tablet" msgid="302165994845009232">"Tentou desbloquear incorretamente o tablet <xliff:g id="NUMBER_0">%1$d</xliff:g> vezes. Após mais <xliff:g id="NUMBER_1">%2$d</xliff:g> tentativas sem êxito, este tablet será reposto, o que eliminará todos os dados do mesmo."</string>
+    <string name="kg_failed_attempts_almost_at_wipe" product="default" msgid="2594813176164266847">"Tentou desbloquear incorretamente o telemóvel <xliff:g id="NUMBER_0">%1$d</xliff:g> vezes. Após mais <xliff:g id="NUMBER_1">%2$d</xliff:g> tentativas sem êxito, este telemóvel será reposto, o que eliminará todos os dados do mesmo."</string>
+    <string name="kg_failed_attempts_now_wiping" product="tablet" msgid="8710104080409538587">"Tentou desbloquear incorretamente o tablet <xliff:g id="NUMBER">%d</xliff:g> vezes. Este tablet será reposto, o que eliminará todos os dados do mesmo."</string>
+    <string name="kg_failed_attempts_now_wiping" product="default" msgid="6381835450014881813">"Tentou desbloquear incorretamente o telemóvel <xliff:g id="NUMBER">%d</xliff:g> vezes. Este telemóvel será reposto, o que eliminará todos os dados do mesmo."</string>
+    <string name="kg_failed_attempts_almost_at_erase_user" product="tablet" msgid="7325071812832605911">"Tentou desbloquear incorretamente o tablet <xliff:g id="NUMBER_0">%1$d</xliff:g> vezes. Após mais <xliff:g id="NUMBER_1">%2$d</xliff:g> tentativas sem êxito, este utilizador será removido, o que eliminará todos os dados do mesmo."</string>
+    <string name="kg_failed_attempts_almost_at_erase_user" product="default" msgid="8110939900089863103">"Tentou desbloquear incorretamente o telemóvel <xliff:g id="NUMBER_0">%1$d</xliff:g> vezes. Após mais <xliff:g id="NUMBER_1">%2$d</xliff:g> tentativas sem êxito, este utilizador será removido, o que eliminará todos os dados do mesmo."</string>
+    <string name="kg_failed_attempts_now_erasing_user" product="tablet" msgid="8509811676952707883">"Tentou desbloquear incorretamente o tablet <xliff:g id="NUMBER">%d</xliff:g> vezes. Este utilizador será removido, o que eliminará todos os dados do mesmo."</string>
+    <string name="kg_failed_attempts_now_erasing_user" product="default" msgid="3051962486994265014">"Tentou desbloquear incorretamente o telemóvel <xliff:g id="NUMBER">%d</xliff:g> vezes. Este utilizador será removido, o que eliminará todos os dados do mesmo."</string>
+    <string name="kg_failed_attempts_almost_at_erase_profile" product="tablet" msgid="1049523640263353830">"Tentou desbloquear incorretamente o tablet <xliff:g id="NUMBER_0">%1$d</xliff:g> vezes. Após mais <xliff:g id="NUMBER_1">%2$d</xliff:g> tentativas sem êxito, o perfil de trabalho será removido, o que eliminará todos os dados do mesmo."</string>
+    <string name="kg_failed_attempts_almost_at_erase_profile" product="default" msgid="3280816298678433681">"Tentou desbloquear incorretamente o telemóvel <xliff:g id="NUMBER_0">%1$d</xliff:g> vezes. Após mais <xliff:g id="NUMBER_1">%2$d</xliff:g> tentativas sem êxito, o perfil de trabalho será removido, o que eliminará todos os dados do mesmo."</string>
+    <string name="kg_failed_attempts_now_erasing_profile" product="tablet" msgid="4417100487251371559">"Tentou desbloquear incorretamente o tablet <xliff:g id="NUMBER">%d</xliff:g> vezes. O perfil de trabalho será removido, o que eliminará todos os dados do mesmo."</string>
+    <string name="kg_failed_attempts_now_erasing_profile" product="default" msgid="4682221342671290678">"Tentou desbloquear incorretamente o telemóvel <xliff:g id="NUMBER">%d</xliff:g> vezes. O perfil de trabalho será removido, o que eliminará todos os dados do mesmo."</string>
+    <string name="kg_failed_attempts_almost_at_login" product="tablet" msgid="1860049973474855672">"Desenhou o padrão de desbloqueio incorretamente <xliff:g id="NUMBER_0">%1$d</xliff:g> vezes. Após mais <xliff:g id="NUMBER_1">%2$d</xliff:g> tentativas sem êxito, ser-lhe-á pedido para desbloquear o tablet através de uma conta de email.\n\n Tente novamente dentro de <xliff:g id="NUMBER_2">%3$d</xliff:g> segundos."</string>
+    <string name="kg_failed_attempts_almost_at_login" product="default" msgid="44112553371516141">"Desenhou o padrão de desbloqueio incorretamente <xliff:g id="NUMBER_0">%1$d</xliff:g> vezes. Após mais <xliff:g id="NUMBER_1">%2$d</xliff:g> tentativas sem êxito, ser-lhe-á pedido para desbloquear o telemóvel através de uma conta de email.\n\n Tente novamente dentro de <xliff:g id="NUMBER_2">%3$d</xliff:g> segundos."</string>
+    <string name="thermal_shutdown_title" product="default" msgid="8039593017174903505">"Telemóvel desligado devido ao calor"</string>
+    <string name="thermal_shutdown_title" product="device" msgid="2954206342842856379">"Dispositivo desligado devido ao calor"</string>
+    <string name="thermal_shutdown_title" product="tablet" msgid="8941033526856177533">"Tablet desligado devido ao calor"</string>
+    <string name="thermal_shutdown_message" product="default" msgid="6685194547904051408">"O seu telemóvel já está a funcionar normalmente.\nToque para obter mais informações"</string>
+    <string name="thermal_shutdown_message" product="device" msgid="3039675532521590478">"O seu dispositivo já está a funcionar normalmente.\nToque para obter mais informações"</string>
+    <string name="thermal_shutdown_message" product="tablet" msgid="5285898074484811386">"O seu tablet já está a funcionar normalmente.\nToque para obter mais informações"</string>
+    <string name="thermal_shutdown_dialog_message" product="default" msgid="6145923570358574186">"O telemóvel estava muito quente, por isso desligou-se para arrefecer. Agora funciona normalmente.\n\nO telemóvel pode sobreaquecer se:\n	• Usar apps que exigem mais recursos (jogos, vídeo ou apps de navegação)\n	• Transferir ou carregar ficheiros grandes\n	• For usado em altas temperaturas"</string>
+    <string name="thermal_shutdown_dialog_message" product="device" msgid="3647879000909527365">"O dispositivo estava muito quente, por isso desligou-se para arrefecer. Agora funciona normalmente.\n\nO dispositivo pode sobreaquecer se:\n	• Usar apps que exigem mais recursos (jogos, vídeo ou apps de navegação)\n	• Transferir ou carregar ficheiros grandes\n	• For usado em altas temperaturas"</string>
+    <string name="thermal_shutdown_dialog_message" product="tablet" msgid="8274487811928782165">"O tablet estava muito quente, por isso desligou-se para arrefecer. Agora funciona normalmente.\n\nO tablet pode sobreaquecer se:\n	• Usar apps que exigem mais recursos (jogos, vídeo ou apps de navegação)\n	• Transferir ou carregar ficheiros grandes\n	• For usado em altas temperaturas"</string>
+    <string name="high_temp_title" product="default" msgid="5365000411304924115">"O telemóvel está a aquecer"</string>
+    <string name="high_temp_title" product="device" msgid="6622009907401563664">"O dispositivo está a aquecer"</string>
+    <string name="high_temp_title" product="tablet" msgid="9039733706606446616">"O tablet está a aquecer"</string>
+    <string name="high_temp_notif_message" product="default" msgid="3928947950087257452">"Algumas funcionalidades são limitadas enquanto o telemóvel arrefece.\nToque para obter mais informações"</string>
+    <string name="high_temp_notif_message" product="device" msgid="6105125771372547292">"Algumas funcionalidades são limitadas enquanto o dispositivo arrefece.\nToque para obter mais informações"</string>
+    <string name="high_temp_notif_message" product="tablet" msgid="7799279192797476850">"Algumas funcionalidades são limitadas enquanto o tablet arrefece.\nToque para obter mais informações"</string>
+    <string name="high_temp_dialog_message" product="default" msgid="4272882413847595625">"Pode continuar a usá-lo, mas este pode funcionar mais lentamente.\n\nAssim que o telemóvel tiver arrefecido, vai funcionar normalmente."</string>
+    <string name="high_temp_dialog_message" product="device" msgid="263861943935989046">"O dispositivo vai tentar arrefecer automaticamente. Pode continuar a usá-lo, mas este pode funcionar mais lentamente.\n\nAssim que o dispositivo tiver arrefecido, vai funcionar normalmente."</string>
+    <string name="high_temp_dialog_message" product="tablet" msgid="5613713326841935537">"O tablet vai tentar arrefecer automaticamente. Pode continuar a usá-lo, mas este pode funcionar mais lentamente.\n\nAssim que o tablet tiver arrefecido, vai funcionar normalmente."</string>
+    <string name="security_settings_sfps_enroll_find_sensor_message" product="tablet" msgid="3726972508570143945">"O sensor de impressões digitais encontra-se no botão ligar/desligar. É o botão sem relevo junto ao botão de volume com relevo na extremidade do tablet."</string>
+    <string name="security_settings_sfps_enroll_find_sensor_message" product="device" msgid="2929467060295094725">"O sensor de impressões digitais encontra-se no botão ligar/desligar. É o botão sem relevo junto ao botão de volume com relevo na extremidade do dispositivo."</string>
+    <string name="security_settings_sfps_enroll_find_sensor_message" product="default" msgid="8582726566542997639">"O sensor de impressões digitais encontra-se no botão ligar/desligar. É o botão sem relevo junto ao botão de volume com relevo na extremidade do telemóvel."</string>
+    <string name="global_action_lock_message" product="default" msgid="7092460751050168771">"Desbloqueie o telemóvel para obter mais opções."</string>
+    <string name="global_action_lock_message" product="tablet" msgid="1024230056230539493">"Desbloqueie o tablet para obter mais opções."</string>
+    <string name="global_action_lock_message" product="device" msgid="3165224897120346096">"Desbloqueie o dispositivo para obter mais opções."</string>
+    <string name="media_transfer_playing_this_device" product="default" msgid="5795784619523545556">"A reproduzir neste telemóvel"</string>
+    <string name="media_transfer_playing_this_device" product="tablet" msgid="222514408550408633">"A reproduzir neste tablet"</string>
+</resources>

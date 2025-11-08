@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+/**
+ * Copyright (c) 2009, The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="dock_alignment_slow_charging" product="default" msgid="6997633396534416792">"Vuelve a alinear el teléfono para cargarlo más rápido"</string>
+    <string name="dock_alignment_not_charging" product="default" msgid="3980752926226749808">"Vuelve a alinear el teléfono para cargarlo inalámbricamente"</string>
+    <string name="inattentive_sleep_warning_message" product="tv" msgid="6844464574089665063">"Pronto se apagará el dispositivo Android TV. Presiona un botón para mantenerlo encendido."</string>
+    <string name="inattentive_sleep_warning_message" product="default" msgid="5693904520452332224">"Pronto se apagará el dispositivo. Presiona para mantenerlo encendido."</string>
+    <string name="keyguard_missing_sim_message" product="tablet" msgid="408124574073032188">"No hay ninguna tarjeta SIM en la tablet."</string>
+    <string name="keyguard_missing_sim_message" product="default" msgid="2605468359948247208">"No hay ninguna tarjeta SIM en el teléfono."</string>
+    <string name="kg_invalid_confirm_pin_hint" product="default" msgid="6278551068943958651">"Los códigos PIN no coinciden"</string>
+    <string name="kg_failed_attempts_almost_at_wipe" product="tablet" msgid="302165994845009232">"Intentaste desbloquear la tablet <xliff:g id="NUMBER_0">%1$d</xliff:g> veces de manera incorrecta. Después de <xliff:g id="NUMBER_1">%2$d</xliff:g> intentos incorrectos más, se restablecerá la tablet, lo que borrará todos los datos."</string>
+    <string name="kg_failed_attempts_almost_at_wipe" product="default" msgid="2594813176164266847">"Intentaste desbloquear el teléfono <xliff:g id="NUMBER_0">%1$d</xliff:g> veces de manera incorrecta. Después de <xliff:g id="NUMBER_1">%2$d</xliff:g> intentos incorrectos más, se restablecerá el teléfono, lo que borrará todos los datos."</string>
+    <string name="kg_failed_attempts_now_wiping" product="tablet" msgid="8710104080409538587">"Intentaste desbloquear la tablet <xliff:g id="NUMBER">%d</xliff:g> veces de manera incorrecta. Se restablecerá la tablet, lo que borrará todos los datos."</string>
+    <string name="kg_failed_attempts_now_wiping" product="default" msgid="6381835450014881813">"Intentaste desbloquear el teléfono <xliff:g id="NUMBER">%d</xliff:g> veces de manera incorrecta. Se restablecerá el teléfono, lo que borrará todos los datos."</string>
+    <string name="kg_failed_attempts_almost_at_erase_user" product="tablet" msgid="7325071812832605911">"Intentaste desbloquear la tablet <xliff:g id="NUMBER_0">%1$d</xliff:g> veces de manera incorrecta. Después de <xliff:g id="NUMBER_1">%2$d</xliff:g> intentos incorrectos más, se quitará este usuario, lo que borrará todos los datos asociados."</string>
+    <string name="kg_failed_attempts_almost_at_erase_user" product="default" msgid="8110939900089863103">"Intentaste desbloquear el teléfono <xliff:g id="NUMBER_0">%1$d</xliff:g> veces de manera incorrecta. Después de <xliff:g id="NUMBER_1">%2$d</xliff:g> intentos incorrectos más, se quitará este usuario, lo que borrará todos los datos asociados."</string>
+    <string name="kg_failed_attempts_now_erasing_user" product="tablet" msgid="8509811676952707883">"Intentaste desbloquear la tablet <xliff:g id="NUMBER">%d</xliff:g> veces de manera incorrecta. Se quitará el usuario, lo que borrará todos los datos asociados."</string>
+    <string name="kg_failed_attempts_now_erasing_user" product="default" msgid="3051962486994265014">"Intentaste desbloquear el teléfono <xliff:g id="NUMBER">%d</xliff:g> veces de manera incorrecta. Se quitará el usuario, lo que borrará todos los datos asociados."</string>
+    <string name="kg_failed_attempts_almost_at_erase_profile" product="tablet" msgid="1049523640263353830">"Intentaste desbloquear la tablet <xliff:g id="NUMBER_0">%1$d</xliff:g> veces de manera incorrecta. Después de <xliff:g id="NUMBER_1">%2$d</xliff:g> intentos incorrectos más, se quitará el perfil de trabajo, lo que borrará todos los datos asociados."</string>
+    <string name="kg_failed_attempts_almost_at_erase_profile" product="default" msgid="3280816298678433681">"Intentaste desbloquear el teléfono <xliff:g id="NUMBER_0">%1$d</xliff:g> veces de manera incorrecta. Después de <xliff:g id="NUMBER_1">%2$d</xliff:g> intentos incorrectos más, se quitará el perfil de trabajo, lo que borrará todos los datos asociados."</string>
+    <string name="kg_failed_attempts_now_erasing_profile" product="tablet" msgid="4417100487251371559">"Intentaste desbloquear la tablet <xliff:g id="NUMBER">%d</xliff:g> veces de manera incorrecta. Se quitará el perfil de trabajo, lo que borrará todos los datos asociados."</string>
+    <string name="kg_failed_attempts_now_erasing_profile" product="default" msgid="4682221342671290678">"Intentaste desbloquear el teléfono <xliff:g id="NUMBER">%d</xliff:g> veces de manera incorrecta. Se quitará el perfil de trabajo, lo que borrará todos los datos asociados."</string>
+    <string name="kg_failed_attempts_almost_at_login" product="tablet" msgid="1860049973474855672">"Dibujaste el patrón de desbloqueo <xliff:g id="NUMBER_0">%1$d</xliff:g> veces de manera incorrecta. Después de <xliff:g id="NUMBER_1">%2$d</xliff:g> intentos incorrectos más, se te solicitará que desbloquees la tablet mediante una cuenta de correo electrónico.\n\n Vuelve a intentarlo en <xliff:g id="NUMBER_2">%3$d</xliff:g> segundos."</string>
+    <string name="kg_failed_attempts_almost_at_login" product="default" msgid="44112553371516141">"Dibujaste el patrón de desbloqueo <xliff:g id="NUMBER_0">%1$d</xliff:g> veces de manera incorrecta. Después de <xliff:g id="NUMBER_1">%2$d</xliff:g> intentos incorrectos más, se te solicitará que desbloquees el dispositivo mediante una cuenta de correo electrónico.\n\n Vuelve a intentarlo en <xliff:g id="NUMBER_2">%3$d</xliff:g> segundos."</string>
+    <string name="thermal_shutdown_title" product="default" msgid="8039593017174903505">"Se apagó el tel. debido a alta temp."</string>
+    <string name="thermal_shutdown_title" product="device" msgid="2954206342842856379">"Se apagó el disp. debido a alta temp."</string>
+    <string name="thermal_shutdown_title" product="tablet" msgid="8941033526856177533">"Se apagó la tablet debido a alta temp."</string>
+    <string name="thermal_shutdown_message" product="default" msgid="6685194547904051408">"Tu teléfono ahora se ejecuta con normalidad.\nPresiona para obtener más información"</string>
+    <string name="thermal_shutdown_message" product="device" msgid="3039675532521590478">"Tu dispositivo ahora se ejecuta con normalidad.\nPresiona para obtener más información"</string>
+    <string name="thermal_shutdown_message" product="tablet" msgid="5285898074484811386">"Tu tablet ahora se ejecuta con normalidad.\nPresiona para obtener más información"</string>
+    <string name="thermal_shutdown_dialog_message" product="default" msgid="6145923570358574186">"Tu teléfono estaba muy caliente y se apagó para enfriarse. Ya funciona correctamente.\n\nTu teléfono puede calentarse en los siguientes casos:\n	• Si usas apps que consumen muchos recursos (como juegos, videos o navegación).\n	• Si subes o descargas archivos grandes.\n	• Si usas el teléfono en condiciones de temperatura alta."</string>
+    <string name="thermal_shutdown_dialog_message" product="device" msgid="3647879000909527365">"Tu dispositivo estaba muy caliente y se apagó para enfriarse. Ya funciona correctamente.\n\nTu dispositivo puede calentarse en los siguientes casos:\n	• Si usas apps que consumen muchos recursos (como juegos, videos o navegación).\n	• Si subes o descargas archivos grandes.\n	• Si usas el dispositivo en condiciones de temperatura alta."</string>
+    <string name="thermal_shutdown_dialog_message" product="tablet" msgid="8274487811928782165">"Tu tablet estaba muy caliente y se apagó para enfriarse. Ya funciona correctamente.\n\nTu tablet puede calentarse en los siguientes casos:\n	• Si usas apps que consumen muchos recursos (como juegos, videos o navegación).\n	• Si subes o descargas archivos grandes.\n	• Si usas la tablet en condiciones de temperatura alta."</string>
+    <string name="high_temp_title" product="default" msgid="5365000411304924115">"El teléfono se está calentando"</string>
+    <string name="high_temp_title" product="device" msgid="6622009907401563664">"El disp. se está calentando"</string>
+    <string name="high_temp_title" product="tablet" msgid="9039733706606446616">"La tablet se está calentando"</string>
+    <string name="high_temp_notif_message" product="default" msgid="3928947950087257452">"Algunas funciones se limitan durante el enfriamiento del teléfono.\nPresiona para obtener más información"</string>
+    <string name="high_temp_notif_message" product="device" msgid="6105125771372547292">"Algunas funciones se limitan durante el enfriamiento del dispositivo.\nPresiona para obtener más información"</string>
+    <string name="high_temp_notif_message" product="tablet" msgid="7799279192797476850">"Algunas funciones se limitan durante el enfriamiento de la tablet.\nPresiona para obtener más información"</string>
+    <string name="high_temp_dialog_message" product="default" msgid="4272882413847595625">"Tu teléfono intentará enfriarse automáticamente. Podrás usarlo, pero es posible que funcione más lento.\n\nUna vez que se haya enfriado, volverá a funcionar con normalidad."</string>
+    <string name="high_temp_dialog_message" product="device" msgid="263861943935989046">"Tu dispositivo intentará enfriarse automáticamente. Podrás usarlo, pero es posible que funcione más lento.\n\nUna vez que se haya enfriado, volverá a funcionar con normalidad."</string>
+    <string name="high_temp_dialog_message" product="tablet" msgid="5613713326841935537">"Tu tablet intentará enfriarse automáticamente. Podrás usarla, pero es posible que funcione más lenta.\n\nUna vez que se haya enfriado, volverá a funcionar con normalidad."</string>
+    <string name="security_settings_sfps_enroll_find_sensor_message" product="tablet" msgid="3726972508570143945">"El sensor de huellas dactilares está en el botón de encendido. Es el botón plano que está junto al botón de volumen en relieve, en el borde de la tablet."</string>
+    <string name="security_settings_sfps_enroll_find_sensor_message" product="device" msgid="2929467060295094725">"El sensor de huellas dactilares está en el botón de encendido. Es el botón plano que está junto al botón de volumen en relieve, en el borde del dispositivo."</string>
+    <string name="security_settings_sfps_enroll_find_sensor_message" product="default" msgid="8582726566542997639">"El sensor de huellas dactilares está en el botón de encendido. Es el botón plano que está junto al botón de volumen en relieve, en el borde del teléfono."</string>
+    <string name="global_action_lock_message" product="default" msgid="7092460751050168771">"Desbloquea el teléfono para ver más opciones"</string>
+    <string name="global_action_lock_message" product="tablet" msgid="1024230056230539493">"Desbloquea la tablet para ver más opciones"</string>
+    <string name="global_action_lock_message" product="device" msgid="3165224897120346096">"Desbloquea el dispositivo para ver más opciones"</string>
+    <string name="media_transfer_playing_this_device" product="default" msgid="5795784619523545556">"Reproduciendo en este teléfono"</string>
+    <string name="media_transfer_playing_this_device" product="tablet" msgid="222514408550408633">"Reproduciendo en esta tablet"</string>
+</resources>

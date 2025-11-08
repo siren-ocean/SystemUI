@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+/**
+ * Copyright (c) 2009, The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="dock_alignment_slow_charging" product="default" msgid="6997633396534416792">"වඩා වේගවත් ආරෝපණය සඳහා දුරකථනය යළි සකසන්න"</string>
+    <string name="dock_alignment_not_charging" product="default" msgid="3980752926226749808">"නොරැහැන්ව ආරෝපණය කිරීමට දුරකථනය යළි සකසන්න"</string>
+    <string name="inattentive_sleep_warning_message" product="tv" msgid="6844464574089665063">"Android TV උපාංගය ඉක්මනින් ක්‍රියා විරහිත වනු ඇත; එය දිගටම ක්‍රියාත්මක කර තැබීමට බොත්තමක් ඔබන්න."</string>
+    <string name="inattentive_sleep_warning_message" product="default" msgid="5693904520452332224">"උපාංගය ඉක්මනින් ක්‍රියා විරහිත වනු ඇත; එය දිගටම ක්‍රියාත්මක කර තැබීමට ඔබන්න."</string>
+    <string name="keyguard_missing_sim_message" product="tablet" msgid="408124574073032188">"ටැබ්ලටයේ SIM නැත."</string>
+    <string name="keyguard_missing_sim_message" product="default" msgid="2605468359948247208">"දුරකථනයේ SIM නැත."</string>
+    <string name="kg_invalid_confirm_pin_hint" product="default" msgid="6278551068943958651">"PIN කේත නොගැළපේ."</string>
+    <string name="kg_failed_attempts_almost_at_wipe" product="tablet" msgid="302165994845009232">"ඔබ ටැබ්ලට් පරිගණකය අගුළු හැරීමට <xliff:g id="NUMBER_0">%1$d</xliff:g> වරක් වැරදියට උත්සාහ කර ඇත. තවත් අසාර්ථක උත්සාහයන් <xliff:g id="NUMBER_1">%2$d</xliff:g>කින් පසුව, මෙම ටැබ්ලට් පරිගණකය යළි සකසනු ඇති අතර, එය එහි සියලු දත්ත මකනු ඇත."</string>
+    <string name="kg_failed_attempts_almost_at_wipe" product="default" msgid="2594813176164266847">"ඔබ දුරකථනය අගුළු හැරීමට <xliff:g id="NUMBER_0">%1$d</xliff:g> වරක් වැරදියට උත්සාහ කර ඇත. තවත් අසාර්ථක උත්සාහයන් <xliff:g id="NUMBER_1">%2$d</xliff:g>කින් පසුව, මෙම දුරකථනය යළි සකසනු ඇති අතර, එය එහි සියලු දත්ත මකනු ඇත."</string>
+    <string name="kg_failed_attempts_now_wiping" product="tablet" msgid="8710104080409538587">"ඔබ ටැබ්ලට් පරිගණකය අගුළු හැරීමට <xliff:g id="NUMBER">%d</xliff:g> වරක් වැරදියට උත්සාහ කර ඇත. මෙම ටැබ්ලට් පරිගණකය යළි සකසනු ඇති අතර, එය එහි සියලු පදත්ත මකනු ඇත."</string>
+    <string name="kg_failed_attempts_now_wiping" product="default" msgid="6381835450014881813">"ඔබ දුරකථනය අගුළු හැරීමට <xliff:g id="NUMBER">%d</xliff:g> වරක් වැරදියට උත්සාහ කර ඇත. මෙම දුරකථනය යළි සකසනු ඇති අතර, එය එහි සියලු පදත්ත මකනු ඇත."</string>
+    <string name="kg_failed_attempts_almost_at_erase_user" product="tablet" msgid="7325071812832605911">"ඔබ ටැබ්ලට් පරිගණකය අගුළු හැරීමට <xliff:g id="NUMBER_0">%1$d</xliff:g> වරක් වැරදියට උත්සාහ කර ඇත. තවත් අසාර්ථක උත්සාහයන් <xliff:g id="NUMBER_1">%2$d</xliff:g>කින් පසුව, මෙම පරිශීලකයා ඉවත් කරනු ඇති අතර, එය සියලු පරිශීලක දත්ත මකනු ඇත."</string>
+    <string name="kg_failed_attempts_almost_at_erase_user" product="default" msgid="8110939900089863103">"ඔබ දුරකථනය අගුළු හැරීමට <xliff:g id="NUMBER_0">%1$d</xliff:g> වරක් වැරදියට උත්සාහ කර ඇත. තවත් අසාර්ථක උත්සාහයන් <xliff:g id="NUMBER_1">%2$d</xliff:g>කින් පසුව, මෙම පරිශීලකයා ඉවත් කරනු ඇති අතර, එය සියලු පරිශීලක දත්ත මකනු ඇත."</string>
+    <string name="kg_failed_attempts_now_erasing_user" product="tablet" msgid="8509811676952707883">"ඔබ ටැබ්ලට් පරිගණකය අගුළු හැරීමට <xliff:g id="NUMBER">%d</xliff:g> වරක් වැරදියට උත්සාහ කර ඇත. මෙම පරිශීලකයා ඉවත් කරනු ඇති අතර, එය සියලු පරිශීලක දත්ත මකනු ඇත."</string>
+    <string name="kg_failed_attempts_now_erasing_user" product="default" msgid="3051962486994265014">"ඔබ දුරකථනය අගුළු හැරීමට <xliff:g id="NUMBER">%d</xliff:g> වරක් වැරදියට උත්සාහ කර ඇත. මෙම පරිශීලකයා ඉවත් කරනු ඇති අතර, එය සියලු පරිශීලක දත්ත මකනු ඇත."</string>
+    <string name="kg_failed_attempts_almost_at_erase_profile" product="tablet" msgid="1049523640263353830">"ඔබ ටැබ්ලට් පරිගණකය අගුළු හැරීමට <xliff:g id="NUMBER_0">%1$d</xliff:g> වරක් වැරදියට උත්සාහ කර ඇත. තවත් අසාර්ථක උත්සාහයන් <xliff:g id="NUMBER_1">%2$d</xliff:g>කින් පසුව, කාර්යාල පැතිකඩ ඉවත් කරනු ඇති අතර, එය සියලු පැතිකඩ දත්ත මකනු ඇත."</string>
+    <string name="kg_failed_attempts_almost_at_erase_profile" product="default" msgid="3280816298678433681">"ඔබ දුරකථනය අගුළු හැරීමට <xliff:g id="NUMBER_0">%1$d</xliff:g> වරක් වැරදියට උත්සාහ කර ඇත. තවත් අසාර්ථක උත්සාහයන් <xliff:g id="NUMBER_1">%2$d</xliff:g>කින් පසුව, කාර්යාල පැතිකඩ ඉවත් කරනු ඇති අතර, එය සියලු පැතිකඩ දත්ත මකනු ඇත."</string>
+    <string name="kg_failed_attempts_now_erasing_profile" product="tablet" msgid="4417100487251371559">"ඔබ ටැබ්ලට් පරිගණකය අගුළු හැරීමට <xliff:g id="NUMBER">%d</xliff:g> වරක් වැරදියට උත්සාහ කර ඇත. කාර්යාල පැතිකඩ ඉවත් කරනු ඇති අතර, එය සියලු පැතිකඩ දත්ත මකනු ඇත."</string>
+    <string name="kg_failed_attempts_now_erasing_profile" product="default" msgid="4682221342671290678">"ඔබ දුරකථනය අගුළු හැරීමට <xliff:g id="NUMBER">%d</xliff:g> වරක් වැරදියට උත්සාහ කර ඇත. කාර්යාල පැතිකඩ ඉවත් කරනු ඇති අතර, එය සියලු පැතිකඩ දත්ත මකනු ඇත."</string>
+    <string name="kg_failed_attempts_almost_at_login" product="tablet" msgid="1860049973474855672">"ඔබ අගුළු ඇරිමේ රටාව <xliff:g id="NUMBER_0">%1$d</xliff:g> වතාවක් වැරදියට ඇඳ ඇත. තවත් අසාර්ථක උත්සාහ <xliff:g id="NUMBER_1">%2$d</xliff:g> කින් පසුව, ඊ-තැපැල් ගිණුම භාවිතා කරමින් ඔබගේ ටැබ්ලටයේ අගුළු ඇරීමට ඔබට පවසනු ඇත.\n\n නැවත තත්පර <xliff:g id="NUMBER_2">%3$d</xliff:g> කින් උත්සාහ කරන්න."</string>
+    <string name="kg_failed_attempts_almost_at_login" product="default" msgid="44112553371516141">"ඔබ වැරදියට <xliff:g id="NUMBER_0">%1$d</xliff:g> වතාවක් ඔබගේ අගුළු හැරීමේ රටාව ඇඳ ඇත. අසාර්ථක උත්සහ කිරීම් <xliff:g id="NUMBER_1">%2$d</xliff:g> න් පසුව, ඔබගේ ඊ-තැපැල් ලිපිනය භාවිතයෙන් ඔබගේ දුරකථනය අගුළු හැරීමට ඔබගෙන් අසයි.\n\n තත්පර <xliff:g id="NUMBER_2">%3$d</xliff:g> න් පසුව නැවත උත්සහ කරන්න."</string>
+    <string name="thermal_shutdown_title" product="default" msgid="8039593017174903505">"දුරකථනය රත් වීම නිසා ක්‍රියාවිරහිත විය"</string>
+    <string name="thermal_shutdown_title" product="device" msgid="2954206342842856379">"උණුසුම හේතුවෙන් උපාංගය ක්‍රියාවිරහිත විය"</string>
+    <string name="thermal_shutdown_title" product="tablet" msgid="8941033526856177533">"ටැබ්ලටය රත් වීම නිසා ක්‍රියාවිරහිත විය"</string>
+    <string name="thermal_shutdown_message" product="default" msgid="6685194547904051408">"ඔබේ දුරකථනය දැන් සාමාන්‍ය ලෙස ධාවනය වේ.\nතව තතු සඳහා තට්ටු කරන්න"</string>
+    <string name="thermal_shutdown_message" product="device" msgid="3039675532521590478">"ඔබේ උපාංගය දැන් සාමාන්‍ය ලෙස ධාවනය වේ.\nතව තතු සඳහා තට්ටු කරන්න"</string>
+    <string name="thermal_shutdown_message" product="tablet" msgid="5285898074484811386">"ඔබේ ටැබ්ලටය දැන් සාමාන්‍ය ලෙස ධාවනය වේ.\nතව තතු සඳහා තට්ටු කරන්න"</string>
+    <string name="thermal_shutdown_dialog_message" product="default" msgid="6145923570358574186">"ඔබේ දුරකථනය ඉතාම උණුසුම් විය, එම නිසා එය සිසිල් වීමට ක්‍රියාවිරහිත කරන ලදි. දැන් ඔබේ දුරකථනය සාමාන්‍ය පරිදි ධාවනය වේ.\n\nඔබ පහත දේවල් සිදු කළහොත් ඔබේ දුරකථනය ඉතාම උණුසුම් විය හැක:\n	• සම්පත්-දැඩි සත්කාරක යෙදුම් භාවිතය (ක්‍රීඩා, වීඩියෝ, හෝ සංචලන යෙදුම් යනාදී)\n	• විශාල ගොනු බාගැනීම හෝ උඩුගත කිරීම\n	• ඔබේ දුරකථනය අධික උෂ්ණත්වයේදී භාවිත කිරීම"</string>
+    <string name="thermal_shutdown_dialog_message" product="device" msgid="3647879000909527365">"ඔබේ උපාංගය ඉතාම උණුසුම් විය, එම නිසා එය සිසිල් වීමට ක්‍රියාවිරහිත කරන ලදි. දැන් ඔබේ දුරකථනය සාමාන්‍ය පරිදි ධාවනය වේ.\n\nඔබ පහත දේවල් සිදු කළහොත් ඔබේ උපාංගය ඉතාම උණුසුම් විය හැක:\n	• සම්පත්-දැඩි සත්කාරක යෙදුම් භාවිතය (ක්‍රීඩා, වීඩියෝ, හෝ සංචලන යෙදුම් යනාදී)\n	• විශාල ගොනු බාගැනීම හෝ උඩුගත කිරීම\n	• ඔබේ දුරකථනය අධික උෂ්ණත්වයේ දී භාවිත කිරීම"</string>
+    <string name="thermal_shutdown_dialog_message" product="tablet" msgid="8274487811928782165">"ඔබේ ටැබ්ලටය ඉතාම උණුසුම් විය, එම නිසා එය සිසිල් වීමට ක්‍රියාවිරහිත කරන ලදි. දැන් ඔබේ දුරකථනය සාමාන්‍ය පරිදි ධාවනය වේ.\n\nඔබ පහත දේවල් සිදු කළහොත් ඔබේ දුරකථනය ඉතාම උණුසුම් විය හැක:\n	• සම්පත්-දැඩි සත්කාරක යෙදුම් භාවිතය (ක්‍රීඩා, වීඩියෝ, හෝ සංචලන යෙදුම් යනාදී)\n	• විශාල ගොනු බාගැනීම හෝ උඩුගත කිරීම\n	• ඔබේ දුරකථනය අධික උෂ්ණත්වයේ දී භාවිත කිරීම"</string>
+    <string name="high_temp_title" product="default" msgid="5365000411304924115">"දුරකථනය උණුසුම් වෙමින්"</string>
+    <string name="high_temp_title" product="device" msgid="6622009907401563664">"උපාංගය උණුසුම් වෙමින් පවතී"</string>
+    <string name="high_temp_title" product="tablet" msgid="9039733706606446616">"ටැබ්ලටය උණුසුම් වෙමින් පවතී"</string>
+    <string name="high_temp_notif_message" product="default" msgid="3928947950087257452">"දුරකථනය සිසිල් වන අතරේ සමහර විශේෂාංග සීමිත විය හැක.\nතව තතු සඳහා තට්ටු කරන්න"</string>
+    <string name="high_temp_notif_message" product="device" msgid="6105125771372547292">"උපාංගය සිසිල් වන අතරේ සමහර විශේෂාංග සීමිත විය හැක.\nතව තතු සඳහා තට්ටු කරන්න"</string>
+    <string name="high_temp_notif_message" product="tablet" msgid="7799279192797476850">"ටැබ්ලටය සිසිල් වන අතරේ සමහර විශේෂාංග සීමිත විය හැක.\nතව තතු සඳහා තට්ටු කරන්න"</string>
+    <string name="high_temp_dialog_message" product="default" msgid="4272882413847595625">"ඔ බේ දුරකථනය ස්වයංක්‍රීයව සිසිල් වීමට උත්සාහ කරනු ඇත. ඔබට තවම ඔබේ දුරකථනය භාවිත කළ හැකි නමුත්, එය සෙමින් ධාවනය විය හැක.\n\nඔබේ දුරකථනය සිසිල් වූ පසු, එය සාමාන්‍ය ලෙස ධාවනය වනු ඇත."</string>
+    <string name="high_temp_dialog_message" product="device" msgid="263861943935989046">"ඔබේ උපාංගය ස්වයංක්‍රීයව සිසිල් වීමට උත්සාහ දරනු ඇත. ඔබට තවමත් බබේ උපාංගය භාවිතා කළ හැකි නමුත්, එය මන්දගාමීව ධාවනය විය හැක.\n\nඔබේ උපාංගය සිසිල් වූ පසු, එය සාමාන්‍ය පරිදි ධාවනය වනු ඇත."</string>
+    <string name="high_temp_dialog_message" product="tablet" msgid="5613713326841935537">"ඔබේ ටැබ්ලටය ස්වයංක්‍රීයව සිසිල් වීමට උත්සාහ දරනු ඇත. ඔබට තවමත් බබේ ටැබ්ලටය භාවිතා කළ හැකි නමුත්, එය මන්දගාමීව ධාවනය විය හැක.\n\nඔබේ ටැබ්ලටය සිසිල් වූ පසු, එය සාමාන්‍ය පරිදි ධාවනය වනු ඇත."</string>
+    <string name="security_settings_sfps_enroll_find_sensor_message" product="tablet" msgid="3726972508570143945">"ඇඟිලි සලකුණු සංවේදකය බල බොත්තම මත ඇත. එය ටැබ්ලටයෙහි කෙළවර ඇති ඉහළ හඬ පරිමා බොත්තම අසල ඇති පැතලි බොත්තමයි."</string>
+    <string name="security_settings_sfps_enroll_find_sensor_message" product="device" msgid="2929467060295094725">"ඇඟිලි සලකුණු සංවේදකය බල බොත්තම මත ඇත. එය උපාංගයෙහි කෙළවර ඇති ඉහළ හඬ පරිමා බොත්තම අසල ඇති පැතලි බොත්තමයි."</string>
+    <string name="security_settings_sfps_enroll_find_sensor_message" product="default" msgid="8582726566542997639">"ඇඟිලි සලකුණු සංවේදකය බල බොත්තම මත ඇත. එය දුරකථනයෙහි කෙළවර ඇති ඉහළ හඬ පරිමා බොත්තම අසල ඇති පැතලි බොත්තමයි."</string>
+    <string name="global_action_lock_message" product="default" msgid="7092460751050168771">"තව විකල්ප සඳහා ඔබේ දුරකථනය අගුලු හරින්න"</string>
+    <string name="global_action_lock_message" product="tablet" msgid="1024230056230539493">"තව විකල්ප සඳහා ඔබේ ටැබ්ලට් පරිගණකය අගුලු හරින්න"</string>
+    <string name="global_action_lock_message" product="device" msgid="3165224897120346096">"තව විකල්ප සඳහා ඔබේ උපාංගය අගුලු හරින්න"</string>
+    <string name="media_transfer_playing_this_device" product="default" msgid="5795784619523545556">"මෙම දුරකථනයෙහි වාදනය වේ"</string>
+    <string name="media_transfer_playing_this_device" product="tablet" msgid="222514408550408633">"මෙම ටැබ්ලටයේ වාදනය වේ"</string>
+</resources>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2021 The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+<MotionScene
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        android:id="@+id/header_transition"
+        app:constraintSetEnd="@id/qs_header_constraint"
+        app:constraintSetStart="@id/qqs_header_constraint"
+        motion:layoutDuringTransition="honorRequest">
+        <KeyFrameSet>
+            <!-- These positions are to prevent visual movement of @id/date -->
+            <KeyPosition
+                app:keyPositionType="deltaRelative"
+                app:percentX="0"
+                app:percentY="@dimen/percent_displacement_at_fade_out"
+                app:framePosition="@integer/fade_out_complete_frame"
+                app:sizePercent="0"
+                app:curveFit="linear"
+                app:motionTarget="@id/date" />
+            <KeyPosition
+                app:keyPositionType="deltaRelative"
+                app:percentX="1"
+                app:percentY="0.5"
+                app:sizePercent="1"
+                app:framePosition="50"
+                app:curveFit="linear"
+                app:motionTarget="@id/date" />
+            <KeyAttribute
+                app:motionTarget="@id/date"
+                app:framePosition="14"
+                android:alpha="0"
+                />
+            <KeyAttribute
+                app:motionTarget="@id/date"
+                app:framePosition="@integer/fade_in_start_frame"
+                android:alpha="0"
+                />
+            <KeyPosition
+                app:motionTarget="@id/shade_header_system_icons"
+                app:keyPositionType="deltaRelative"
+                app:percentX="0"
+                app:percentY="@dimen/percent_displacement_at_fade_out"
+                app:framePosition="@integer/fade_out_complete_frame"
+                app:sizePercent="0"
+                app:curveFit="linear" />
+            <KeyPosition
+                app:motionTarget="@id/shade_header_system_icons"
+                app:keyPositionType="deltaRelative"
+                app:percentX="1"
+                app:percentY="0.5"
+                app:framePosition="50"
+                app:sizePercent="1"
+                app:curveFit="linear" />
+            <KeyAttribute
+                app:motionTarget="@id/shade_header_system_icons"
+                app:framePosition="@integer/fade_out_complete_frame"
+                android:alpha="0"
+                />
+            <KeyAttribute
+                app:motionTarget="@id/shade_header_system_icons"
+                app:framePosition="@integer/fade_in_start_frame"
+                android:alpha="0"
+                />
+            <KeyPosition
+                app:motionTarget="@id/carrier_group"
+                app:percentX="1"
+                app:percentY="0.5"
+                app:framePosition="50"
+                app:percentWidth="1"
+                app:percentHeight="1"
+                app:curveFit="linear"
+                app:keyPositionType="deltaRelative" />
+            <KeyAttribute
+                app:motionTarget="@id/carrier_group"
+                app:framePosition="0"
+                android:alpha="0" />
+            <KeyAttribute
+                app:motionTarget="@id/carrier_group"
+                app:framePosition="@integer/fade_in_start_frame"
+                android:alpha="0" />
+        </KeyFrameSet>
+    </Transition>
+
+    <Transition
+        android:id="@+id/large_screen_header_transition"
+        app:constraintSetStart="@id/large_screen_header_constraint"
+        app:constraintSetEnd="@id/large_screen_header_constraint"/>
+
+    <Include app:constraintSet="@xml/large_screen_shade_header"/>
+
+    <Include app:constraintSet="@xml/qs_header"/>
+
+    <Include app:constraintSet="@xml/qqs_header"/>
+</MotionScene>

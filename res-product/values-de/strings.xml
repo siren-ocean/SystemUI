@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+/**
+ * Copyright (c) 2009, The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="dock_alignment_slow_charging" product="default" msgid="6997633396534416792">"Smartphone genau platzieren, um es schneller zu laden"</string>
+    <string name="dock_alignment_not_charging" product="default" msgid="3980752926226749808">"Smartphone genau platzieren, um es kabellos zu laden"</string>
+    <string name="inattentive_sleep_warning_message" product="tv" msgid="6844464574089665063">"Das Android TV-Gerät wird gleich ausgeschaltet. Falls es eingeschaltet bleiben soll, drücke eine Taste."</string>
+    <string name="inattentive_sleep_warning_message" product="default" msgid="5693904520452332224">"Das Gerät wird gleich ausgeschaltet. Falls es eingeschaltet bleiben soll, drücke beispielsweise eine Taste oder berühre den Bildschirm."</string>
+    <string name="keyguard_missing_sim_message" product="tablet" msgid="408124574073032188">"Keine SIM-Karte im Tablet."</string>
+    <string name="keyguard_missing_sim_message" product="default" msgid="2605468359948247208">"Keine SIM-Karte im Smartphone."</string>
+    <string name="kg_invalid_confirm_pin_hint" product="default" msgid="6278551068943958651">"PIN-Codes stimmen nicht überein"</string>
+    <string name="kg_failed_attempts_almost_at_wipe" product="tablet" msgid="302165994845009232">"Du hast <xliff:g id="NUMBER_0">%1$d</xliff:g>-mal erfolglos versucht, das Tablet zu entsperren. Nach <xliff:g id="NUMBER_1">%2$d</xliff:g> weiteren erfolglosen Versuchen wird dieses Tablet zurückgesetzt. Dadurch werden alle Gerätedaten gelöscht."</string>
+    <string name="kg_failed_attempts_almost_at_wipe" product="default" msgid="2594813176164266847">"Du hast <xliff:g id="NUMBER_0">%1$d</xliff:g>-mal erfolglos versucht, das Smartphone zu entsperren. Nach <xliff:g id="NUMBER_1">%2$d</xliff:g> weiteren erfolglosen Versuchen wird es zurückgesetzt. Dadurch werden alle Gerätedaten gelöscht."</string>
+    <string name="kg_failed_attempts_now_wiping" product="tablet" msgid="8710104080409538587">"Du hast <xliff:g id="NUMBER">%d</xliff:g>-mal erfolglos versucht, das Tablet zu entsperren. Es wird nun zurückgesetzt und alle Gerätedaten werden gelöscht."</string>
+    <string name="kg_failed_attempts_now_wiping" product="default" msgid="6381835450014881813">"Du hast <xliff:g id="NUMBER">%d</xliff:g>-mal erfolglos versucht, das Smartphone zu entsperren. Es wird nun zurückgesetzt und alle Gerätedaten werden gelöscht."</string>
+    <string name="kg_failed_attempts_almost_at_erase_user" product="tablet" msgid="7325071812832605911">"Du hast <xliff:g id="NUMBER_0">%1$d</xliff:g>-mal erfolglos versucht, das Tablet zu entsperren. Nach <xliff:g id="NUMBER_1">%2$d</xliff:g> weiteren erfolglosen Versuchen wird dieser Nutzer entfernt. Dadurch werden alle Nutzerdaten gelöscht."</string>
+    <string name="kg_failed_attempts_almost_at_erase_user" product="default" msgid="8110939900089863103">"Du hast <xliff:g id="NUMBER_0">%1$d</xliff:g>-mal erfolglos versucht, das Smartphone zu entsperren. Nach <xliff:g id="NUMBER_1">%2$d</xliff:g> weiteren erfolglosen Versuchen wird dieser Nutzer entfernt. Dadurch werden alle Nutzerdaten gelöscht."</string>
+    <string name="kg_failed_attempts_now_erasing_user" product="tablet" msgid="8509811676952707883">"Du hast <xliff:g id="NUMBER">%d</xliff:g>-mal erfolglos versucht, das Tablet zu entsperren. Dieser Nutzer wird nun entfernt und alle Nutzerdaten werden gelöscht."</string>
+    <string name="kg_failed_attempts_now_erasing_user" product="default" msgid="3051962486994265014">"Du hast <xliff:g id="NUMBER">%d</xliff:g>-mal erfolglos versucht, das Smartphone zu entsperren. Dieser Nutzer wird nun entfernt und alle Nutzerdaten werden gelöscht."</string>
+    <string name="kg_failed_attempts_almost_at_erase_profile" product="tablet" msgid="1049523640263353830">"Du hast <xliff:g id="NUMBER_0">%1$d</xliff:g>-mal erfolglos versucht, das Tablet zu entsperren. Nach <xliff:g id="NUMBER_1">%2$d</xliff:g> weiteren erfolglosen Versuchen wird das Arbeitsprofil entfernt. Dadurch werden alle Profildaten gelöscht."</string>
+    <string name="kg_failed_attempts_almost_at_erase_profile" product="default" msgid="3280816298678433681">"Du hast <xliff:g id="NUMBER_0">%1$d</xliff:g>-mal erfolglos versucht, das Smartphone zu entsperren. Nach <xliff:g id="NUMBER_1">%2$d</xliff:g> weiteren erfolglosen Versuchen wird das Arbeitsprofil entfernt. Dadurch werden alle Profildaten gelöscht."</string>
+    <string name="kg_failed_attempts_now_erasing_profile" product="tablet" msgid="4417100487251371559">"Du hast <xliff:g id="NUMBER">%d</xliff:g>-mal erfolglos versucht, das Tablet zu entsperren. Das Arbeitsprofil wird nun entfernt und alle Profildaten werden gelöscht."</string>
+    <string name="kg_failed_attempts_now_erasing_profile" product="default" msgid="4682221342671290678">"Du hast <xliff:g id="NUMBER">%d</xliff:g>-mal erfolglos versucht, das Smartphone zu entsperren. Das Arbeitsprofil wird nun entfernt und alle Profildaten werden gelöscht."</string>
+    <string name="kg_failed_attempts_almost_at_login" product="tablet" msgid="1860049973474855672">"Du hast dein Entsperrungsmuster <xliff:g id="NUMBER_0">%1$d</xliff:g>-mal falsch gezeichnet. Nach <xliff:g id="NUMBER_1">%2$d</xliff:g> weiteren erfolglosen Versuchen wirst du aufgefordert, dein Tablet mithilfe eines E-Mail-Kontos zu entsperren.\n\n Versuche es in <xliff:g id="NUMBER_2">%3$d</xliff:g> Sekunden noch einmal."</string>
+    <string name="kg_failed_attempts_almost_at_login" product="default" msgid="44112553371516141">"Du hast dein Entsperrungsmuster <xliff:g id="NUMBER_0">%1$d</xliff:g>-mal falsch gezeichnet. Nach <xliff:g id="NUMBER_1">%2$d</xliff:g> weiteren erfolglosen Versuchen wirst du aufgefordert, dein Smartphone mithilfe eines E-Mail-Kontos zu entsperren.\n\n Versuche es in <xliff:g id="NUMBER_2">%3$d</xliff:g> Sekunden noch einmal."</string>
+    <string name="thermal_shutdown_title" product="default" msgid="8039593017174903505">"Smartphone wegen Überhitzung ausgeschaltet"</string>
+    <string name="thermal_shutdown_title" product="device" msgid="2954206342842856379">"Gerät wegen Überhitzung ausgeschaltet"</string>
+    <string name="thermal_shutdown_title" product="tablet" msgid="8941033526856177533">"Tablet wegen Überhitzung ausgeschaltet"</string>
+    <string name="thermal_shutdown_message" product="default" msgid="6685194547904051408">"Dein Smartphone funktioniert jetzt wieder normal.\nFür mehr Informationen tippen."</string>
+    <string name="thermal_shutdown_message" product="device" msgid="3039675532521590478">"Dein Gerät funktioniert jetzt wieder normal.\nFür mehr Informationen tippen."</string>
+    <string name="thermal_shutdown_message" product="tablet" msgid="5285898074484811386">"Dein Tablet funktioniert jetzt wieder normal.\nFür mehr Informationen tippen."</string>
+    <string name="thermal_shutdown_dialog_message" product="default" msgid="6145923570358574186">"Dein Smartphone war zu heiß und wurde zum Abkühlen ausgeschaltet. Nun funktioniert es wieder normal.\n\nMögliche Ursachen:\n	• Verwendung ressourcenintensiver Apps, z. B. Spiele-, Video- oder Navigations-Apps\n	• Download oder Upload großer Dateien\n	• Verwendung des Smartphones bei hohen Temperaturen"</string>
+    <string name="thermal_shutdown_dialog_message" product="device" msgid="3647879000909527365">"Dein Gerät war zu heiß und wurde zum Abkühlen ausgeschaltet. Nun funktioniert es wieder normal.\n\nMögliche Ursachen:\n	• Verwendung ressourcenintensiver Apps, z. B. Spiele-, Video- oder Navigations-Apps\n	• Download oder Upload großer Dateien\n	• Verwendung des Geräts bei hohen Temperaturen"</string>
+    <string name="thermal_shutdown_dialog_message" product="tablet" msgid="8274487811928782165">"Dein Tablet war zu heiß und wurde zum Abkühlen ausgeschaltet. Nun funktioniert es wieder normal.\n\nMögliche Ursachen:\n	• Verwendung ressourcenintensiver Apps, z. B. Spiele-, Video- oder Navigations-Apps\n	• Download oder Upload großer Dateien\n	• Verwendung des Tablets bei hohen Temperaturen"</string>
+    <string name="high_temp_title" product="default" msgid="5365000411304924115">"Smartphone wird warm"</string>
+    <string name="high_temp_title" product="device" msgid="6622009907401563664">"Gerät wird warm"</string>
+    <string name="high_temp_title" product="tablet" msgid="9039733706606446616">"Tablet wird warm"</string>
+    <string name="high_temp_notif_message" product="default" msgid="3928947950087257452">"Einige Funktionen sind während der Abkühlphase des Smartphones eingeschränkt.\nFür mehr Informationen tippen."</string>
+    <string name="high_temp_notif_message" product="device" msgid="6105125771372547292">"Einige Funktionen sind während der Abkühlphase des Geräts eingeschränkt.\nFür mehr Informationen tippen."</string>
+    <string name="high_temp_notif_message" product="tablet" msgid="7799279192797476850">"Einige Funktionen sind während der Abkühlphase des Tablets eingeschränkt.\nFür mehr Informationen tippen."</string>
+    <string name="high_temp_dialog_message" product="default" msgid="4272882413847595625">"Dein Smartphone kühlt sich automatisch ab. Du kannst es weiterhin nutzen, aber es reagiert möglicherweise langsamer.\n\nSobald dein Smartphone abgekühlt ist, funktioniert es wieder normal."</string>
+    <string name="high_temp_dialog_message" product="device" msgid="263861943935989046">"Dein Gerät kühlt sich automatisch ab. Du kannst es weiterhin nutzen, aber es reagiert möglicherweise langsamer.\n\nSobald dein Gerät abgekühlt ist, funktioniert es wieder normal."</string>
+    <string name="high_temp_dialog_message" product="tablet" msgid="5613713326841935537">"Dein Tablet kühlt sich automatisch ab. Du kannst es weiterhin nutzen, aber es reagiert möglicherweise langsamer.\n\nSobald dein Tablet abgekühlt ist, funktioniert es wieder normal."</string>
+    <string name="security_settings_sfps_enroll_find_sensor_message" product="tablet" msgid="3726972508570143945">"Der Fingerabdrucksensor befindet sich auf der Ein-/Aus-Taste. Das ist die flache Taste neben der erhöhten Lautstärketaste am Rand des Tablets."</string>
+    <string name="security_settings_sfps_enroll_find_sensor_message" product="device" msgid="2929467060295094725">"Der Fingerabdrucksensor befindet sich auf der Ein-/Aus-Taste. Das ist die flache Taste neben der erhöhten Lautstärketaste am Rand des Geräts."</string>
+    <string name="security_settings_sfps_enroll_find_sensor_message" product="default" msgid="8582726566542997639">"Der Fingerabdrucksensor befindet sich auf der Ein-/Aus-Taste. Das ist die flache Taste neben der erhöhten Lautstärketaste am Rand des Smartphones."</string>
+    <string name="global_action_lock_message" product="default" msgid="7092460751050168771">"Entsperre dein Smartphone für weitere Optionen"</string>
+    <string name="global_action_lock_message" product="tablet" msgid="1024230056230539493">"Entsperre dein Tablet für weitere Optionen"</string>
+    <string name="global_action_lock_message" product="device" msgid="3165224897120346096">"Entsperre dein Gerät für weitere Optionen"</string>
+    <string name="media_transfer_playing_this_device" product="default" msgid="5795784619523545556">"Wiedergabe läuft auf diesem Smartphone"</string>
+    <string name="media_transfer_playing_this_device" product="tablet" msgid="222514408550408633">"Wiedergabe läuft auf diesem Tablet"</string>
+</resources>

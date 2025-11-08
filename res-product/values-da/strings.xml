@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+/**
+ * Copyright (c) 2009, The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="dock_alignment_slow_charging" product="default" msgid="6997633396534416792">"Juster telefonens placering for at oplade den hurtigere"</string>
+    <string name="dock_alignment_not_charging" product="default" msgid="3980752926226749808">"Juster telefonens placering for at oplade den trådløst"</string>
+    <string name="inattentive_sleep_warning_message" product="tv" msgid="6844464574089665063">"Android TV-enheden slukker snart. Tryk på en knap for at holde den tændt."</string>
+    <string name="inattentive_sleep_warning_message" product="default" msgid="5693904520452332224">"Enheden slukker snart. Tryk for at holde den tændt."</string>
+    <string name="keyguard_missing_sim_message" product="tablet" msgid="408124574073032188">"Intet SIM-kort i tabletten."</string>
+    <string name="keyguard_missing_sim_message" product="default" msgid="2605468359948247208">"Intet SIM-kort i telefonen."</string>
+    <string name="kg_invalid_confirm_pin_hint" product="default" msgid="6278551068943958651">"Pinkoderne stemmer ikke overens"</string>
+    <string name="kg_failed_attempts_almost_at_wipe" product="tablet" msgid="302165994845009232">"Du har forsøgt at låse denne tablet op med den forkerte adgangskode <xliff:g id="NUMBER_0">%1$d</xliff:g> gange. Efter endnu <xliff:g id="NUMBER_1">%2$d</xliff:g> mislykkede forsøg nulstilles denne tablet, hvilket sletter alle dens data."</string>
+    <string name="kg_failed_attempts_almost_at_wipe" product="default" msgid="2594813176164266847">"Du har forsøgt at låse telefonen op med den forkerte adgangskode <xliff:g id="NUMBER_0">%1$d</xliff:g> gange. Efter endnu <xliff:g id="NUMBER_1">%2$d</xliff:g> mislykkede forsøg nulstilles denne telefon, hvilket sletter alle dens data."</string>
+    <string name="kg_failed_attempts_now_wiping" product="tablet" msgid="8710104080409538587">"Du har forsøgt at låse denne tablet op på forkert vis <xliff:g id="NUMBER">%d</xliff:g> gange. Denne tablet nulstilles, hvilket sletter alle dens data."</string>
+    <string name="kg_failed_attempts_now_wiping" product="default" msgid="6381835450014881813">"Du har forsøgt at låse telefonen op på forkert vis <xliff:g id="NUMBER">%d</xliff:g> gange. Telefonen nulstilles, hvilket sletter alle dens data."</string>
+    <string name="kg_failed_attempts_almost_at_erase_user" product="tablet" msgid="7325071812832605911">"Du har forsøgt at låse denne tablet op med den forkerte adgangskode <xliff:g id="NUMBER_0">%1$d</xliff:g> gange. Efter endnu <xliff:g id="NUMBER_1">%2$d</xliff:g> mislykkede forsøg fjernes denne bruger, hvilket sletter alle brugerdata."</string>
+    <string name="kg_failed_attempts_almost_at_erase_user" product="default" msgid="8110939900089863103">"Du har forsøgt at låse telefonen op med den forkerte adgangskode <xliff:g id="NUMBER_0">%1$d</xliff:g> gange. Efter endnu <xliff:g id="NUMBER_1">%2$d</xliff:g> mislykkede forsøg fjernes denne bruger, hvilket sletter alle brugerdata."</string>
+    <string name="kg_failed_attempts_now_erasing_user" product="tablet" msgid="8509811676952707883">"Du har forsøgt at låse denne tablet op på forkert vis <xliff:g id="NUMBER">%d</xliff:g> gange. Brugeren fjernes, hvilket sletter alle brugerdata."</string>
+    <string name="kg_failed_attempts_now_erasing_user" product="default" msgid="3051962486994265014">"Du har forsøgt at låse telefonen op på forkert vis <xliff:g id="NUMBER">%d</xliff:g> gange. Brugeren fjernes, hvilket sletter alle brugerdata."</string>
+    <string name="kg_failed_attempts_almost_at_erase_profile" product="tablet" msgid="1049523640263353830">"Du har forsøgt at låse denne tablet op med den forkerte adgangskode <xliff:g id="NUMBER_0">%1$d</xliff:g> gange. Efter endnu <xliff:g id="NUMBER_1">%2$d</xliff:g> mislykkede forsøg fjernes arbejdsprofilen, hvilket sletter alle profildata."</string>
+    <string name="kg_failed_attempts_almost_at_erase_profile" product="default" msgid="3280816298678433681">"Du har forsøgt at låse telefonen op med den forkerte adgangskode <xliff:g id="NUMBER_0">%1$d</xliff:g> gange. Efter endnu <xliff:g id="NUMBER_1">%2$d</xliff:g> mislykkede forsøg fjernes arbejdsprofilen, hvilket sletter alle profildata."</string>
+    <string name="kg_failed_attempts_now_erasing_profile" product="tablet" msgid="4417100487251371559">"Du har forsøgt at låse denne tablet op med den forkerte adgangskode <xliff:g id="NUMBER">%d</xliff:g> gange. Arbejdsprofilen fjernes, hvilket sletter alle profildata."</string>
+    <string name="kg_failed_attempts_now_erasing_profile" product="default" msgid="4682221342671290678">"Du har forsøgt at låse telefonen op med den forkerte adgangskode <xliff:g id="NUMBER">%d</xliff:g> gange. Arbejdsprofilen fjernes, hvilket sletter alle profildata."</string>
+    <string name="kg_failed_attempts_almost_at_login" product="tablet" msgid="1860049973474855672">"Du har tegnet dit oplåsningsmønster forkert <xliff:g id="NUMBER_0">%1$d</xliff:g> gange. Efter endnu <xliff:g id="NUMBER_1">%2$d</xliff:g> mislykkede forsøg bliver du bedt om at låse din tablet op ved hjælp af en mailkonto.\n\n Prøv igen om <xliff:g id="NUMBER_2">%3$d</xliff:g> sekunder."</string>
+    <string name="kg_failed_attempts_almost_at_login" product="default" msgid="44112553371516141">"Du har tegnet dit oplåsningsmønster forkert <xliff:g id="NUMBER_0">%1$d</xliff:g> gange. Efter endnu <xliff:g id="NUMBER_1">%2$d</xliff:g> mislykkede forsøg bliver du bedt om at låse din telefon op ved hjælp af en mailkonto.\n\n Prøv igen om <xliff:g id="NUMBER_2">%3$d</xliff:g> sekunder."</string>
+    <string name="thermal_shutdown_title" product="default" msgid="8039593017174903505">"Telefonen slukkede pga. varme"</string>
+    <string name="thermal_shutdown_title" product="device" msgid="2954206342842856379">"Enheden slukkede pga. varme"</string>
+    <string name="thermal_shutdown_title" product="tablet" msgid="8941033526856177533">"Din tablet slukkede pga. varme"</string>
+    <string name="thermal_shutdown_message" product="default" msgid="6685194547904051408">"Din telefon kører nu normalt.\nTryk for at få flere oplysninger"</string>
+    <string name="thermal_shutdown_message" product="device" msgid="3039675532521590478">"Din enhed kører nu normalt.\nTryk for at få flere oplysninger"</string>
+    <string name="thermal_shutdown_message" product="tablet" msgid="5285898074484811386">"Din tablet kører nu normalt.\nTryk for at få flere oplysninger"</string>
+    <string name="thermal_shutdown_dialog_message" product="default" msgid="6145923570358574186">"Din telefon var blevet for varm, så den slukkede for at køle ned. Din telefon kører nu igen normalt. \n\nDin telefon kan blive for varm, hvis du:\n	• Bruger ressourcekrævende apps (f.eks. spil, video eller navigation)\n	• Downloader eller uploader store filer\n	• Bruger din telefon i varme omgivelser"</string>
+    <string name="thermal_shutdown_dialog_message" product="device" msgid="3647879000909527365">"Din enhed var blevet for varm, så den slukkede for at køle ned. Din enhed kører nu igen normalt. \n\nDin enhed kan blive for varm, hvis du:\n	• Bruger ressourcekrævende apps (f.eks. spil, video eller navigation)\n	• Downloader eller uploader store filer\n	• Bruger din enhed i varme omgivelser"</string>
+    <string name="thermal_shutdown_dialog_message" product="tablet" msgid="8274487811928782165">"Din tablet var blevet for varm, så den slukkede for at køle ned. Din tablet kører nu igen normalt. \n\nDin tablet kan blive for varm, hvis du:\n	• Bruger ressourcekrævende apps (f.eks. spil, video eller navigation)\n	• Downloader eller uploader store filer\n	• Bruger din tablet i varme omgivelser"</string>
+    <string name="high_temp_title" product="default" msgid="5365000411304924115">"Telefonen er ved at blive varm"</string>
+    <string name="high_temp_title" product="device" msgid="6622009907401563664">"Enheden er ved at blive varm"</string>
+    <string name="high_temp_title" product="tablet" msgid="9039733706606446616">"Tabletten er ved at blive varm"</string>
+    <string name="high_temp_notif_message" product="default" msgid="3928947950087257452">"Nogle funktioner er begrænsede, mens telefonen køler ned.\nTryk for at få flere oplysninger"</string>
+    <string name="high_temp_notif_message" product="device" msgid="6105125771372547292">"Nogle funktioner er begrænsede, mens enheden køler ned.\nTryk for at få flere oplysninger"</string>
+    <string name="high_temp_notif_message" product="tablet" msgid="7799279192797476850">"Nogle funktioner er begrænsede, mens din tablet køler ned.\nTryk for at få flere oplysninger"</string>
+    <string name="high_temp_dialog_message" product="default" msgid="4272882413847595625">"Din telefon forsøger automatisk at køle sig selv ned. Du kan stadig bruge telefonen, men den kører muligvis langsommere end normalt.\n\nNår din telefon er kølet ned, fungerer den normalt igen."</string>
+    <string name="high_temp_dialog_message" product="device" msgid="263861943935989046">"Din enhed forsøger automatisk at køle sig selv ned. Du kan stadig bruge din enhed, men den kører muligvis langsommere end normalt.\n\nNår din enhed er kølet ned, fungerer den normalt igen."</string>
+    <string name="high_temp_dialog_message" product="tablet" msgid="5613713326841935537">"Din tablet forsøger automatisk at køle sig selv ned. Du kan stadig bruge din tablet, men den kører muligvis langsommere end normalt.\n\nNår din tablet er kølet ned, fungerer den normalt igen."</string>
+    <string name="security_settings_sfps_enroll_find_sensor_message" product="tablet" msgid="3726972508570143945">"Fingeraftrykssensoren sidder på afbryderknappen. Det er den flade knap ved siden af den hævede lydstyrkeknap på siden af din tablet."</string>
+    <string name="security_settings_sfps_enroll_find_sensor_message" product="device" msgid="2929467060295094725">"Fingeraftrykssensoren sidder på afbryderknappen. Det er den flade knap ved siden af den hævede lydstyrkeknap på siden af enheden."</string>
+    <string name="security_settings_sfps_enroll_find_sensor_message" product="default" msgid="8582726566542997639">"Fingeraftrykssensoren sidder på afbryderknappen. Det er den flade knap ved siden af den hævede lydstyrkeknap på siden af telefonen."</string>
+    <string name="global_action_lock_message" product="default" msgid="7092460751050168771">"Lås din telefon op for at se flere valgmuligheder"</string>
+    <string name="global_action_lock_message" product="tablet" msgid="1024230056230539493">"Lås din tablet op for at se flere valgmuligheder"</string>
+    <string name="global_action_lock_message" product="device" msgid="3165224897120346096">"Lås din enhed op for at se flere valgmuligheder"</string>
+    <string name="media_transfer_playing_this_device" product="default" msgid="5795784619523545556">"Afspilles på denne telefon"</string>
+    <string name="media_transfer_playing_this_device" product="tablet" msgid="222514408550408633">"Afspilles på denne tablet"</string>
+</resources>

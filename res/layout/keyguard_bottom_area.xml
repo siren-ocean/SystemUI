@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2014 The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License
+  -->
+
+<com.android.systemui.statusbar.phone.KeyguardBottomAreaView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/keyguard_bottom_area"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:outlineProvider="none" >
+
+    <LinearLayout
+        android:id="@id/keyguard_indication_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/keyguard_indication_margin_bottom"
+        android:layout_gravity="bottom|center_horizontal"
+        android:orientation="vertical">
+
+        <com.android.systemui.statusbar.phone.KeyguardIndicationTextView
+            android:id="@id/keyguard_indication_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingStart="@dimen/keyguard_indication_text_padding"
+            android:paddingEnd="@dimen/keyguard_indication_text_padding"
+            android:textAppearance="@style/TextAppearance.Keyguard.BottomArea"
+            android:accessibilityLiveRegion="polite"/>
+
+        <com.android.systemui.statusbar.phone.KeyguardIndicationTextView
+            android:id="@id/keyguard_indication_text_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="@dimen/keyguard_indication_text_min_height"
+            android:layout_gravity="center_horizontal"
+            android:paddingStart="@dimen/keyguard_indication_text_padding"
+            android:paddingEnd="@dimen/keyguard_indication_text_padding"
+            android:textAppearance="@style/TextAppearance.Keyguard.BottomArea"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:alpha=".8"
+            android:accessibilityLiveRegion="polite"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <com.android.systemui.animation.view.LaunchableImageView
+        android:id="@+id/start_button"
+        android:layout_height="@dimen/keyguard_affordance_fixed_height"
+        android:layout_width="@dimen/keyguard_affordance_fixed_width"
+        android:layout_gravity="start|bottom"
+        android:layout_marginStart="@dimen/keyguard_affordance_horizontal_offset"
+        android:layout_marginBottom="@dimen/keyguard_affordance_vertical_offset"
+        android:scaleType="fitCenter"
+        android:padding="@dimen/keyguard_affordance_fixed_padding"
+        android:tint="?android:attr/textColorPrimary"
+        android:background="@drawable/keyguard_bottom_affordance_bg"
+        android:foreground="@drawable/keyguard_bottom_affordance_selected_border"
+        android:visibility="invisible" />
+
+    <com.android.systemui.animation.view.LaunchableImageView
+        android:id="@+id/end_button"
+        android:layout_height="@dimen/keyguard_affordance_fixed_height"
+        android:layout_width="@dimen/keyguard_affordance_fixed_width"
+        android:layout_gravity="end|bottom"
+        android:layout_marginEnd="@dimen/keyguard_affordance_horizontal_offset"
+        android:layout_marginBottom="@dimen/keyguard_affordance_vertical_offset"
+        android:scaleType="fitCenter"
+        android:padding="@dimen/keyguard_affordance_fixed_padding"
+        android:tint="?android:attr/textColorPrimary"
+        android:background="@drawable/keyguard_bottom_affordance_bg"
+        android:foreground="@drawable/keyguard_bottom_affordance_selected_border"
+        android:visibility="invisible" />
+
+    <include
+        android:id="@+id/keyguard_settings_button"
+        layout="@layout/keyguard_settings_popup_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="@dimen/keyguard_affordance_vertical_offset"
+        android:layout_marginHorizontal="@dimen/keyguard_affordance_horizontal_offset"
+        android:visibility="gone"
+        />
+
+    <FrameLayout
+        android:id="@+id/overlay_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/keyguard_bottom_area_overlay" />
+    </FrameLayout>
+
+    <include layout="@layout/ambient_indication"
+             android:id="@id/ambient_indication_container" />
+
+    <FrameLayout
+        android:id="@+id/smartspace_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/ambient_indication_margin_bottom"
+        android:visibility="gone">
+    </FrameLayout>
+</com.android.systemui.statusbar.phone.KeyguardBottomAreaView>

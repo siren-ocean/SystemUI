@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+/**
+ * Copyright (c) 2009, The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="dock_alignment_slow_charging" product="default" msgid="6997633396534416792">"Færðu símann til að fá hraðari hleðslu"</string>
+    <string name="dock_alignment_not_charging" product="default" msgid="3980752926226749808">"Færðu símann til að hlaða þráðlaust"</string>
+    <string name="inattentive_sleep_warning_message" product="tv" msgid="6844464574089665063">"Android TV tækið slekkur á sér fljótlega. Ýttu á takka til að það slokkni ekki á því."</string>
+    <string name="inattentive_sleep_warning_message" product="default" msgid="5693904520452332224">"Tækið slekkur á sér fljótlega. Ýttu á takka til að það slokkni ekki á því."</string>
+    <string name="keyguard_missing_sim_message" product="tablet" msgid="408124574073032188">"Það er ekkert SIM-kort í spjaldtölvunni."</string>
+    <string name="keyguard_missing_sim_message" product="default" msgid="2605468359948247208">"Það er ekkert SIM-kort í símanum."</string>
+    <string name="kg_invalid_confirm_pin_hint" product="default" msgid="6278551068943958651">"PIN-númerin stemma ekki"</string>
+    <string name="kg_failed_attempts_almost_at_wipe" product="tablet" msgid="302165994845009232">"Þú hefur gert <xliff:g id="NUMBER_0">%1$d</xliff:g> árangurslausar tilraunir til að opna spjaldtölvuna. Eftir <xliff:g id="NUMBER_1">%2$d</xliff:g> árangurslausar tilraunir í viðbót verður spjaldtölvan endurstillt, með þeim afleiðingum að öllum gögnum hennar verður eytt."</string>
+    <string name="kg_failed_attempts_almost_at_wipe" product="default" msgid="2594813176164266847">"Þú hefur gert <xliff:g id="NUMBER_0">%1$d</xliff:g> árangurslausar tilraunir til að opna símann. Eftir <xliff:g id="NUMBER_1">%2$d</xliff:g> árangurslausar tilraunir í viðbót verður síminn endurstilltur, með þeim afleiðingum að öllum gögnum hans verður eytt."</string>
+    <string name="kg_failed_attempts_now_wiping" product="tablet" msgid="8710104080409538587">"Þú hefur gert <xliff:g id="NUMBER">%d</xliff:g> árangurslausar tilraunir til að opna spjaldtölvuna. Spjaldtölvan verður endurstillt, með þeim afleiðingum að öllum gögnum hennar verður eytt."</string>
+    <string name="kg_failed_attempts_now_wiping" product="default" msgid="6381835450014881813">"Þú hefur gert <xliff:g id="NUMBER">%d</xliff:g> árangurslausar tilraunir til að opna símann. Síminn verður endurstilltur, með þeim afleiðingum að öllum gögnum hans verður eytt."</string>
+    <string name="kg_failed_attempts_almost_at_erase_user" product="tablet" msgid="7325071812832605911">"Þú hefur gert <xliff:g id="NUMBER_0">%1$d</xliff:g> árangurslausar tilraunir til að opna spjaldtölvuna. Eftir <xliff:g id="NUMBER_1">%2$d</xliff:g> árangurslausar tilraunir í viðbót verður notandinn fjarlægður með þeim afleiðingum að öllum notandagögnum verður eytt."</string>
+    <string name="kg_failed_attempts_almost_at_erase_user" product="default" msgid="8110939900089863103">"Þú hefur gert <xliff:g id="NUMBER_0">%1$d</xliff:g> árangurslausar tilraunir til að opna símann. Eftir <xliff:g id="NUMBER_1">%2$d</xliff:g> árangurslausar tilraunir í viðbót verður notandinn fjarlægður með þeim afleiðingum að öllum notandagögnum verður eytt."</string>
+    <string name="kg_failed_attempts_now_erasing_user" product="tablet" msgid="8509811676952707883">"Þú hefur gert <xliff:g id="NUMBER">%d</xliff:g> árangurslausar tilraunir til að opna spjaldtölvuna. Notandinn verður fjarlægður, með þeim afleiðingum að öllum notandagögnum verður eytt."</string>
+    <string name="kg_failed_attempts_now_erasing_user" product="default" msgid="3051962486994265014">"Þú hefur gert <xliff:g id="NUMBER">%d</xliff:g> árangurslausar tilraunir til að opna símann. Notandinn verður fjarlægður, með þeim afleiðingum að öllum notandagögnum verður eytt."</string>
+    <string name="kg_failed_attempts_almost_at_erase_profile" product="tablet" msgid="1049523640263353830">"Þú hefur gert <xliff:g id="NUMBER_0">%1$d</xliff:g> árangurslausar tilraunir til að opna spjaldtölvuna. Eftir <xliff:g id="NUMBER_1">%2$d</xliff:g> árangurslausar tilraunir í viðbót verður vinnusniðið fjarlægt með þeim afleiðingum að öllum gögnum þess verður eytt."</string>
+    <string name="kg_failed_attempts_almost_at_erase_profile" product="default" msgid="3280816298678433681">"Þú hefur gert <xliff:g id="NUMBER_0">%1$d</xliff:g> árangurslausar tilraunir til að opna símann. Eftir <xliff:g id="NUMBER_1">%2$d</xliff:g> árangurslausar tilraunir í viðbót verður vinnusniðið fjarlægt með þeim afleiðingum að öllum gögnum þess verður eytt."</string>
+    <string name="kg_failed_attempts_now_erasing_profile" product="tablet" msgid="4417100487251371559">"Þú hefur gert <xliff:g id="NUMBER">%d</xliff:g> árangurslausar tilraunir til að opna spjaldtölvuna. Vinnusniðið verður fjarlægt, með þeim afleiðingum að öllum gögnum þess verður eytt."</string>
+    <string name="kg_failed_attempts_now_erasing_profile" product="default" msgid="4682221342671290678">"Þú hefur gert <xliff:g id="NUMBER">%d</xliff:g> árangurslausar tilraunir til að opna símann. Vinnusniðið verður fjarlægt, með þeim afleiðingum að öllum gögnum þess verður eytt."</string>
+    <string name="kg_failed_attempts_almost_at_login" product="tablet" msgid="1860049973474855672">"Þú hefur teiknað rangt opnunarmynstur <xliff:g id="NUMBER_0">%1$d</xliff:g> sinnum. Eftir <xliff:g id="NUMBER_1">%2$d</xliff:g> árangurslausar tilraunir í viðbót verðurðu beðin(n) um að opna spjaldtölvuna með tölvupóstreikningi.\n\n Reyndu aftur eftir <xliff:g id="NUMBER_2">%3$d</xliff:g> sekúndur."</string>
+    <string name="kg_failed_attempts_almost_at_login" product="default" msgid="44112553371516141">"Þú hefur teiknað rangt opnunarmynstur <xliff:g id="NUMBER_0">%1$d</xliff:g> sinnum. Eftir <xliff:g id="NUMBER_1">%2$d</xliff:g> árangurslausar tilraunir í viðbót verðurðu beðin(n) um að opna símann með tölvupóstreikningi.\n\n Reyndu aftur eftir <xliff:g id="NUMBER_2">%3$d</xliff:g> sekúndur."</string>
+    <string name="thermal_shutdown_title" product="default" msgid="8039593017174903505">"Slökkt var á símanum vegna hita"</string>
+    <string name="thermal_shutdown_title" product="device" msgid="2954206342842856379">"Slökkt var á tækinu vegna hita"</string>
+    <string name="thermal_shutdown_title" product="tablet" msgid="8941033526856177533">"Slökkt var á spjaldtölvunni vegna hita"</string>
+    <string name="thermal_shutdown_message" product="default" msgid="6685194547904051408">"Síminn virkar nú eins og venjulega.\nÝttu til að fá frekari upplýsingar"</string>
+    <string name="thermal_shutdown_message" product="device" msgid="3039675532521590478">"Tækið virkar nú eins og venjulega.\nÝttu til að fá frekari upplýsingar"</string>
+    <string name="thermal_shutdown_message" product="tablet" msgid="5285898074484811386">"Spjaldtölvan virkar nú eins og venjulega.\nÝttu til að fá frekari upplýsingar"</string>
+    <string name="thermal_shutdown_dialog_message" product="default" msgid="6145923570358574186">"Síminn varð of heitur og því var slökkt á honum til að kæla hann. Síminn virkar núna sem skyldi.\n\nSíminn getur orðið of heitur ef þú:\n	• Notar plássfrek forrit (t.d. leikja-, myndbands- eða leiðsagnarforrit\n	• Sækir eða hleður upp stórum skrám\n	• Notar símann í miklum hita"</string>
+    <string name="thermal_shutdown_dialog_message" product="device" msgid="3647879000909527365">"Tækið varð of heitt og því var slökkt á því til að kæla það. Tækið virkar núna sem skyldi.\n\nTækið getur orðið of heitt ef þú:\n	• Notar plássfrek forrit (t.d. leikja-, myndbands- eða leiðsagnarforrit\n	• Sækir eða hleður upp stórum skrám\n	• Notar tækið í miklum hita"</string>
+    <string name="thermal_shutdown_dialog_message" product="tablet" msgid="8274487811928782165">"Spjaldtölvan varð of heit og því var slökkt á henni til að kæla hana. Spjaldtölvan virkar núna sem skyldi.\n\nSpjaldtölvan getur orðið of heit ef þú:\n	• Notar plássfrek forrit (t.d. leikja-, myndbands- eða leiðsagnarforrit\n	• Sækir eða hleður upp stórum skrám\n	• Notar spjaldtölvuna í miklum hita"</string>
+    <string name="high_temp_title" product="default" msgid="5365000411304924115">"Síminn er að hitna"</string>
+    <string name="high_temp_title" product="device" msgid="6622009907401563664">"Tækið er að hitna"</string>
+    <string name="high_temp_title" product="tablet" msgid="9039733706606446616">"Spjaldtölvan er að hitna"</string>
+    <string name="high_temp_notif_message" product="default" msgid="3928947950087257452">"Sumir eiginleikar eru takmarkaðir á meðan síminn kælir sig.\nÝttu til að fá frekari upplýsingar"</string>
+    <string name="high_temp_notif_message" product="device" msgid="6105125771372547292">"Sumir eiginleikar eru takmarkaðir á meðan tækið kælir sig.\nÝttu til að fá frekari upplýsingar"</string>
+    <string name="high_temp_notif_message" product="tablet" msgid="7799279192797476850">"Sumir eiginleikar eru takmarkaðir á meðan spjaldtölvan kælir sig.\nÝttu til að fá frekari upplýsingar"</string>
+    <string name="high_temp_dialog_message" product="default" msgid="4272882413847595625">"Síminn reynir að kæla sig sjálfkrafa. Þú getur áfram notað símann en hann gæti verið hægvirkari.\n\nÞegar síminn hefur kælt sig mun hann virka eðlilega."</string>
+    <string name="high_temp_dialog_message" product="device" msgid="263861943935989046">"Tækið reynir að kæla sig sjálfkrafa. Þú getur áfram notað tækið en það gæti verið hægvirkara.\n\nÞegar tækið hefur kælt sig mun það virka eðlilega."</string>
+    <string name="high_temp_dialog_message" product="tablet" msgid="5613713326841935537">"Spjaldtölvan reynir að kæla sig sjálfkrafa. Þú getur áfram notað spjaldtölvuna en hún gæti verið hægvirkari.\n\nÞegar spjaldtölvan hefur kælt sig mun hún virka eðlilega."</string>
+    <string name="security_settings_sfps_enroll_find_sensor_message" product="tablet" msgid="3726972508570143945">"Fingrafaralesarinn er á aflrofanum. Það er flati hnappurinn við hliðina á upphleypta hljóðstyrkshnappnum á hlið spjaldtölvunnar."</string>
+    <string name="security_settings_sfps_enroll_find_sensor_message" product="device" msgid="2929467060295094725">"Fingrafaralesarinn er á aflrofanum. Það er flati hnappurinn við hliðina á upphleypta hljóðstyrkshnappnum á hlið tækisins."</string>
+    <string name="security_settings_sfps_enroll_find_sensor_message" product="default" msgid="8582726566542997639">"Fingrafaralesarinn er á aflrofanum. Það er flati hnappurinn við hliðina á upphleypta hljóðstyrkshnappnum á hlið símans."</string>
+    <string name="global_action_lock_message" product="default" msgid="7092460751050168771">"Taktu símann úr lás til að fá fleiri valkosti"</string>
+    <string name="global_action_lock_message" product="tablet" msgid="1024230056230539493">"Taktu spjaldtölvuna úr lás til að fá fleiri valkosti"</string>
+    <string name="global_action_lock_message" product="device" msgid="3165224897120346096">"Taktu tækið úr lás til að fá fleiri valkosti"</string>
+    <string name="media_transfer_playing_this_device" product="default" msgid="5795784619523545556">"Í spilun í þessum síma"</string>
+    <string name="media_transfer_playing_this_device" product="tablet" msgid="222514408550408633">"Í spilun í þessari spjaldtölvu"</string>
+</resources>

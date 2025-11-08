@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+/**
+ * Copyright (c) 2009, The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="dock_alignment_slow_charging" product="default" msgid="6997633396534416792">"Jarri ondo telefonoa, bizkorrago karga dadin"</string>
+    <string name="dock_alignment_not_charging" product="default" msgid="3980752926226749808">"Jarri ondo telefonoa, haririk gabe karga dadin"</string>
+    <string name="inattentive_sleep_warning_message" product="tv" msgid="6844464574089665063">"Android TV gailua laster itzaliko da; sakatu botoi bat piztuta mantentzeko."</string>
+    <string name="inattentive_sleep_warning_message" product="default" msgid="5693904520452332224">"Gailua laster itzaliko da; sakatu piztuta mantentzeko."</string>
+    <string name="keyguard_missing_sim_message" product="tablet" msgid="408124574073032188">"Ez dago SIMik tabletan."</string>
+    <string name="keyguard_missing_sim_message" product="default" msgid="2605468359948247208">"Ez dago SIMik telefonoan."</string>
+    <string name="kg_invalid_confirm_pin_hint" product="default" msgid="6278551068943958651">"PIN kodeak ez datoz bat"</string>
+    <string name="kg_failed_attempts_almost_at_wipe" product="tablet" msgid="302165994845009232">"<xliff:g id="NUMBER_0">%1$d</xliff:g> aldiz saiatu zara tableta desblokeatzen, baina huts egin duzu denetan. Beste <xliff:g id="NUMBER_1">%2$d</xliff:g> aldiz huts egiten baduzu, berrezarri egingo da tableta eta, ondorioz, bertako datu guztiak ezabatuko dira."</string>
+    <string name="kg_failed_attempts_almost_at_wipe" product="default" msgid="2594813176164266847">"<xliff:g id="NUMBER_0">%1$d</xliff:g> aldiz saiatu zara telefonoa desblokeatzen, baina huts egin duzu denetan. Beste <xliff:g id="NUMBER_1">%2$d</xliff:g> aldiz huts egiten baduzu, berrezarri egingo da telefonoa eta, ondorioz, bertako datu guztiak ezabatuko dira."</string>
+    <string name="kg_failed_attempts_now_wiping" product="tablet" msgid="8710104080409538587">"<xliff:g id="NUMBER">%d</xliff:g> aldiz saiatu zara tableta desblokeatzen, baina huts egin duzu denetan. Tableta berrezarri egingo da eta, ondorioz, bertako datu guztiak ezabatuko dira."</string>
+    <string name="kg_failed_attempts_now_wiping" product="default" msgid="6381835450014881813">"<xliff:g id="NUMBER">%d</xliff:g> aldiz saiatu zara telefonoa desblokeatzen, baina huts egin duzu denetan. Telefonoa berrezarri egingo da eta, ondorioz, bertako datu guztiak ezabatuko dira."</string>
+    <string name="kg_failed_attempts_almost_at_erase_user" product="tablet" msgid="7325071812832605911">"<xliff:g id="NUMBER_0">%1$d</xliff:g> aldiz saiatu zara tableta desblokeatzen, baina huts egin duzu denetan. Beste <xliff:g id="NUMBER_1">%2$d</xliff:g> aldiz huts egiten baduzu, kendu egingo da erabiltzailea eta, ondorioz, haren datu guztiak ezabatuko dira."</string>
+    <string name="kg_failed_attempts_almost_at_erase_user" product="default" msgid="8110939900089863103">"<xliff:g id="NUMBER_0">%1$d</xliff:g> aldiz saiatu zara telefonoa desblokeatzen, baina huts egin duzu denetan. Beste <xliff:g id="NUMBER_1">%2$d</xliff:g> aldiz huts egiten baduzu, kendu egingo da erabiltzailea eta, ondorioz, haren datu guztiak ezabatuko dira."</string>
+    <string name="kg_failed_attempts_now_erasing_user" product="tablet" msgid="8509811676952707883">"<xliff:g id="NUMBER">%d</xliff:g> aldiz saiatu zara tableta desblokeatzen, baina huts egin duzu denetan. Erabiltzailea kendu egingo da eta, ondorioz, haren datu guztiak ezabatuko dira."</string>
+    <string name="kg_failed_attempts_now_erasing_user" product="default" msgid="3051962486994265014">"<xliff:g id="NUMBER">%d</xliff:g> aldiz saiatu zara telefonoa desblokeatzen, baina huts egin duzu denetan. Erabiltzailea kendu egingo da eta, ondorioz, haren datu guztiak ezabatuko dira."</string>
+    <string name="kg_failed_attempts_almost_at_erase_profile" product="tablet" msgid="1049523640263353830">"<xliff:g id="NUMBER_0">%1$d</xliff:g> aldiz saiatu zara tableta desblokeatzen, baina huts egin duzu denetan. Beste <xliff:g id="NUMBER_1">%2$d</xliff:g> aldiz huts egiten baduzu, kendu egingo da laneko profila eta, ondorioz, profileko datu guztiak ezabatuko dira."</string>
+    <string name="kg_failed_attempts_almost_at_erase_profile" product="default" msgid="3280816298678433681">"<xliff:g id="NUMBER_0">%1$d</xliff:g> aldiz saiatu zara telefonoa desblokeatzen, baina huts egin duzu denetan. Beste <xliff:g id="NUMBER_1">%2$d</xliff:g> aldiz huts egiten baduzu, kendu egingo da laneko profila eta, ondorioz, profileko datu guztiak ezabatuko dira."</string>
+    <string name="kg_failed_attempts_now_erasing_profile" product="tablet" msgid="4417100487251371559">"<xliff:g id="NUMBER">%d</xliff:g> aldiz saiatu zara tableta desblokeatzen, baina huts egin duzu denetan. Laneko profila kendu egingo da eta, ondorioz, profileko datu guztiak ezabatuko dira."</string>
+    <string name="kg_failed_attempts_now_erasing_profile" product="default" msgid="4682221342671290678">"<xliff:g id="NUMBER">%d</xliff:g> aldiz saiatu zara telefonoa desblokeatzen, baina huts egin duzu denetan. Laneko profila kendu egingo da eta, ondorioz, profileko datu guztiak ezabatuko dira."</string>
+    <string name="kg_failed_attempts_almost_at_login" product="tablet" msgid="1860049973474855672">"Desblokeatzeko eredua oker marraztu duzu <xliff:g id="NUMBER_0">%1$d</xliff:g> aldiz. Beste <xliff:g id="NUMBER_1">%2$d</xliff:g> aldiz oker marrazten baduzu, tableta posta-kontu baten bidez desblokeatzeko eskatuko dizugu.\n\n Saiatu berriro <xliff:g id="NUMBER_2">%3$d</xliff:g> segundo barru."</string>
+    <string name="kg_failed_attempts_almost_at_login" product="default" msgid="44112553371516141">"Desblokeatzeko eredua oker marraztu duzu <xliff:g id="NUMBER_0">%1$d</xliff:g> aldiz. Beste <xliff:g id="NUMBER_1">%2$d</xliff:g> aldiz oker marrazten baduzu, telefonoa posta-kontu baten bidez desblokeatzeko eskatuko dizugu.\n\n Saiatu berriro <xliff:g id="NUMBER_2">%3$d</xliff:g> segundo barru."</string>
+    <string name="thermal_shutdown_title" product="default" msgid="8039593017174903505">"Gehiegi berotu delako itzali da telefonoa"</string>
+    <string name="thermal_shutdown_title" product="device" msgid="2954206342842856379">"Gehiegi berotu delako itzali da gailua"</string>
+    <string name="thermal_shutdown_title" product="tablet" msgid="8941033526856177533">"Gehiegi berotu delako itzali da tableta"</string>
+    <string name="thermal_shutdown_message" product="default" msgid="6685194547904051408">"Orain, ohi bezala funtzionatzen du telefonoak.\nInformazio gehiago lortzeko, sakatu hau"</string>
+    <string name="thermal_shutdown_message" product="device" msgid="3039675532521590478">"Orain, ohi bezala funtzionatzen du gailuak.\nInformazio gehiago lortzeko, sakatu hau"</string>
+    <string name="thermal_shutdown_message" product="tablet" msgid="5285898074484811386">"Orain, ohi bezala funtzionatzen du tabletak.\nInformazio gehiago lortzeko, sakatu hau"</string>
+    <string name="thermal_shutdown_dialog_message" product="default" msgid="6145923570358574186">"Telefonoa gehiegi berotu denez, itzali egin da hoztu ahal izateko. Orain, ohi bezala funtzionatzen du.\n\nBerotzeko arrazoi posibleak:\n	• Baliabide asko behar dituzten aplikazioak erabiltzea (adibidez, jokoak, bideoak edo nabigazio-aplikazioak).\n	• Fitxategi handiak deskargatzea edo kargatzea.\n	• Telefonoa tenperatura altuak daudenean erabiltzea."</string>
+    <string name="thermal_shutdown_dialog_message" product="device" msgid="3647879000909527365">"Gailua gehiegi berotu denez, itzali egin da hoztu ahal izateko. Orain, ohi bezala funtzionatzen du.\n\nBerotzeko arrazoi posibleak:\n	• Baliabide asko behar dituzten aplikazioak erabiltzea (adibidez, jokoak, bideoak edo nabigazio-aplikazioak).\n	• Fitxategi handiak deskargatzea edo kargatzea.\n	• Gailua tenperatura altuak daudenean erabiltzea."</string>
+    <string name="thermal_shutdown_dialog_message" product="tablet" msgid="8274487811928782165">"Tableta gehiegi berotu denez, itzali egin da hoztu ahal izateko. Orain, ohi bezala funtzionatzen du.\n\nBerotzeko arrazoi posibleak:\n	• Baliabide asko behar dituzten aplikazioak erabiltzea (adibidez, jokoak, bideoak edo nabigazio-aplikazioak).\n	• Fitxategi handiak deskargatzea edo kargatzea.\n	• Tableta tenperatura altuak daudenean erabiltzea."</string>
+    <string name="high_temp_title" product="default" msgid="5365000411304924115">"Telefonoa berotzen ari da"</string>
+    <string name="high_temp_title" product="device" msgid="6622009907401563664">"Gailua berotzen ari da"</string>
+    <string name="high_temp_title" product="tablet" msgid="9039733706606446616">"Tableta berotzen ari da"</string>
+    <string name="high_temp_notif_message" product="default" msgid="3928947950087257452">"Eginbide batzuk ezingo dira erabili telefonoa hozten den arte.\nInformazio gehiago lortzeko, sakatu hau"</string>
+    <string name="high_temp_notif_message" product="device" msgid="6105125771372547292">"Eginbide batzuk ezingo dira erabili gailua hozten den arte.\nInformazio gehiago lortzeko, sakatu hau"</string>
+    <string name="high_temp_notif_message" product="tablet" msgid="7799279192797476850">"Eginbide batzuk ezingo dira erabili tableta hozten den arte.\nInformazio gehiago lortzeko, sakatu hau"</string>
+    <string name="high_temp_dialog_message" product="default" msgid="4272882413847595625">"Telefonoa automatikoki saiatuko da hozten. Hoztu bitartean, erabiltzen jarrai dezakezu, baina baliteke mantsoago funtzionatzea.\n\nHozten denean, ohi bezala funtzionatuko du."</string>
+    <string name="high_temp_dialog_message" product="device" msgid="263861943935989046">"Gailua automatikoki saiatuko da hozten. Hoztu bitartean, erabiltzen jarrai dezakezu, baina baliteke mantsoago funtzionatzea.\n\nHozten denean, ohi bezala funtzionatuko du."</string>
+    <string name="high_temp_dialog_message" product="tablet" msgid="5613713326841935537">"Tableta automatikoki saiatuko da hozten. Hoztu bitartean, erabiltzen jarrai dezakezu, baina baliteke mantsoago funtzionatzea.\n\nHozten denean, ohi bezala funtzionatuko du."</string>
+    <string name="security_settings_sfps_enroll_find_sensor_message" product="tablet" msgid="3726972508570143945">"Hatz-marken sentsorea etengailuan dago. Tabletaren ertzeko bolumen-botoi goratuaren ondoan dagoen botoi laua da."</string>
+    <string name="security_settings_sfps_enroll_find_sensor_message" product="device" msgid="2929467060295094725">"Hatz-marken sentsorea etengailuan dago. Gailuaren ertzeko bolumen-botoi goratuaren ondoan dagoen botoi laua da."</string>
+    <string name="security_settings_sfps_enroll_find_sensor_message" product="default" msgid="8582726566542997639">"Hatz-marken sentsorea etengailuan dago. Telefonoaren ertzeko bolumen-botoi goratuaren ondoan dagoen botoi laua da."</string>
+    <string name="global_action_lock_message" product="default" msgid="7092460751050168771">"Desblokeatu telefonoa aukera gehiago ikusteko"</string>
+    <string name="global_action_lock_message" product="tablet" msgid="1024230056230539493">"Desblokeatu tableta aukera gehiago ikusteko"</string>
+    <string name="global_action_lock_message" product="device" msgid="3165224897120346096">"Desblokeatu gailua aukera gehiago ikusteko"</string>
+    <string name="media_transfer_playing_this_device" product="default" msgid="5795784619523545556">"Telefono honetan erreproduzitzen"</string>
+    <string name="media_transfer_playing_this_device" product="tablet" msgid="222514408550408633">"Tableta honetan erreproduzitzen"</string>
+</resources>
