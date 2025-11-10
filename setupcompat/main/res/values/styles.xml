@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (C) 2018 The Android Open Source Project
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Customization footer styles -->
+    <style name="SucPartnerCustomizationButtonBar.Stackable" parent="SucPartnerCustomizationButtonBar">
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="SucPartnerCustomizationButtonBar">
+        <item name="android:baselineAligned">false</item>
+        <item name="android:clipChildren">false</item>
+        <item name="android:clipToPadding">false</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:minHeight">?attr/sucFooterBarMinHeight</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingTop">?attr/sucFooterBarPaddingVertical</item>
+        <item name="android:paddingBottom">?attr/sucFooterBarPaddingVertical</item>
+        <item name="android:paddingEnd" tools:ignore="NewApi">?attr/sucFooterBarPaddingEnd</item>
+        <item name="android:paddingLeft">?attr/sucFooterBarPaddingStart</item>
+        <item name="android:paddingRight">?attr/sucFooterBarPaddingEnd</item>
+        <item name="android:paddingStart" tools:ignore="NewApi">?attr/sucFooterBarPaddingStart</item>
+    </style>
+
+    <style name="SucPartnerCustomizationButton.Primary" parent="android:Widget.Material.Button.Colored">
+        <!-- This style can be applied to a button either as a "style" in XML, or as a theme in
+             ContextThemeWrapper. These self-referencing attributes make sure this is applied as
+             both to the button. -->
+        <item name="android:buttonStyle">@style/SucPartnerCustomizationButton.Primary</item>
+        <item name="android:theme">@style/SucPartnerCustomizationButton.Primary</item>
+
+        <!-- Values used in styles -->
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">?attr/sucFooterBarButtonFontFamily</item>
+        <item name="android:paddingLeft">?attr/sucFooterButtonPaddingStart</item>
+        <item name="android:paddingStart" tools:ignore="NewApi">?attr/sucFooterButtonPaddingStart</item>
+        <item name="android:paddingRight">?attr/sucFooterButtonPaddingEnd</item>
+        <item name="android:paddingEnd" tools:ignore="NewApi">?attr/sucFooterButtonPaddingEnd</item>
+        <item name="android:textAllCaps">?attr/sucFooterBarButtonAllCaps</item>
+        <item name="android:stateListAnimator" tools:ignore="NewApi">@null</item>
+
+        <!-- Values used in themes -->
+        <item name="android:buttonCornerRadius" tools:ignore="NewApi">?attr/sucFooterBarButtonCornerRadius</item>
+    </style>
+
+    <style name="SucPartnerCustomizationButton.Secondary" parent="android:Widget.Material.Button.Borderless.Colored">
+        <!-- This style can be applied to a button either as a "style" in XML, or as a theme in
+             ContextThemeWrapper. These self-referencing attributes make sure this is applied as
+             both to the button. -->
+        <item name="android:buttonStyle">@style/SucPartnerCustomizationButton.Secondary</item>
+        <item name="android:theme">@style/SucPartnerCustomizationButton.Secondary</item>
+
+        <!-- Values used in styles -->
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">?attr/sucFooterBarButtonFontFamily</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:paddingLeft">?attr/sucFooterButtonPaddingStart</item>
+        <item name="android:paddingStart" tools:ignore="NewApi">?attr/sucFooterButtonPaddingStart</item>
+        <item name="android:paddingRight">?attr/sucFooterButtonPaddingEnd</item>
+        <item name="android:paddingEnd" tools:ignore="NewApi">?attr/sucFooterButtonPaddingEnd</item>
+        <item name="android:textAllCaps">?attr/sucFooterBarButtonAllCaps</item>
+
+        <!-- Values used in themes -->
+        <item name="android:buttonCornerRadius" tools:ignore="NewApi">?attr/sucFooterBarButtonCornerRadius</item>
+        <item name="android:colorControlHighlight" tools:targetApi="lollipop">@color/suc_customization_button_highlight_ripple</item>
+        <item name="sucFooterBarButtonColorControlHighlight">@color/suc_customization_button_highlight_ripple</item>
+    </style>
+
+</resources>
