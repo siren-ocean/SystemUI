@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="6" by="lint 8.4.0-alpha01" type="baseline" client="" dependencies="true" name="" variant="all" version="8.4.0-alpha01">
+
+    <issue
+        id="NewApi"
+        message="Call requires API level 23 (current min is 21): `android.content.Context#getSystemService`"
+        errorLine1="            mTelephonyManager = context.getSystemService(TelephonyManager.class);"
+        errorLine2="                                        ~~~~~~~~~~~~~~~~">
+        <location
+            file="frameworks/base/packages/SettingsLib/EmergencyNumber/src/com/android/settingslib/emergencynumber/EmergencyNumberUtils.java"
+            line="81"
+            column="41"/>
+    </issue>
+
+    <issue
+        id="NewApi"
+        message="Call requires API level 23 (current min is 21): `android.content.Context#getSystemService`"
+        errorLine1="            mCarrierConfigManager = context.getSystemService(CarrierConfigManager.class);"
+        errorLine2="                                            ~~~~~~~~~~~~~~~~">
+        <location
+            file="frameworks/base/packages/SettingsLib/EmergencyNumber/src/com/android/settingslib/emergencynumber/EmergencyNumberUtils.java"
+            line="82"
+            column="45"/>
+    </issue>
+
+    <issue
+        id="NewApi"
+        message="Class requires API level 23 (current min is 21): `android.telephony.CarrierConfigManager`"
+        errorLine1="            mCarrierConfigManager = context.getSystemService(CarrierConfigManager.class);"
+        errorLine2="                                                             ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="frameworks/base/packages/SettingsLib/EmergencyNumber/src/com/android/settingslib/emergencynumber/EmergencyNumberUtils.java"
+            line="82"
+            column="62"/>
+    </issue>
+
+    <issue
+        id="NewApi"
+        message="Call requires API level 29 (current min is 21): `android.telephony.TelephonyManager#getEmergencyNumberList`"
+        errorLine1="        Map&lt;Integer, List&lt;EmergencyNumber&gt;&gt; allLists = mTelephonyManager.getEmergencyNumberList("
+        errorLine2="                                                                         ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="frameworks/base/packages/SettingsLib/EmergencyNumber/src/com/android/settingslib/emergencynumber/EmergencyNumberUtils.java"
+            line="177"
+            column="74"/>
+    </issue>
+
+    <issue
+        id="NewApi"
+        message="Call requires API level 29 (current min is 21): `android.telephony.emergency.EmergencyNumber#getEmergencyNumberSources`"
+        errorLine1="                        emergencyNumber.getEmergencyNumberSources().contains("
+        errorLine2="                                        ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="frameworks/base/packages/SettingsLib/EmergencyNumber/src/com/android/settingslib/emergencynumber/EmergencyNumberUtils.java"
+            line="200"
+            column="41"/>
+    </issue>
+
+    <issue
+        id="NewApi"
+        message="Call requires API level 24 (current min is 21): `android.telephony.SubscriptionManager#getDefaultSubscriptionId`"
+        errorLine1="        return promotedEmergencyNumberLists.get(SubscriptionManager.getDefaultSubscriptionId());"
+        errorLine2="                                                                    ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="frameworks/base/packages/SettingsLib/EmergencyNumber/src/com/android/settingslib/emergencynumber/EmergencyNumberUtils.java"
+            line="223"
+            column="69"/>
+    </issue>
+
+    <issue
+        id="NewApi"
+        message="Call requires API level 29 (current min is 21): `android.telephony.emergency.EmergencyNumber#getNumber`"
+        errorLine1="        String number = emergencyNumber.getNumber();"
+        errorLine2="                                        ~~~~~~~~~">
+        <location
+            file="frameworks/base/packages/SettingsLib/EmergencyNumber/src/com/android/settingslib/emergencynumber/EmergencyNumberUtils.java"
+            line="238"
+            column="41"/>
+    </issue>
+
+    <issue
+        id="NewApi"
+        message="Call requires API level 23 (current min is 21): `android.telephony.CarrierConfigManager#getConfigForSubId`"
+        errorLine1="        PersistableBundle b = carrierConfigManager.getConfigForSubId(subId);"
+        errorLine2="                                                   ~~~~~~~~~~~~~~~~~">
+        <location
+            file="frameworks/base/packages/SettingsLib/EmergencyNumber/src/com/android/settingslib/emergencynumber/EmergencyNumberUtils.java"
+            line="255"
+            column="52"/>
+    </issue>
+
+</issues>

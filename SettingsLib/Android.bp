@@ -1,0 +1,111 @@
+package {
+    // See: http://go/android-license-faq
+    // A large-scale-change added 'default_applicable_licenses' to import
+    // all of the 'license_kinds' from "frameworks_base_license"
+    // to get the below license kinds:
+    //   SPDX-license-identifier-Apache-2.0
+    default_applicable_licenses: ["frameworks_base_license"],
+}
+
+android_library {
+    name: "SettingsLib",
+    defaults: [
+        "SettingsLintDefaults",
+    ],
+
+    static_libs: [
+        "androidx.localbroadcastmanager_localbroadcastmanager",
+        "androidx.room_room-runtime",
+        "androidx.sqlite_sqlite",
+        "zxing-core",
+        "guava",
+
+        "WifiTrackerLibRes",
+        "iconloader",
+        "setupdesign",
+
+        "SettingsLibActionBarShadow",
+        "SettingsLibActionButtonsPreference",
+        "SettingsLibAdaptiveIcon",
+        "SettingsLibAppPreference",
+        "SettingsLibBannerMessagePreference",
+        "SettingsLibBarChartPreference",
+        "SettingsLibButtonPreference",
+        "SettingsLibCollapsingToolbarBaseActivity",
+        "SettingsLibDeviceStateRotationLock",
+        "SettingsLibDisplayUtils",
+        "SettingsLibEmergencyNumber",
+        "SettingsLibEntityHeaderWidgets",
+        "SettingsLibFooterPreference",
+        "SettingsLibHelpUtils",
+        "SettingsLibIllustrationPreference",
+        "SettingsLibLayoutPreference",
+        "SettingsLibMainSwitchPreference",
+        "SettingsLibProfileSelector",
+        "SettingsLibProgressBar",
+        "SettingsLibRestrictedLockUtils",
+        "SettingsLibSearchWidget",
+        "SettingsLibSelectorWithWidgetPreference",
+        "SettingsLibSettingsSpinner",
+        "SettingsLibSettingsTransition",
+        "SettingsLibTopIntroPreference",
+        "SettingsLibTwoTargetPreference",
+        "SettingsLibUsageProgressBarPreference",
+        "SettingsLibUtils",
+        "settingslib_media_flags_lib",
+        "settingslib_flags_lib",
+    ],
+
+    plugins: ["androidx.room_room-compiler-plugin"],
+    use_resource_processor: true,
+    resource_dirs: ["res"],
+
+    srcs: [
+        "src/**/*.java",
+        "src/**/*.kt",
+    ],
+}
+
+// defaults for lint option
+java_defaults {
+    name: "SettingsLintDefaults",
+    lint: {
+        extra_check_modules: [
+            "SettingsLibLintChecker",
+        ],
+    },
+}
+
+// NOTE: Keep this module in sync with ./common.mk
+java_defaults {
+    name: "SettingsLibDefaults",
+    static_libs: [
+        "SettingsLib",
+    ],
+}
+
+aconfig_declarations {
+    name: "settingslib_media_flags",
+    package: "com.android.settingslib.media.flags",
+    srcs: [
+        "aconfig/settingslib_media_flag_declarations.aconfig",
+    ],
+}
+
+java_aconfig_library {
+    name: "settingslib_media_flags_lib",
+    aconfig_declarations: "settingslib_media_flags",
+}
+
+aconfig_declarations {
+    name: "settingslib_flags",
+    package: "com.android.settingslib.flags",
+    srcs: [
+        "aconfig/settingslib.aconfig",
+    ],
+}
+
+java_aconfig_library {
+    name: "settingslib_flags_lib",
+    aconfig_declarations: "settingslib_flags",
+}
