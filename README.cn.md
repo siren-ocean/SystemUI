@@ -1,58 +1,59 @@
-# English | [中文文档](README.cn.md)
+# [English](README.md) | 中文文档
 ## SystemUI from android-11.0.0_r10
-### Building SystemUI outside AOSP source in Android Studio
-##### Please switch to the corresponding branch for different Android version support
-### Support Notes
-* Instead of changing the project's directory structure, we add additional configurations and dependencies to build Gradle environment support
-* Scripts are used to remove some attributes and fields that AS does not support, and then use git local ignore
-* The running effect will still be slightly different from the native one, which is due to the style differences caused by the failure to reference private attributes after being separated from the source code (as shown below)
+### SystemUI脱离源码在Android Studiod的编译
+##### 不同安卓版本的支持请切换到对应的分支
+### 支持说明
+* 不试图改变项目本身的目录结构
+* 通过添加额外的配置和依赖构建Gradle环境支持
+* 会使用脚本移除一些AS不支持的属性和字段，然后利用git本地忽略
+* 运行的效果会与原生的还是有些许差异，这是由于脱离源码之后，引用private属性失败所导致的样式差异（如下图）
 
 
-### pixel2 running effect: Gradle build VS Android.bp build
+###  pixel2运行效果：Gradle编译 VS Android.bp编译
 ---
 <img src="images/pixel2_systemui_gradle.jpg" width = "225" height = "400"/> <img src="images/pixel2_systemui_original.jpg" width = "225" height = "400"/>
 
 ---
 
-## Building with Command Line
-### Environment Requirements
+## 使用命令编译
+### 环境依赖
 *  Gradle 6.5
 *  JDK version >= 8
 
 ```
-# Setup build environment
+# 构建环境
 gradle wrapper
 
-# Execute pre-filter task
+# 执行预过滤任务
 ./gradlew :Filter:run
 
-# Build and package
+# 打包编译
 ./gradlew assemble
 ```
 
-## Building in Android Studio
-### Recommended
+## 在Android Studio上编译
+### 推荐使用
 *  Android Studio 4.2.2 & JDK version >= 8
 
-#### Step 1: Run the main function on Filter to execute the filter task
+#### 第一步：运行在Filter上的主函数，执行过滤任务
 <img src="images/filter_main.png" width = "600" height = "480"/>
 
-### Step 2: Execute Build APK in Android Studio, then push the apk to the SystemUI directory on the device
+### 第二步：执行Android Studio上Build APK的操作, 然后将apk推送到设备上SystemUI所在的目录
 
 ```
 adb push SystemUI.apk /system/system_ext/priv-app/SystemUI/
 
 adb shell killall com.android.systemui
 ```
-######  If SystemUI cannot start properly, you need to reboot the device
+######  如果SystemUI不能正常起来，则需要重启一下设备
 ```
 adb reboot
 ```
 
 
-## Build Steps
+## 构建步骤
 
-### Step 1: Add Static Dependencies
+### Step1：引入静态依赖
 ##### @framework.jar:
 ```
 // AOSP/android-11/out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/classes-header.jar
@@ -76,7 +77,7 @@ implementation(name: 'preference-1.2.0-alpha01', ext: 'aar')
 
 
 ![avatar](images/preference-1.2.0-alpha01.png)
-###### ps: androidx.preference is not easy to reference in the following way, so it is replaced with static
+###### ps: androidx.preference 不容易通过以下方式去引用，故换成静态
 ```
 ## implementation 'androidx.preference:preference:1.2.0-alpha01'
 ```
@@ -139,8 +140,8 @@ implementation files('libs/SystemUI-statsd.jar')
 ![avatar](images/SystemUI-statsd.png)
 
 
-### Step 2: Add Module
-###### Import the code from the specific path directly into the project as a Module dependency. During build, you can directly reference it through implementation project, or you can use gradle build to generate aar and place it in the libs folder.
+### Step2：引入Module
+###### 将具体路径下的代码直接导入到项目中作为Module依赖, 构建的时候可以直接通过implementation project引用，或者也可以gradle build生成aar,再放置到libs文件夹中，作为静态包使用。
 
 ##### @iconloaderlib: 
 ```
@@ -179,16 +180,16 @@ implementation project(':SettingsLib:Utils')
 ```
 ![avatar](images/SettingsLib.png)
 
-## Generate platform.keystore Default Signature
+## 生成platform.keystore默认签名
 
-Find the signing certificates in the AOSP/android-11/build/target/product/security path and use [keytool-importkeypair](https://github.com/getfatday/keytool-importkeypair) to generate the keystore.
-Execute the following command:  
+在AOSP/android-11/build/target/product/security路径下找到签名证书，并使用 [keytool-importkeypair](https://github.com/getfatday/keytool-importkeypair) 生成keystore,
+执行如下命令：  
 
 ```
 ./keytool-importkeypair -k platform.keystore -p 123456 -pk8 platform.pk8 -cert platform.x509.pem -alias platform
 ```
 
-And add the following code to the gradle configuration:
+并将以下代码添加到gradle配置中：
 
 ```
     signingConfigs {
@@ -216,25 +217,25 @@ And add the following code to the gradle configuration:
 ```
 
 ### PS:
-##### View ignored file list
+##### 查看被忽略的文件列表
 ```
 git ls-files -v | grep '^h\ '
 ```  
 
-##### Ignore and restore a single file
+##### 忽略和还原单个文件
 ``` 
 git update-index --assume-unchanged $path
 git update-index --no-assume-unchanged $path
 ``` 
 
-##### Restore all ignored files
+##### 还原全部被忽略的文件
 ```
 git ls-files -v | grep '^h' | awk '{print $2}' |xargs git update-index --no-assume-unchanged 
 ```
 
 ---
 
-### Related Projects
+### 关联项目
 * [Settings](https://github.com/siren-ocean/Settings)
 * [Launcher3](https://github.com/siren-ocean/Launcher3)
 * [DocumentsUI](https://github.com/siren-ocean/DocumentsUI)
