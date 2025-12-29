@@ -1,0 +1,29 @@
+plugins {
+    alias(libs.plugins.android.library)
+}
+
+android {
+    namespace "com.android.settingslib.widget.progressbar"
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    buildFeatures {
+        buildConfig = false
+    }
+
+    sourceSets {
+        main {
+            res.srcDirs = ['res']
+            manifest.srcFile 'AndroidManifest.xml'
+        }
+    }
+}

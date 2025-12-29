@@ -1,0 +1,69 @@
+plugins {
+    alias(libs.plugins.android.library)
+    alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.kotlin.kapt)
+}
+
+android {
+    namespace "com.android.wm.shell"
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    buildFeatures {
+        buildConfig = false
+    }
+
+    kotlinOptions {
+        jvmTarget = "17"
+        freeCompilerArgs += [
+                '-Xjvm-default=all'
+        ]
+    }
+
+    buildFeatures {
+        aidl = true
+    }
+
+    sourceSets {
+        main {
+            java.srcDirs = ['src']
+            aidl.srcDirs = ['src', 'framework-aidl']
+            res.srcDirs = ['res']
+            manifest.srcFile 'AndroidManifest.xml'
+        }
+    }
+}
+
+dependencies {
+    compileOnly files('../libs/framework.jar')
+    implementation files('../libs/libprotobuf-java-nano.jar')
+    implementation files('../libs/WindowManager-Shell-proto.jar')
+    implementation files('../libs/WindowManager-Shell-shared.jar')
+    implementation files('../libs/com.android.window.flags.window-aconfig-java.jar')
+    implementation files('../libs/com_android_wm_shell_flags_lib.jar')
+    implementation files('../libs/perfetto_trace_java_protos.jar')
+
+    implementation project(':iconloaderlib')
+    implementation libs.dynamicanimation
+    implementation libs.appcompat
+    implementation libs.core.animation
+    implementation libs.core.runtime
+    implementation libs.recyclerview
+    implementation libs.constraintlayout
+    implementation libs.kotlinx.coroutines.android
+    implementation libs.kotlinx.coroutines.core
+    implementation libs.core.ktx
+    implementation libs.javax.inject
+
+    implementation libs.dagger.android
+    kapt libs.dagger.compiler
+}

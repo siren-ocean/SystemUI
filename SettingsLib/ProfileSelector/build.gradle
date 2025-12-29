@@ -1,0 +1,35 @@
+plugins {
+    alias(libs.plugins.android.library)
+}
+
+android {
+    namespace "com.android.settingslib.widget.profileselector"
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    buildFeatures {
+        buildConfig = false
+    }
+
+    sourceSets {
+        main {
+            java.srcDirs = ['src']
+            res.srcDirs = ['res']
+            manifest.srcFile 'AndroidManifest.xml'
+        }
+    }
+}
+
+dependencies {
+    implementation project(':SettingsLib:SettingsTheme')
+    implementation libs.material
+}

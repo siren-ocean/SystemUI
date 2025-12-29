@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace "com.android.systemui.animation"
+    namespace "com.android.systemui.plugins"
 
     buildTypes {
         release {
@@ -22,17 +22,9 @@ android {
         buildConfig = false
     }
 
-    kotlinOptions {
-        jvmTarget = "17"
-        freeCompilerArgs += [
-                '-Xjvm-default=all'
-        ]
-    }
-
     sourceSets {
         main {
-            java.srcDirs = ['src']
-            res.srcDirs = ['res']
+            java.srcDirs = ['src', 'bcsmartspace']
             manifest.srcFile 'AndroidManifest.xml'
         }
     }
@@ -40,12 +32,13 @@ android {
 
 dependencies {
     compileOnly files('../libs/framework.jar')
-    implementation files('../libs/com_android_systemui_flags_lib.jar')
-    implementation files('../libs/WindowManager-Shell-shared.jar')
+//    implementation files('../libs/framework-annotations-lib.jar')
     implementation project(':plugin_core')
-    implementation project(':animationlib')
-
+    implementation project(':animation')
+    implementation project(':common')
+    implementation project(':log')
+    implementation libs.dynamicanimation
     implementation libs.appcompat
-    implementation libs.core.animation
-    implementation libs.core.ktx
+    implementation libs.concurrent.futures
+    implementation libs.constraintlayout
 }

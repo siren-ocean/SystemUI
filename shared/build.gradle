@@ -1,0 +1,67 @@
+plugins {
+    alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.kotlin.kapt)
+    alias(libs.plugins.android.library)
+}
+
+android {
+    namespace "com.android.systemui.shared"
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    buildFeatures {
+        buildConfig = false
+    }
+
+    kotlinOptions {
+        jvmTarget = "17"
+        freeCompilerArgs += [
+                '-Xjvm-default=all'
+        ]
+    }
+
+    buildFeatures {
+        aidl = true
+    }
+
+    sourceSets {
+        main {
+            java.srcDirs = ['src', 'keyguard/src']
+            aidl.srcDirs = ['src']
+            res.srcDirs = ['res',]
+            manifest.srcFile 'AndroidManifest.xml'
+        }
+    }
+}
+
+dependencies {
+    compileOnly files('../libs/framework.jar')
+    compileOnly files('../libs/core-all.jar')
+    implementation files('../libs/com_android_systemui_shared_flags_lib.jar')
+    implementation files('../libs/tracinglib-platform.jar')
+    implementation project(':Shell')
+    implementation project(':plugin')
+    implementation project(':plugin_core')
+    implementation project(':animation')
+    implementation project(':unfold')
+    implementation project(':biometrics')
+
+    implementation libs.lifecycle.runtime.ktx
+    implementation libs.lifecycle.viewmodel.ktx
+    implementation libs.kotlinx.coroutines.android
+    implementation libs.dynamicanimation
+    implementation libs.appcompat
+    implementation libs.concurrent.futures
+    implementation libs.javax.inject
+    implementation libs.dagger.android
+    kapt libs.dagger.compiler
+
+}

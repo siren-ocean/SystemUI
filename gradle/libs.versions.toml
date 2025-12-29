@@ -1,0 +1,128 @@
+[versions]
+agp = "8.2.2"
+kotlin = "1.9.22"
+protobuf-plugin = "0.9.1"
+kotlinx-coroutines = "1.9.0"
+recyclerview = "1.2.1"
+legacy-support = "1.0.0"
+appcompat = "1.7.0"
+mediarouter = "1.2.0-alpha01"
+lifecycle = "2.8.0-alpha02"
+lifecycle-extensions = "2.2.0"
+constraintlayout = "2.2.0-alpha13"
+constraintlayout-core = "1.1.0-alpha13"
+slice = "1.1.0-alpha02"
+cardview = "1.0.0"
+window = "1.5.0-alpha01"
+material = "1.7.0-alpha03"
+protobuf-java = "3.22.3"
+lottie = "6.0.0"
+guava = "32.0.1-jre"
+errorprone = "2.18.0"
+core = "1.13.0"
+dagger = "2.50"
+collection-ktx = "1.4.0"
+localbroadcastmanager = "1.1.0"
+room = "2.7.0-alpha01"
+sqlite = "2.5.0-alpha01"
+concurrent = "1.2.0-alpha01"
+jsr305 = "3.0.2"
+navigation = "2.8.0-alpha03"
+compose-compiler = "1.5.10"
+dynamicanimation = "1.1.0"
+fragment = "1.7.0-beta01"
+atomicfu = "0.23.2"
+gson = "2.13.1"
+material3 = "1.3.0-alpha01"
+lottie-compose = "5.2.0"
+mp-android-chart = "v3.1.0-alpha"
+compose = "1.7.0-alpha03"
+javax-inject = "1"
+core-runtime = "2.2.0"
+core-animation = "1.0.0"
+leanback = "1.2.0-alpha03"
+savedstate = "1.3.0-alpha01"
+asynclayoutinflater = "1.1.0"
+viewpager2 = "1.1.0"
+media = "1.7.1"
+exifinterface = "1.4.0-alpha01"
+protobuf-lite = "3.0.0"
+
+[libraries]
+recyclerview = { module = "androidx.recyclerview:recyclerview", version.ref = "recyclerview" }
+legacy-support-v4 = { module = "androidx.legacy:legacy-support-v4", version.ref = "legacy-support" }
+appcompat = { module = "androidx.appcompat:appcompat", version.ref = "appcompat" }
+mediarouter = { module = "androidx.mediarouter:mediarouter", version.ref = "mediarouter" }
+lifecycle-runtime = { module = "androidx.lifecycle:lifecycle-runtime", version.ref = "lifecycle" }
+lifecycle-runtime-ktx = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycle" }
+lifecycle-livedata-ktx = { module = "androidx.lifecycle:lifecycle-livedata-ktx", version.ref = "lifecycle" }
+lifecycle-viewmodel-ktx = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "lifecycle" }
+lifecycle-runtime-compose = { module = "androidx.lifecycle:lifecycle-runtime-compose", version.ref = "lifecycle" }
+lifecycle-extensions = { module = "androidx.lifecycle:lifecycle-extensions", version.ref = "lifecycle-extensions" }
+constraintlayout = { module = "androidx.constraintlayout:constraintlayout", version.ref = "constraintlayout" }
+constraintlayout-core = { module = "androidx.constraintlayout:constraintlayout-core", version.ref = "constraintlayout-core" }
+slice-builders = { module = "androidx.slice:slice-builders", version.ref = "slice" }
+slice-core = { module = "androidx.slice:slice-core", version.ref = "slice" }
+slice-view = { module = "androidx.slice:slice-view", version.ref = "slice" }
+cardview = { module = "androidx.cardview:cardview", version.ref = "cardview" }
+window = { module = "androidx.window:window", version.ref = "window" }
+window-java = { module = "androidx.window:window-java", version.ref = "window" }
+core = { module = "androidx.core:core", version.ref = "core" }
+core-animation = { module = "androidx.core:core-animation", version.ref = "core-animation" }
+core-ktx = { module = "androidx.core:core-ktx", version.ref = "core" }
+activity-compose = { module = "androidx.activity:activity-compose", version.ref = "compose" }
+foundation = { module = "androidx.compose.foundation:foundation", version.ref = "compose" }
+animation-graphics = { module = "androidx.compose.animation:animation-graphics", version.ref = "compose" }
+leanback = { module = "androidx.leanback:leanback", version.ref = "leanback" }
+material = { module = "com.google.android.material:material", version.ref = "material" }
+protobuf-java = { module = "com.google.protobuf:protobuf-java", version.ref = "protobuf-java" }
+guava = { module = "com.google.guava:guava", version.ref = "guava" }
+errorprone-annotations = { module = "com.google.errorprone:error_prone_annotations", version.ref = "errorprone" }
+lottie = { module = "com.airbnb.android:lottie", version.ref = "lottie" }
+collection-ktx = { module = "androidx.collection:collection-ktx", version.ref = "collection-ktx" }
+localbroadcastmanager = { module = "androidx.localbroadcastmanager:localbroadcastmanager", version.ref = "localbroadcastmanager" }
+room-runtime = { module = "androidx.room:room-runtime", version.ref = "room" }
+room-compiler = { module = "androidx.room:room-compiler", version.ref = "room" }
+sqlite = { module = "androidx.sqlite:sqlite", version.ref = "sqlite" }
+concurrent-futures = { module = "androidx.concurrent:concurrent-futures", version.ref = "concurrent" }
+jsr305 = { module = "com.google.code.findbugs:jsr305", version.ref = "jsr305" }
+dynamicanimation = { module = "androidx.dynamicanimation:dynamicanimation", version.ref = "dynamicanimation" }
+fragment = { module = "androidx.fragment:fragment", version.ref = "fragment" }
+fragment-ktx = { module = "androidx.fragment:fragment-ktx", version.ref = "fragment" }
+navigation-fragment-ktx = { module = "androidx.navigation:navigation-fragment-ktx", version.ref = "navigation" }
+navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigation" }
+atomicfu = { module = "org.jetbrains.kotlinx:atomicfu", version.ref = "atomicfu" }
+gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
+material3 = { module = "androidx.compose.material3:material3", version.ref = "material3" }
+material3-window = { module = "androidx.compose.material3:material3-window-size-class", version.ref = "material3" }
+lottie-compose = { module = "com.airbnb.android:lottie-compose", version.ref = "lottie-compose" }
+mp-android-chart = { module = "com.github.PhilJay:MPAndroidChart", version.ref = "mp-android-chart" }
+javax-inject = { module = "javax.inject:javax.inject", version.ref = "javax-inject" }
+core-runtime = { module = "androidx.arch.core:core-runtime", version.ref = "core-runtime" }
+savedstate = { module = "androidx.savedstate:savedstate", version.ref = "savedstate" }
+asynclayoutinflater = { module = "androidx.asynclayoutinflater:asynclayoutinflater", version.ref = "asynclayoutinflater" }
+viewpager2 = { module = "androidx.viewpager2:viewpager2", version.ref = "viewpager2" }
+media = { module = "androidx.media:media", version.ref = "media" }
+exifinterface = { module = "androidx.exifinterface:exifinterface", version.ref = "exifinterface" }
+
+protobuf-lite = { module = "com.google.protobuf:protobuf-lite", version.ref = "protobuf-lite" }
+
+compose-material-icons-extended = { module = "androidx.compose.material:material-icons-extended", version.ref = "compose" }
+compose-runtime-livedata = { module = "androidx.compose.runtime:runtime-livedata", version.ref = "compose" }
+compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "compose" }
+compose-ui-toolingt = { module = "androidx.compose.ui:ui-tooling", version.ref = "compose" }
+
+kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlinx-coroutines" }
+kotlinx_coroutines_core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinx-coroutines" }
+kotlin-reflect = { module = "org.jetbrains.kotlin:kotlin-reflect", version.ref = "kotlin" }
+compose-compiler = { module = "androidx.compose.compiler:compiler", version.ref = "compose-compiler" }
+
+dagger-android = { module = "com.google.dagger:dagger-android", version.ref = "dagger" }
+dagger-compiler = { module = "com.google.dagger:dagger-compiler", version.ref = "dagger" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+android-library = { id = "com.android.library", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }
+protobuf = { id = "com.google.protobuf", version.ref = "protobuf-plugin" }

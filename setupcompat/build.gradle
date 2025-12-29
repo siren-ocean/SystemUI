@@ -13,15 +13,13 @@
  *      }
  */
 
-apply plugin: 'com.android.library'
+plugins {
+    alias(libs.plugins.android.library)
+    alias(libs.plugins.kotlin.android)
+}
 
 android {
-    // Not specifying compileSdkVersion here so clients can specify it; must be at least Q
-
-    defaultConfig {
-        minSdkVersion 19
-        targetSdkVersion 28
-    }
+    namespace "com.google.android.setupcompat"
 
     buildTypes {
         release {
@@ -37,12 +35,18 @@ android {
         res.srcDirs = ['main/res']
     }
 
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    buildFeatures {
+        aidl = true
     }
 }
 
 dependencies {
-    implementation "androidx.annotation:annotation:1.0.0"
+    implementation libs.appcompat
+    implementation libs.window
+    implementation libs.errorprone.annotations
 }

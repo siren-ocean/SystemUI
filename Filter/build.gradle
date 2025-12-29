@@ -1,0 +1,11 @@
+apply plugin: 'java'
+apply plugin: 'application'
+mainClassName = 'com.siren.filter.Main'
+
+run {
+    workingDir = rootProject.projectDir
+}
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}

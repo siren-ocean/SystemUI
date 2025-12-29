@@ -1,0 +1,35 @@
+plugins {
+    alias(libs.plugins.android.library)
+}
+
+android {
+    namespace "com.android.settingslib.widget.transition"
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    buildFeatures {
+        buildConfig = false
+    }
+
+    sourceSets {
+        main {
+            java.srcDirs = ['src']
+            manifest.srcFile 'AndroidManifest.xml'
+        }
+    }
+}
+
+dependencies {
+    implementation libs.appcompat
+    implementation libs.core.ktx
+    implementation libs.material
+}

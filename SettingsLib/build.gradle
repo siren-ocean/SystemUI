@@ -1,0 +1,96 @@
+plugins {
+    alias(libs.plugins.android.library)
+    alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.kotlin.kapt)
+}
+
+android {
+    namespace "com.android.settingslib"
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    buildFeatures {
+        buildConfig = false
+    }
+
+    kotlinOptions {
+        jvmTarget = "17"
+        freeCompilerArgs += [
+                '-Xjvm-default=all'
+        ]
+    }
+
+    sourceSets {
+        main {
+            java.srcDirs = ['src']
+            res.srcDirs = ['res']
+            manifest.srcFile 'AndroidManifest.xml'
+        }
+    }
+}
+
+dependencies {
+    compileOnly files('../libs/framework.jar')
+    compileOnly files('../libs/core-all.jar')
+    implementation files('../libs/settingslib_media_flags_lib.jar')
+    implementation files('../libs/settingslib_flags_lib.jar')
+    implementation files('../libs/zxing-core.jar')
+    implementation files('../libs/core-icu4j.jar')
+
+    implementation(libs.legacy.support.v4, {
+        exclude group: 'androidx.preference', module: 'preference'
+    })
+    implementation libs.recyclerview
+    implementation libs.appcompat
+    implementation libs.lifecycle.runtime
+    implementation libs.mediarouter
+    implementation libs.core.ktx
+    implementation libs.material
+    implementation libs.localbroadcastmanager
+    implementation libs.concurrent.futures
+    implementation libs.guava
+    implementation libs.room.runtime
+    implementation libs.sqlite
+    implementation libs.jsr305
+    kapt libs.room.compiler
+
+    implementation(':preference-1.3.0-alpha01@aar')
+    implementation project(':setupcompat')
+    implementation project(':setupdesign')
+    implementation project(':SettingsLib:RestrictedLockUtils')
+    implementation project(':SettingsLib:AdaptiveIcon')
+    implementation project(':SettingsLib:HelpUtils')
+    implementation project(':SettingsLib:ActionBarShadow')
+    implementation project(':SettingsLib:AppPreference')
+    implementation project(':SettingsLib:SearchWidget')
+    implementation project(':SettingsLib:SettingsSpinner')
+    implementation project(':SettingsLib:LayoutPreference')
+    implementation project(':SettingsLib:ActionButtonsPreference')
+    implementation project(':SettingsLib:EntityHeaderWidgets')
+    implementation project(':SettingsLib:BarChartPreference')
+    implementation project(':SettingsLib:ProgressBar')
+    implementation project(':SettingsLib:EmergencyNumber')
+    implementation project(':SettingsLib:TopIntroPreference')
+    implementation project(':SettingsLib:BannerMessagePreference')
+    implementation project(':SettingsLib:FooterPreference')
+    implementation project(':SettingsLib:UsageProgressBarPreference')
+    implementation project(':SettingsLib:CollapsingToolbarBaseActivity')
+    implementation project(':SettingsLib:TwoTargetPreference')
+    implementation project(':SettingsLib:SettingsTransition')
+    implementation project(':SettingsLib:ActivityEmbedding')
+    implementation project(':SettingsLib:MainSwitchPreference')
+    implementation project(':SettingsLib:Utils')
+    implementation project(':SettingsLib:SettingsTheme')
+    implementation project(':WifiTrackerLib')
+    implementation project(':iconloaderlib')
+}

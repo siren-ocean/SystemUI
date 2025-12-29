@@ -4,12 +4,11 @@ plugins {
 }
 
 android {
-    namespace "com.android.systemui.animation"
+    namespace "com.android.systemui.customization"
 
     buildTypes {
         release {
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
 
@@ -22,16 +21,14 @@ android {
         buildConfig = false
     }
 
-    kotlinOptions {
-        jvmTarget = "17"
-        freeCompilerArgs += [
-                '-Xjvm-default=all'
-        ]
+    buildFeatures {
+        aidl = true
     }
 
     sourceSets {
         main {
             java.srcDirs = ['src']
+            aidl.srcDirs = ['src']
             res.srcDirs = ['res']
             manifest.srcFile 'AndroidManifest.xml'
         }
@@ -40,12 +37,16 @@ android {
 
 dependencies {
     compileOnly files('../libs/framework.jar')
-    implementation files('../libs/com_android_systemui_flags_lib.jar')
-    implementation files('../libs/WindowManager-Shell-shared.jar')
-    implementation project(':plugin_core')
+    implementation project(':animation')
     implementation project(':animationlib')
+    implementation project(':plugin_core')
+    implementation project(':plugin')
+    implementation project(':unfold')
+    implementation project(':log')
 
-    implementation libs.appcompat
-    implementation libs.core.animation
-    implementation libs.core.ktx
+    implementation libs.lifecycle.runtime.ktx
+    implementation libs.lifecycle.viewmodel.ktx
+    implementation libs.kotlinx.coroutines.android
+    implementation libs.dynamicanimation
+    implementation libs.recyclerview
 }

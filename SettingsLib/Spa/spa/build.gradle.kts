@@ -20,7 +20,6 @@ plugins {
     jacoco
 }
 
-val jetpackComposeVersion: String? by extra
 
 android {
     namespace = "com.android.settingslib.spa"
@@ -49,28 +48,34 @@ android {
             enableAndroidTestCoverage = true
         }
     }
+
+    kotlinOptions {
+        jvmTarget = "17"
+        freeCompilerArgs = listOf("-Xjvm-default=all")
+    }
+
+    composeOptions {
+        kotlinCompilerExtensionVersion = "1.5.10"
+    }
 }
 
 dependencies {
-    api(project(":SettingsLibColor"))
-    api("androidx.appcompat:appcompat:1.7.0-alpha03")
-    api("androidx.slice:slice-builders:1.1.0-alpha02")
-    api("androidx.slice:slice-core:1.1.0-alpha02")
-    api("androidx.slice:slice-view:1.1.0-alpha02")
-    api("androidx.compose.material3:material3:1.3.0-alpha01")
-    api("androidx.compose.material:material-icons-extended:$jetpackComposeVersion")
-    api("androidx.compose.runtime:runtime-livedata:$jetpackComposeVersion")
-    api("androidx.compose.ui:ui-tooling-preview:$jetpackComposeVersion")
-    api("androidx.lifecycle:lifecycle-livedata-ktx")
-    api("androidx.lifecycle:lifecycle-runtime-compose")
-    api("androidx.navigation:navigation-compose:2.8.0-alpha02")
-    api("com.github.PhilJay:MPAndroidChart:v3.1.0-alpha")
-    api("com.google.android.material:material:1.7.0-alpha03")
-    debugApi("androidx.compose.ui:ui-tooling:$jetpackComposeVersion")
-    implementation("com.airbnb.android:lottie-compose:5.2.0")
-
-    androidTestImplementation(project(":testutils"))
-    androidTestImplementation(libs.dexmaker.mockito)
+    implementation(project(":SettingsLib:Color"))
+    implementation(libs.appcompat)
+    implementation(libs.slice.builders)
+    implementation(libs.slice.core)
+    implementation(libs.slice.view)
+    implementation(libs.material3)
+    implementation(libs.compose.material.icons.extended)
+    implementation(libs.compose.runtime.livedata)
+    implementation(libs.compose.ui.tooling.preview)
+    implementation(libs.lifecycle.livedata.ktx)
+    implementation(libs.lifecycle.runtime.compose)
+    implementation(libs.navigation.compose)
+    implementation(libs.mp.android.chart)
+    implementation(libs.material)
+    debugImplementation(libs.compose.ui.toolingt)
+    implementation(libs.lottie.compose)
 }
 
 tasks.register<JacocoReport>("coverageReport") {

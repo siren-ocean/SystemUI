@@ -1,0 +1,234 @@
+plugins {
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.kotlin.kapt)
+    alias(libs.plugins.android.library) apply false
+}
+
+android {
+    namespace "com.android.systemui"
+
+    defaultConfig {
+        applicationId "com.android.systemui"
+        versionCode 34
+        versionName "14"
+    }
+
+    signingConfigs {
+        platform {
+            storeFile file("platform.keystore")
+            storePassword '123456'
+            keyAlias 'platform'
+            keyPassword '123456'
+            enableV3Signing true
+        }
+    }
+
+    buildTypes {
+        release {
+            debuggable false
+            minifyEnabled false
+            signingConfig signingConfigs.platform
+        }
+
+        debug {
+            debuggable true
+            minifyEnabled false
+            signingConfig signingConfigs.platform
+        }
+
+        applicationVariants.all { variant ->
+            variant.outputs.all {
+                outputFileName = "SystemUI.apk"
+            }
+        }
+    }
+
+    kotlinOptions {
+        jvmTarget = "17"
+        freeCompilerArgs += [
+                '-Xjvm-default=all'
+        ]
+    }
+
+    buildFeatures {
+        compose = true
+    }
+
+    composeOptions {
+        kotlinCompilerExtensionVersion = "1.5.10"
+    }
+
+    buildFeatures {
+        aidl = true
+    }
+
+    sourceSets {
+        main {
+            java.srcDirs = ['src', 'src-debug', 'compose/features/src', 'compose/facade/enabled/src']
+            aidl.srcDirs = ['src']
+            manifest.srcFile 'AndroidManifest.xml'
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+}
+
+dependencies {
+    compileOnly files('libs/framework.jar')
+    compileOnly files('libs/core-all.jar')
+
+    implementation files('libs/keepanno-annotations.jar')
+    implementation files('libs/SystemUI-statsd.jar')
+    implementation files('libs/SystemUI-tags.jar')
+    implementation files('libs/SystemUI-proto.jar')
+    implementation files('libs/libprotobuf-java-nano.jar')
+    implementation files('libs/settingslib_flags_lib.jar')
+    implementation files('libs/com_android_systemui_flags_lib.jar')
+    implementation files('libs/com_android_systemui_shared_flags_lib.jar')
+    implementation files('libs/com_android_wm_shell_flags_lib.jar')
+    implementation files('libs/notification_flags_lib.jar')
+    implementation files('libs/tracinglib-platform.jar')
+    implementation files('libs/motion_tool_proto.jar')
+    implementation files('libs/libmonet.jar')
+    implementation files('libs/device_state_flags_lib.jar')
+    implementation files('libs/zxing-core.jar')
+    implementation files('libs/WindowManager-Shell-shared.jar')
+    implementation files('libs/motion_tool_lib.jar')
+    kapt files('libs/motion_tool_lib.jar')
+
+    implementation project(':setupcompat')
+    implementation project(':animation')
+    implementation project(':animationlib')
+    implementation project(':plugin')
+    implementation project(':shared')
+    implementation project(':biometrics')
+    implementation project(':iconloaderlib')
+    implementation project(':viewcapturelib')
+    implementation project(':plugin_core')
+    implementation project(':monet')
+    implementation project(':Shell')
+    implementation project(':WifiTrackerLib')
+    implementation project(':customization')
+    implementation project(':common')
+    implementation project(':log')
+    implementation project(':unfold')
+    implementation project(':ComposeCore')
+    implementation project(':ComposeScene')
+    implementation project(':SystemUI-res')
+    implementation project(':lowlight')
+    implementation project(':SettingsLib')
+    implementation project(':SettingsLib:RestrictedLockUtils')
+    implementation project(':SettingsLib:AdaptiveIcon')
+    implementation project(':SettingsLib:Color')
+    implementation project(':SettingsLib:IllustrationPreference')
+    implementation project(':SettingsLib:DisplayUtils')
+    implementation project(':SettingsLib:DeviceStateRotationLock')
+
+    implementation(':preference-1.3.0-alpha01@aar')
+    implementation libs.dynamicanimation
+    implementation libs.viewpager2
+    implementation libs.recyclerview
+    implementation libs.appcompat
+    implementation libs.mediarouter
+    implementation libs.constraintlayout
+    implementation libs.constraintlayout.core
+    implementation libs.slice.builders
+    implementation libs.slice.core
+    implementation libs.slice.view
+    implementation libs.cardview
+    implementation libs.lifecycle.runtime
+    implementation libs.lifecycle.extensions
+    implementation libs.exifinterface
+    implementation libs.concurrent.futures
+    implementation libs.lottie
+    implementation libs.errorprone.annotations
+    implementation libs.activity.compose
+    implementation libs.foundation
+    implementation libs.animation.graphics
+    implementation libs.material
+    implementation libs.material3
+    implementation libs.material3.window
+    implementation libs.window
+    implementation libs.jsr305
+    implementation libs.asynclayoutinflater
+    implementation libs.core.animation
+    implementation libs.media
+
+    implementation libs.compose.material.icons.extended
+    implementation libs.guava
+
+    implementation libs.kotlinx.coroutines.android
+    implementation libs.kotlinx.coroutines.core
+    implementation libs.kotlin.reflect
+    implementation libs.core
+    implementation libs.core.ktx
+
+    implementation libs.sqlite
+    implementation libs.room.runtime
+    kapt libs.room.compiler
+
+    implementation libs.dagger.android
+    kapt libs.dagger.compiler
+}
+
+
+allprojects { project ->
+    project.plugins.withId("com.android.library") {
+        applyReorderRule(project)
+        applyDefaultConfig(project)
+    }
+    project.plugins.withId("com.android.application") {
+        applyReorderRule(project)
+        applyDefaultConfig(project)
+    }
+}
+
+def applyReorderRule(Project project) {
+    project.gradle.projectsEvaluated {
+        project.tasks.matching { it.name == "compileDebugJavaWithJavac" }.configureEach { task ->
+            task.doFirst {
+                task.classpath = reorderClasspath(task.classpath.files)
+            }
+        }
+        project.tasks.matching { it.name == "compileReleaseJavaWithJavac" }.configureEach { task ->
+            task.doFirst {
+                task.classpath = reorderClasspath(task.classpath.files)
+            }
+        }
+    }
+}
+
+def reorderClasspath(Set<File> classpathSet) {
+    def androidJar = classpathSet.find { it.name == "android.jar" }
+    def others = classpathSet - (androidJar ? [androidJar] : [])
+    return files((others + (androidJar ?: [])).toArray())
+}
+
+def applyDefaultConfig(Project project) {
+    project.android {
+        compileSdk COMPILE_SDK.toInteger()
+
+        defaultConfig {
+            minSdk MIN_SDK_VERSION.toInteger()
+            targetSdk TARGET_SDK_VERSION.toInteger()
+        }
+
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_17
+            targetCompatibility JavaVersion.VERSION_17
+        }
+    }
+}
+
+allprojects {
+    tasks.withType(JavaCompile).configureEach { task ->
+        task.doFirst {
+            // 替换java.base
+            options.compilerArgs += ["--patch-module", "java.base=${rootDir}/libs/core-all.jar"]
+        }
+    }
+}

@@ -1,0 +1,42 @@
+plugins {
+    alias(libs.plugins.android.library)
+}
+
+android {
+    namespace "com.android.settingslib.widget.preference.banner"
+
+    defaultConfig {
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    buildFeatures {
+        buildConfig = false
+    }
+
+    sourceSets {
+        main {
+            java.srcDirs = ['src']
+            res.srcDirs = ['res']
+            manifest.srcFile 'AndroidManifest.xml'
+        }
+    }
+}
+
+dependencies {
+    implementation(':preference-1.3.0-alpha01@aar')
+    implementation project(':SettingsLib:SettingsTheme')
+    implementation project(':SettingsLib:Utils')
+    implementation libs.appcompat
+    implementation libs.recyclerview
+}

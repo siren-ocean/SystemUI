@@ -1,9 +1,15 @@
 plugins {
-    id 'com.android.library'
+    alias(libs.plugins.android.library)
+    alias(libs.plugins.kotlin.android)
 }
 
 android {
-    namespace = "com.android.launcher3.icons"
+    namespace "com.android.launcher3.icons"
+
+    defaultConfig {
+        vectorDrawables.useSupportLibrary = true
+    }
+
     sourceSets {
         main {
             java.srcDirs = ['src', 'src_full_lib']
@@ -11,7 +17,8 @@ android {
             res.srcDirs = ['res']
         }
     }
-    lint {
+
+    lintOptions {
         abortOnError false
     }
 
@@ -21,5 +28,6 @@ android {
 }
 
 dependencies {
-    implementation "androidx.core:core"
+    compileOnly files('../libs/framework.jar')
+    implementation libs.appcompat
 }

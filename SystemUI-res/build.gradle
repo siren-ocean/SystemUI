@@ -1,0 +1,43 @@
+plugins {
+    alias(libs.plugins.android.library)
+    alias(libs.plugins.kotlin.android)
+}
+
+android {
+    namespace "com.android.systemui.res"
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    buildFeatures {
+        buildConfig = false
+    }
+
+    sourceSets {
+        main {
+            res.srcDirs = ['../res-product', '../res-keyguard', '../res']
+            manifest.srcFile '../AndroidManifest-res.xml'
+        }
+    }
+}
+
+dependencies {
+    implementation project(':shared')
+    implementation project(':customization')
+    implementation project(':SettingsLib')
+
+    implementation libs.leanback
+    implementation libs.slice.core
+    implementation libs.slice.view
+    implementation libs.lottie
+    implementation libs.constraintlayout
+}

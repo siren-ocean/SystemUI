@@ -16,14 +16,15 @@
  *      }
  */
 
-apply plugin: 'com.android.library'
+plugins {
+    alias(libs.plugins.android.library)
+}
 
 android {
-    compileSdkVersion 28
+    namespace "com.google.android.setupdesign"
 
     defaultConfig {
-        minSdkVersion 14
-        targetSdkVersion 28
+        vectorDrawables.useSupportLibrary = true
     }
 
     buildTypes {
@@ -40,11 +41,18 @@ android {
             res.srcDirs = ['main/res', 'strings/res']
         }
     }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
 }
 
 dependencies {
     implementation project(':setupcompat')
-    implementation "androidx.annotation:annotation:1.0.0"
-    implementation "androidx.recyclerview:recyclerview:1.0.0"
-    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation libs.recyclerview
+    implementation libs.appcompat
+    implementation libs.material
+    implementation libs.window
+    implementation libs.errorprone.annotations
 }

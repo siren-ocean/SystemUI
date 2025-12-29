@@ -1,0 +1,29 @@
+plugins {
+    alias(libs.plugins.android.library)
+    alias(libs.plugins.kotlin.android)
+}
+
+android {
+    namespace "com.android.systemui.shared.biometrics"
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+
+    sourceSets.main {
+        java.srcDirs = ['src']
+        res.srcDirs = ['res']
+        manifest.srcFile 'AndroidManifest.xml'
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+}
+
+dependencies {
+    compileOnly files('../../libs/framework.jar')
+}

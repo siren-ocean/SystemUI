@@ -1,0 +1,41 @@
+plugins {
+    alias(libs.plugins.android.library)
+}
+
+android {
+    namespace "com.android.wifitrackerlib"
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    buildFeatures {
+        buildConfig = false
+    }
+
+    sourceSets {
+        main {
+            java.srcDirs = ['src']
+            res.srcDirs = ['res']
+            manifest.srcFile 'AndroidManifest.xml'
+        }
+    }
+}
+
+dependencies {
+    compileOnly files('../libs/framework.jar')
+    implementation files('../libs/wifi_aconfig_flags_lib.jar')
+
+    implementation(':preference-1.3.0-alpha01@aar')
+    implementation project(':SettingsLib:HelpUtils')
+
+    implementation libs.lifecycle.runtime
+    implementation libs.appcompat
+}

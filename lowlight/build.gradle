@@ -1,10 +1,11 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.kotlin.kapt)
 }
 
 android {
-    namespace "com.android.systemui.animation"
+    namespace "com.android.dream.lowlight"
 
     buildTypes {
         release {
@@ -22,13 +23,6 @@ android {
         buildConfig = false
     }
 
-    kotlinOptions {
-        jvmTarget = "17"
-        freeCompilerArgs += [
-                '-Xjvm-default=all'
-        ]
-    }
-
     sourceSets {
         main {
             java.srcDirs = ['src']
@@ -40,12 +34,9 @@ android {
 
 dependencies {
     compileOnly files('../libs/framework.jar')
-    implementation files('../libs/com_android_systemui_flags_lib.jar')
-    implementation files('../libs/WindowManager-Shell-shared.jar')
-    implementation project(':plugin_core')
-    implementation project(':animationlib')
+    implementation libs.kotlinx.coroutines.android
+    implementation libs.kotlinx.coroutines.core
 
-    implementation libs.appcompat
-    implementation libs.core.animation
-    implementation libs.core.ktx
+    implementation libs.dagger.android
+    kapt libs.dagger.compiler
 }

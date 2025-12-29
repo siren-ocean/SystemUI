@@ -1,0 +1,87 @@
+pluginManagement {
+    repositories {
+        maven { url = uri("https://maven.aliyun.com/repository/gradle-plugin") }
+        maven { url = uri("https://maven.aliyun.com/repository/google") }
+        maven { url = uri("https://maven.aliyun.com/repository/public") }
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        maven { url = uri("https://maven.aliyun.com/repository/google") }
+        maven { url = uri("https://maven.aliyun.com/repository/public") }
+        flatDir {
+            dirs("${rootDir}/libs")
+        }
+        google()
+        mavenCentral()
+    }
+}
+
+include ':Filter'
+include ':plugin_core'
+include ':WifiTrackerLib'
+include ':iconloaderlib'
+include ':viewcapturelib'
+include ':animationlib'
+include ':shared'
+include ':plugin'
+include ':animation'
+include ':monet'
+include ':unfold'
+include ':Shell'
+include ':common'
+include ':log'
+include ':customization'
+include ':setupcompat'
+include ':setupdesign'
+include ':lowlight'
+include ':SystemUI-res'
+include ':SettingsLib'
+include 'SettingsLib:Tile'
+include 'SettingsLib:AdaptiveIcon'
+include 'SettingsLib:RestrictedLockUtils'
+include 'SettingsLib:HelpUtils'
+include 'SettingsLib:SettingsTheme'
+include 'SettingsLib:AppPreference'
+include 'SettingsLib:SearchWidget'
+include 'SettingsLib:SettingsSpinner'
+include 'SettingsLib:LayoutPreference'
+include 'SettingsLib:ActionButtonsPreference'
+include 'SettingsLib:EntityHeaderWidgets'
+include 'SettingsLib:BarChartPreference'
+include 'SettingsLib:ProgressBar'
+include 'SettingsLib:Utils'
+include 'SettingsLib:ActionBarShadow'
+include 'SettingsLib:search'
+include 'SettingsLib:ActivityEmbedding'
+include 'SettingsLib:BannerMessagePreference'
+include 'SettingsLib:SettingsTransition'
+include 'SettingsLib:CollapsingToolbarBaseActivity'
+include 'SettingsLib:EmergencyNumber'
+include 'SettingsLib:FooterPreference'
+include 'SettingsLib:IllustrationPreference'
+include 'SettingsLib:UsageProgressBarPreference'
+include 'SettingsLib:TwoTargetPreference'
+include 'SettingsLib:TopIntroPreference'
+include 'SettingsLib:MainSwitchPreference'
+include 'SettingsLib:ButtonPreference'
+include 'SettingsLib:SelectorWithWidgetPreference'
+include 'SettingsLib:Color'
+include 'SettingsLib:DataStore'
+include 'SettingsLib:DeviceStateRotationLock'
+include 'SettingsLib:DisplayUtils'
+include 'SettingsLib:ProfileSelector'
+
+include ':biometrics'
+project(':biometrics').projectDir = new File('shared/biometrics')
+
+include ':ComposeCore'
+project(':ComposeCore').projectDir = new File('compose/core')
+
+include ':ComposeScene'
+project(':ComposeScene').projectDir = new File('compose/scene')
