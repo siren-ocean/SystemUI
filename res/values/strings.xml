@@ -2236,6 +2236,8 @@
     <!-- SysUI Tuner: Section to customize lockscreen shortcuts [CHAR LIMIT=60] -->
     <string name="tuner_lock_screen">Lock screen</string>
 
+    <string name="finder_active">"You can locate this phone with Find My Device even when powered off"</string>
+    <string name="shutdown_progress">"Shutting down…"</string>
     <!-- Tuner string -->
     <!-- Tuner string -->
     <!-- Tuner string -->

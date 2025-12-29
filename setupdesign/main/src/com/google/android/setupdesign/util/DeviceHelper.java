@@ -109,7 +109,7 @@ public final class DeviceHelper {
     }
 
     return context.getString(
-        com.google.android.setupdesign.strings.R.string.sud_default_device_name);
+        com.google.android.setupdesign.R.string.sud_default_device_name);
   }
 
   private DeviceHelper() {}
