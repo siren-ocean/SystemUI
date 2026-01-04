@@ -1,65 +1,68 @@
-# English | [中文文档](README.cn.md)
+# [English](README.md) | 中文文档
 ## SystemUI from android-14.0.0_r67
-### Building SystemUI outside AOSP source in Android Studio
-##### Please switch to the corresponding branch for different Android version support
-### Support Notes
-* Instead of changing the project's directory structure, we add additional configurations and dependencies to build Gradle environment support
-* Scripts are used to remove some attributes and fields not supported by AS, then utilize git local ignore
-* A small amount of code is modified, but overall it does not affect its compilation as an AOSP subproject using mm
-* The running effect may be less than ideal. The most important reason here is: limitations of high-version SDK toolchain, Android Studio compiled applications cannot reference private resources or attributes like "@*android" and "com.android.internal.R". For parts that may cause crashes, we use scripts to temporarily replace them. Unfortunately, there are still some parts where resource replacement cannot be achieved, such as SystemUIDialog, so once touched, crashes will be inevitable.
+### SystemUI脱离源码在Android Studio的编译
+##### 不同安卓版本的支持请切换到对应的分支
+### 支持说明
+* 不试图改变项目本身的目录结构
+* 通过添加额外的配置和依赖构建Gradle环境支持
+* 会使用脚本移除一些AS不支持的属性和字段，然后利用git本地忽略
+*  修改少量代码，但是总体不影响其作为AOSP的子项目进行mm编译
+* 运行的效果可能比较差强人意，这里最重要的原因是: 高版本SDK工具链的限制，Android studio编译出来的应用没有办法引用像@*android 和 com.android.internal.R 这一类的私有资源或属性。对于这些可能会导致崩溃的部分，会被我们用脚本进行暂时性的替代。但遗憾的是仍然有部分做不到资源的替换，如SystemUIDialog，所以一旦触及，崩溃将不可避免。
 
-### Pixel7 Running Effect
+
+###  在pixel7运行效果
 ---
 <img src="images/pixel7_systemui_gradle.png" width = "300"/>
 
 ---
 
-## Building with Command Line
-### Environment Requirements
+## 使用命令编译
+### 环境依赖
 *  Gradle 8.7
 *  JDK version 17
 
 ```
-# Setup build environment
+# 构建环境
 gradle wrapper
 
-# Execute pre-filter task
+# 执行预过滤任务
 ./gradlew :Filter:run
 
-# Build and package
+# 打包编译
 ./gradlew assemble
 ```
 
-## Building in Android Studio
-### Recommended
+## 在Android Studio上编译
+### 推荐使用
 *  Android Studio Koala & JDK version 17
 
-#### Step 1: Run the main function on Filter to execute two filter tasks
+#### 第一步：运行在Filter上的主函数，会执行两个过滤任务
 <img src="images/filter_main.png" width = "700"/>
 
-*  Remove some attributes and fields not supported by AS, and reduce internationalization languages to speed up compilation
+*  移除一些AS不支持的属性和字段，以及减少国际化语言，加快编译速度
 
 <img src="images/filter_resource.png" width = "700"/>
 
-*  Execute aggressive filtering task to replace some unreferenced resources, etc.
+*  执行暴力过滤任务，替代一些无法被引用的资源等。
 
 <img src="images/replace_content.png" width = "700"/>
 
-#### Step 2: Execute Build APK in Android Studio, then push the apk to the SystemUI directory on the device
+### 第二步：执行Android Studio上Build APK的操作, 然后将apk推送到设备上SystemUI所在的目录
 
 ```
 adb push SystemUI.apk /system/system_ext/priv-app/SystemUI/
 
 adb shell killall com.android.systemui
 ```
-### The first push may not start properly, you need to reboot the device.
+#####  首次推送会起不来，需要重启一下设备
 ```
 adb reboot
 ```
 
-## Build Steps
 
-### Step 1: Add Static Dependencies
+## 构建步骤
+
+### Step1：引入静态依赖
 ##### @framework.jar:
 ```
 // android-14/out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/classes-header.jar
@@ -243,15 +246,15 @@ implementation(':preference-1.3.0-alpha01@aar')
 ```
 
 ![avatar](images/preference-1.3.0-alpha01.png)
-### PS: androidx.preference is not easy to reference in the following way, so it is replaced with static dependency
+###### ps: androidx.preference 不容易通过以下方式去引用，故换成静态
 ```
 ## implementation 'androidx.preference:preference:1.3.0-alpha01'
 ```
 
 
 
-### Step 2: Add Module Dependencies
-##### Import code from specific paths directly into the project as Module dependencies. You can reference them through implementation project during build, or build aar with gradle build and place it in the libs folder.
+### Step2：引入Module
+###### 将具体路径下的代码直接导入到项目中作为Module依赖, 构建的时候可以直接通过implementation project引用，或者也可以gradle build生成aar,再放置到libs文件夹中，作为静态包使用。
 
 ##### @iconloaderlib: 
 ```
@@ -355,16 +358,16 @@ include 'SettingsLib:ProfileSelector'
 ```
 ![avatar](images/SettingsLib.png)
 
-## Generate platform.keystore Default Signature
+## 生成platform.keystore默认签名
 
-Find the signing certificates in the AOSP/android-14/build/target/product/security path and use [keytool-importkeypair](https://github.com/getfatday/keytool-importkeypair) to generate the keystore.
-Execute the following command:  
+在AOSP/android-14/build/target/product/security路径下找到签名证书，并使用 [keytool-importkeypair](https://github.com/getfatday/keytool-importkeypair) 生成keystore,
+执行如下命令：
 
 ```
 ./keytool-importkeypair -k platform.keystore -p 123456 -pk8 platform.pk8 -cert platform.x509.pem -alias platform
 ```
 
-And add the following code to the gradle configuration:
+并将以下代码添加到gradle配置中：
 
 ```
     signingConfigs {
@@ -392,28 +395,27 @@ And add the following code to the gradle configuration:
 ```
 
 ### PS:
-##### View ignored file list
+##### 查看被忽略的文件列表
 ```
 git ls-files -v | grep '^h\ '
 ```  
 
-##### Ignore and restore a single file
+##### 忽略和还原单个文件
 ``` 
 git update-index --assume-unchanged $path
 git update-index --no-assume-unchanged $path
 ``` 
 
-##### Restore all ignored files
+##### 还原全部被忽略的文件
 ```
 git ls-files -v | grep '^h' | awk '{print $2}' |xargs git update-index --no-assume-unchanged 
 ```
 
 ---
 
-### Related Projects
+### 关联项目
 * [Settings](https://github.com/siren-ocean/Settings)
 * [Launcher3](https://github.com/siren-ocean/Launcher3)
 * [DocumentsUI](https://github.com/siren-ocean/DocumentsUI)
 * [Camera2](https://github.com/siren-ocean/Camera2)
 * [PermissionController](https://github.com/siren-ocean/PermissionController)
-
