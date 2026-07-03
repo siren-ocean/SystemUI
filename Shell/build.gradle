@@ -51,6 +51,7 @@ dependencies {
     implementation files('../libs/com.android.window.flags.window-aconfig-java.jar')
     implementation files('../libs/com_android_wm_shell_flags_lib.jar')
     implementation files('../libs/perfetto_trace_java_protos.jar')
+    implementation files('../libs/core-icu4j.jar')
 
     implementation project(':iconloaderlib')
     implementation libs.dynamicanimation
