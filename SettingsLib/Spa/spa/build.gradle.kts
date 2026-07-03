@@ -49,11 +49,6 @@ android {
         }
     }
 
-    kotlinOptions {
-        jvmTarget = "17"
-        freeCompilerArgs = listOf("-Xjvm-default=all")
-    }
-
     composeOptions {
         kotlinCompilerExtensionVersion = "1.5.10"
     }

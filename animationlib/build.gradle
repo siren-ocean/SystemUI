@@ -23,13 +23,6 @@ android {
     tasks.withType(JavaCompile) {
         options.compilerArgs << "-Xlint:unchecked" << "-Xlint:deprecation"
     }
-
-    kotlinOptions {
-        jvmTarget = "17"
-        freeCompilerArgs += [
-                '-Xjvm-default=all'
-        ]
-    }
 }
 
 dependencies {

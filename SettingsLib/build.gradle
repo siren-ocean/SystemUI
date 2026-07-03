@@ -23,13 +23,6 @@ android {
         buildConfig = false
     }
 
-    kotlinOptions {
-        jvmTarget = "17"
-        freeCompilerArgs += [
-                '-Xjvm-default=all'
-        ]
-    }
-
     sourceSets {
         main {
             java.srcDirs = ['src']
