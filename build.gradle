@@ -180,10 +180,12 @@ allprojects { project ->
     project.plugins.withId("com.android.library") {
         applyReorderRule(project)
         applyDefaultConfig(project)
+        applyAidlWindowsPathFix(project)
     }
     project.plugins.withId("com.android.application") {
         applyReorderRule(project)
         applyDefaultConfig(project)
+        applyAidlWindowsPathFix(project)
     }
 }
 
@@ -229,6 +231,51 @@ allprojects {
         task.doFirst {
             // 替换java.base
             options.compilerArgs += ["--patch-module", "java.base=${rootDir}/libs/core-all.jar"]
+        }
+    }
+}
+
+
+// 解决注解在windows平台获取路径的时候，输出的分隔符为反斜杠，导致编译不通过
+// AIDL on Windows emits file paths with backslashes inside Java string literals and
+// comments (e.g. overrideSourcePosition="C:\Users\..."), which javac rejects.
+def fixAidlGeneratedWindowsPaths(Project project) {
+    if (!org.gradle.internal.os.OperatingSystem.current().isWindows()) {
+        return
+    }
+    def aidlDir = new File(project.buildDir, "generated/aidl_source_output_dir")
+    if (!aidlDir.exists()) {
+        return
+    }
+    aidlDir.eachFileRecurse { file ->
+        if (!file.file || !file.name.endsWith('.java')) {
+            return
+        }
+        def content = file.getText('UTF-8')
+        def fixed = content.replaceAll(/overrideSourcePosition="([^"]*)"/) { match, path ->
+            "overrideSourcePosition=\"${path.replace('\\', '/')}\""
+        }
+        fixed = fixed.replaceAll(/(?m)^(\s*\* Using: )(.*)$/) { match, prefix, path ->
+            "${prefix}${path.replace('\\', '/')}"
+        }
+        if (content != fixed) {
+            file.setText(fixed, 'UTF-8')
+        }
+    }
+}
+
+def applyAidlWindowsPathFix(Project project) {
+    project.gradle.projectsEvaluated {
+        project.tasks.configureEach { task ->
+            // Run immediately before any compilation that reads AIDL output. AIDL task names
+            // vary across AGP versions, and outputs can be regenerated after compile*Aidl.
+            if (task.name ==~ /compile.*Aidl/
+                    || task.name ==~ /compile.*JavaWithJavac/
+                    || task.name ==~ /kapt.*Kotlin/) {
+                task.doFirst {
+                    fixAidlGeneratedWindowsPaths(project)
+                }
+            }
         }
     }
 }
